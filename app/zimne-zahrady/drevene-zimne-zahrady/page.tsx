@@ -1,0 +1,46 @@
+import type { Metadata } from "next";
+import { ProductSubpage } from "@/components/ProductSubpage";
+import { zimnaZahradaFaqs } from "@/lib/faqs";
+
+export const metadata: Metadata = {
+  title: "Drevené zimné záhrady - WoodSteel.sk",
+  description:
+    "Drevené zimné záhrady z BSH dreva. Teplo a charakter klasiky, garancia 5+ rokov, vlastná SK výroba.",
+  alternates: { canonical: "https://woodsteel.sk/zimne-zahrady/drevene-zimne-zahrady/" },
+};
+
+export default function DreveneZimneZahradyPage() {
+  return (
+    <ProductSubpage
+      breadcrumb={{ parentLabel: "Zimné záhrady", parentHref: "/zimne-zahrady" }}
+      hero={{
+        eyebrow: "Drevené zimné záhrady",
+        title: (
+          <>
+            Drevené zimné záhrady s <span className="text-gold">prirodzeným teplom.</span>
+          </>
+        ),
+        subtitle:
+          "Drevo prináša do priestoru teplo a charakter, aké sa nedajú napodobniť. Prirodzený materiál, ktorý časom nezostarne — len získa patinu a zostane samozrejmou súčasťou domu.",
+        image:
+          "/images/drevena-zimna-zahrada5.jpg",
+      }}
+      intro={{
+        title: "Drevo ako obytný materiál",
+        body:
+          "Drevené zimné záhrady prinášajú do interiéru teplo, ktoré hliník nikdy nedosiahne. Vhodné pre rodinné domy s drevenými alebo prírodnými prvkami. Pri správnej impregnácii vydrží konštrukcia generácie.",
+      }}
+      features={[
+        "Lepené BSH drevo (Brettschichtholz)",
+        "Sliding posuvné systémy",
+        "Príprava na vykurovanie / klimatizáciu",
+        "Záruka 5+ rokov",
+        "Vlastná SK výroba",
+        "Impregnácia proti UV a vlhkosti",
+      ]}
+      realizationFilter={(c) => c.toLowerCase().includes("drevená zimná")}
+      faqs={zimnaZahradaFaqs.slice(0, 5)}
+      stickyName="Drevená zimná záhrada"
+    />
+  );
+}

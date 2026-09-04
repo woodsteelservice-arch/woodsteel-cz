@@ -1,0 +1,50 @@
+import type { Metadata } from "next";
+import { Inter, Manrope } from "next/font/google";
+import "./globals.css";
+import { Analytics, GtmNoscript } from "@/components/Analytics";
+import { CookieConsent } from "@/components/CookieConsent";
+
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-manrope",
+  display: "swap",
+  weight: ["500", "600", "700", "800"],
+});
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://woodsteel.sk"),
+  title: "WoodSteel.sk - Zimné záhrady, pergoly a zasklenia terás",
+  description:
+    "Vlastná SK výroba aj montáž. Cenová ponuka do 24 hodín, bezplatná obhliadka. 250+ realizácií, 5 rokov záruka.",
+  openGraph: {
+    title: "WoodSteel — Outdoor priestor, ktorý milujete celý rok",
+    description:
+      "Pergoly, zimné záhrady, zasklenia terás. Vlastná SK výroba a montáž od roku 2021.",
+    type: "website",
+    locale: "sk_SK",
+  },
+  verification: {
+    google: "YKEOg1-tX28Hj7soObmAi8-KitpGkoGqV4vRSvCZMDE",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="sk" className={`${inter.variable} ${manrope.variable} antialiased`}>
+      <body className="bg-white text-charcoal min-h-screen flex flex-col">
+        <GtmNoscript />
+        {children}
+        <CookieConsent />
+        <Analytics />
+      </body>
+    </html>
+  );
+}
