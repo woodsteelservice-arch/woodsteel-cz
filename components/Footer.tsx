@@ -72,7 +72,6 @@ export function Footer() {
               <li><Link href="#realizations" className="hover:text-gold transition-colors">Realizace</Link></li>
               <li><Link href="#process" className="hover:text-gold transition-colors">Proces</Link></li>
               <li><Link href="#reviews" className="hover:text-gold transition-colors">Recenze</Link></li>
-              <li><Link href="/showroom" className="hover:text-gold transition-colors">Showroom Rovinka</Link></li>
             </ul>
           </div>
 

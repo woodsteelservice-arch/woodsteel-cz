@@ -283,7 +283,6 @@ export const navigation = [
     ],
   },
   { label: "Realizace", href: "/realizacie" },
-  { label: "Showroom", href: "/showroom" },
   { label: "Články", href: "/clanky" },
   { label: "O nás", href: "/o-nas" },
   { label: "FAQ", href: "/faq" },

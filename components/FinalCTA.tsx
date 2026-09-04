@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { InquiryForm } from "./InquiryForm";
 
 export function FinalCTA() {
@@ -30,23 +29,26 @@ export function FinalCTA() {
                   <Phone size={20} className="text-gold group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <div className="text-xs text-eyebrow text-mutedbrand">Zavolajte nám</div>
+                  <div className="text-xs text-eyebrow text-mutedbrand">Zavolejte nám</div>
                   <div className="font-display font-bold text-lg text-brown group-hover:text-gold transition-colors">
                     +421 904 473 111
                   </div>
                 </div>
               </a>
-              <Link href="/showroom" className="flex items-center gap-4 group">
+              <a
+                href="mailto:info@woodsteel.sk"
+                className="flex items-center gap-4 group"
+              >
                 <div className="w-12 h-12 rounded-full bg-gold/15 group-hover:bg-gold flex items-center justify-center transition-colors">
-                  <MapPin size={20} className="text-gold group-hover:text-white transition-colors" />
+                  <Mail size={20} className="text-gold group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <div className="text-xs text-eyebrow text-mutedbrand">Přijďte do showroomu</div>
+                  <div className="text-xs text-eyebrow text-mutedbrand">Napište nám</div>
                   <div className="font-display font-bold text-lg text-brown group-hover:text-gold transition-colors">
-                    Rovinka, okres Senec
+                    info@woodsteel.sk
                   </div>
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
 

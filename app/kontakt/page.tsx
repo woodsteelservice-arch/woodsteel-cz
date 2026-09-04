@@ -10,7 +10,7 @@ import { MapEmbed } from "@/components/MapEmbed";
 export const metadata: Metadata = {
   title: "Kontakt - WoodSteel",
   description:
-    "Napište nám nebo zavolejte a domluvte si bezplatnou prohlídku. Showroom v Rovince, působíme po celém Slovensku i v Česku.",
+    "Napište nám nebo zavolejte a domluvte si bezplatnou prohlídku u vás doma. Působíme po celém Slovensku i v Česku.",
   alternates: { canonical: "https://woodsteel.sk/kontakt/" },
 };
 
@@ -31,7 +31,7 @@ export default function KontaktPage() {
             </h1>
             <p className="mt-5 text-mutedbrand text-base lg:text-lg max-w-2xl mx-auto">
               Vyplňte formulář, zavolejte nebo si domluvte osobní setkání v
-              showroomu v Rovince.
+              naší provozovně.
             </p>
           </div>
         </section>
@@ -95,12 +95,6 @@ export default function KontaktPage() {
                       </div>
                     </div>
                   </div>
-                  <Link
-                    href="/showroom"
-                    className="inline-flex items-center gap-2 py-2 text-gold font-semibold text-sm mt-2 hover:gap-3 transition-all"
-                  >
-                    Více o showroomu →
-                  </Link>
                 </div>
               </div>
             </div>

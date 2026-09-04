@@ -15,7 +15,7 @@ import { stats } from "@/lib/data";
 export const metadata: Metadata = {
   title: "O nás - WoodSteel",
   description:
-    "Vlastní slovenská výroba a montáž od roku 2021. Showroom v Rovince a tým, který vede zakázku od návrhu po předání.",
+    "Vlastní slovenská výroba a montáž od roku 2021. Tým, který vede zakázku od návrhu po předání.",
   alternates: { canonical: "https://woodsteel.sk/o-nas/" },
 };
 

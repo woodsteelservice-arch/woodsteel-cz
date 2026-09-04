@@ -26,7 +26,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/realizacie/realizacie-pristresky-na-auto/`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE}/o-nas/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/kontakt/`, lastModified: now, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${BASE}/showroom/`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
     { url: `${BASE}/clanky/`, lastModified: now, changeFrequency: "weekly", priority: 0.7 },
     { url: `${BASE}/akcna-cenova-ponuka/`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/na-stiahnutie/`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
