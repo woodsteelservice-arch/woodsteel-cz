@@ -120,9 +120,9 @@ export function Process() {
 
       <div className="relative max-w-7xl mx-auto px-5 lg:px-8">
         <SectionHeader
-          eyebrow="Ako postupujeme"
-          title="Od prvého dopytu po odovzdanie kľúčov"
-          subtitle="Päť krokov, pri ktorých vždy viete, čo nasleduje."
+          eyebrow="Jak postupujeme"
+          title="Od první poptávky po předání klíčů"
+          subtitle="Pět kroků, u kterých vždy víte, co následuje."
         />
 
         <div

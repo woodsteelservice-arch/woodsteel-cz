@@ -6,33 +6,33 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CookieSettingsButton } from "@/components/CookieSettingsButton";
 
 export const metadata: Metadata = {
-  title: "Cookies - WoodSteel.sk",
+  title: "Cookies - WoodSteel",
   description:
-    "Aké súbory cookies na woodsteel.sk používame, na čo slúžia a ako svoj súhlas kedykoľvek zmeníte alebo odvoláte.",
+    "Jaké soubory cookies na webu používáme, k čemu slouží a jak svůj souhlas kdykoli změníte nebo odvoláte.",
   alternates: { canonical: "https://woodsteel.sk/cookies/" },
 };
 
 /** Kategórie zodpovedajú prepínačom v lište súhlasu (components/CookieConsent.tsx). */
 const categories = [
   {
-    name: "Nevyhnutné",
+    name: "Nezbytné",
     state: "Vždy zapnuté",
-    text: "Zabezpečujú základné fungovanie stránky — napríklad zapamätanie vašej voľby v tejto lište. Bez nich by web nefungoval, preto sa nedajú vypnúť.",
+    text: "Zajišťují základní fungování stránky — například zapamatování vaší volby v této liště. Bez nich by web nefungoval, proto se nedají vypnout.",
   },
   {
     name: "Analytické",
-    state: "Voliteľné",
-    text: "Merajú návštevnosť a to, ktoré stránky ľudí zaujímajú, aby sme web vedeli zlepšovať. Používame Google Analytics 4 a Google Tag Manager.",
+    state: "Volitelné",
+    text: "Měří návštěvnost a to, které stránky lidi zajímají, abychom web mohli zlepšovat. Používáme Google Analytics 4 a Google Tag Manager.",
   },
   {
     name: "Marketingové",
-    state: "Voliteľné",
-    text: "Umožňujú merať účinnosť reklamy a zobraziť vám relevantnejšie ponuky. Používame Meta Pixel a reklamné funkcie Google.",
+    state: "Volitelné",
+    text: "Umožňují měřit účinnost reklamy a zobrazit vám relevantnější nabídky. Používáme Meta Pixel a reklamní funkce Google.",
   },
   {
-    name: "Preferenčné",
-    state: "Voliteľné",
-    text: "Zapamätajú si vaše nastavenia, aby ste ich pri ďalšej návšteve nemuseli zadávať znova.",
+    name: "Preferenční",
+    state: "Volitelné",
+    text: "Zapamatují si vaše nastavení, abyste je při další návštěvě nemuseli zadávat znovu.",
   },
 ];
 
@@ -49,11 +49,11 @@ export default function CookiesPage() {
               <span className="text-mutedbrand">Cookies</span>
             </div>
             <h1 className="text-display-1 font-extrabold text-brown">
-              Súbory <span className="text-gold">cookies.</span>
+              Soubory <span className="text-gold">cookies.</span>
             </h1>
             <p className="mt-5 text-mutedbrand text-base lg:text-lg max-w-2xl mx-auto">
-              Cookies sú malé súbory, ktoré si stránka uloží vo vašom prehliadači. Nižšie nájdete,
-              na čo ich používame a ako svoju voľbu kedykoľvek zmeníte.
+              Cookies jsou malé soubory, které si stránka uloží ve vašem prohlížeči. Níže najdete,
+              k čemu je používáme a jak svou volbu kdykoli změníte.
             </p>
           </div>
         </section>
@@ -75,10 +75,10 @@ export default function CookiesPage() {
             </div>
 
             <div className="mt-10 rounded-2xl border border-gold/30 bg-cream/30 p-6 lg:p-8">
-              <h2 className="font-display text-xl font-bold text-brown">Zmena súhlasu</h2>
+              <h2 className="font-display text-xl font-bold text-brown">Změna souhlasu</h2>
               <p className="mt-2 text-mutedbrand leading-relaxed">
-                Súhlas môžete kedykoľvek zmeniť alebo úplne odvolať. Analytické a marketingové
-                cookies sa načítajú až po vašom súhlase — do jeho udelenia sú zablokované.
+                Souhlas můžete kdykoli změnit nebo úplně odvolat. Analytické a marketingové
+                cookies se načtou až po vašem souhlasu — do jeho udělení jsou zablokované.
               </p>
               <div className="mt-5">
                 <CookieSettingsButton />
@@ -86,11 +86,11 @@ export default function CookiesPage() {
             </div>
 
             <p className="mt-10 text-mutedbrand leading-relaxed">
-              Cookies môžete spravovať aj priamo v nastaveniach svojho prehliadača, kde sa dajú
-              existujúce súbory vymazať a ukladanie nových zakázať. Ako nakladáme s osobnými
-              údajmi, popisuje{" "}
+              Cookies můžete spravovat i přímo v nastavení svého prohlížeče, kde lze
+              stávající soubory vymazat a ukládání nových zakázat. Jak nakládáme s osobními
+              údaji, popisuje{" "}
               <Link href="/ochrana-osobnych-udajov" className="text-gold underline">
-                ochrana osobných údajov
+                ochrana osobních údajů
               </Link>
               .
             </p>

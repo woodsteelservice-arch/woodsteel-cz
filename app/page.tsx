@@ -37,7 +37,7 @@ export default function HomePage() {
         <Reviews />
         <InstagramFeed />
         <CatalogDownload />
-        <Faq items={generalFaqs.slice(0, 4)} compact help title="Často sa pýtate" eyebrow="FAQ" />
+        <Faq items={generalFaqs.slice(0, 4)} compact help title="Často se ptáte" eyebrow="FAQ" />
         <FinalCTA />
       </main>
       <Footer />

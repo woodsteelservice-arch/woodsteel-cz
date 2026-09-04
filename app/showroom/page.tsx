@@ -11,9 +11,9 @@ import { ShowroomBooking } from "@/components/ShowroomBooking";
 import { Reveal } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Showroom - WoodSteel.sk",
+  title: "Showroom - WoodSteel",
   description:
-    "Navštívte náš showroom v Rovinke. Sadnite si pod hotovú zimnú záhradu a pozrite si, ako vyzerá a pôsobí výsledok, skôr než sa preň rozhodnete.",
+    "Navštivte náš showroom v Rovince. Sedněte si pod hotovou zimní zahradu a prohlédněte si, jak vypadá a působí výsledek, dřív než se pro něj rozhodnete.",
   alternates: { canonical: "https://woodsteel.sk/showroom/" },
 };
 
@@ -21,37 +21,37 @@ export const metadata: Metadata = {
 const videos = [
   {
     id: "3Np7U4NERZc",
-    title: "Hliníková zimná záhrada v striebornej farbe s izolačnými dvojsklami",
+    title: "Hliníková zimní zahrada ve stříbrné barvě s izolačními dvojskly",
     poster: "/images/yt-3Np7U4NERZc.jpg",
     caption:
-      "Všimnite si, ako ticho beží posuvná časť a koľko svetla prepustia izolačné dvojsklá. Toto je presne ten typ konštrukcie, pod ktorý si u nás sadnete.",
+      "Všimněte si, jak tiše běží posuvná část a kolik světla propustí izolační dvojskla. To je přesně ten typ konstrukce, pod který si u nás sednete.",
   },
   {
     id: "ZYtCChJLp4s",
-    title: "Hliníková zimná záhrada Woodsteel.sk",
+    title: "Hliníková zimní zahrada Woodsteel",
     poster: "/images/yt-ZYtCChJLp4s.jpg",
     caption:
-      "Prejdite sa dokončenou zimnou záhradou — od prvého kroku dnu až po výhľad do záhrady. Za dve minúty uvidíte viac než na dvadsiatich fotkách.",
+      "Projděte se dokončenou zimní zahradou — od prvního kroku dovnitř až po výhled do zahrady. Za dvě minuty uvidíte víc než na dvaceti fotkách.",
   },
 ];
 
 /** Zážitok, ktorý sa nedá sprostredkovať fotkou ani vizualizáciou */
 const experience = [
   {
-    title: "Koľko priestoru tým získate",
-    text: "Meter na papieri a meter pod nohami sú dve rôzne veci. Naživo si rozmer overíte za pár sekúnd.",
+    title: "Kolik prostoru tím získáte",
+    text: "Metr na papíře a metr pod nohama jsou dvě různé věci. Naživo si rozměr ověříte za pár vteřin.",
   },
   {
-    title: "Ako znie ticho",
-    text: "Zatvoríte posuvné zasklenie a ruch zvonku stíchne. Rozdiel je počuť okamžite — a je väčší, než väčšina ľudí čaká.",
+    title: "Jak zní ticho",
+    text: "Zavřete posuvné zasklení a ruch zvenku ztichne. Rozdíl je slyšet okamžitě — a je větší, než většina lidí čeká.",
   },
   {
-    title: "Ako to bude vyzerať u vás",
-    text: "Vzorky farieb a skiel priložíme k fotke vášho domu. Odtieň si vyberiete na dennom svetle, nie na monitore.",
+    title: "Jak to bude vypadat u vás",
+    text: "Vzorky barev a skel přiložíme k fotce vašeho domu. Odstín si vyberete na denním světle, ne na monitoru.",
   },
   {
-    title: "Aké to je na dotyk",
-    text: "Chytíte profil, oprete sa oň, prejdete rukou po povrchovej úprave. Hrúbku materiálu fotka neprenesie.",
+    title: "Jaké to je na dotek",
+    text: "Chytíte profil, opřete se o něj, přejedete rukou po povrchové úpravě. Tloušťku materiálu fotka nepřenese.",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function ShowroomPage() {
           <div className="absolute inset-0 overflow-hidden">
             <Image
               src="/images/hero-uvod.jpg"
-              alt="Výstavná zimná záhrada WoodSteel v Rovinke"
+              alt="Výstavní zimní zahrada WoodSteel v Rovince"
               fill
               priority
               sizes="100vw"
@@ -89,8 +89,8 @@ export default function ShowroomPage() {
               className="mt-6 text-cream/90 text-lg max-w-2xl reveal"
               style={{ animationDelay: "120ms" }}
             >
-              Miesto, kde si výsledok svojho outdoor priestoru nemusíte
-              predstavovať. Stačí si doň sadnúť.
+              Místo, kde si výsledek svého outdoor prostoru nemusíte
+              představovat. Stačí si do něj sednout.
             </p>
             <div
               className="mt-8 flex flex-wrap gap-3 reveal"
@@ -100,7 +100,7 @@ export default function ShowroomPage() {
                 href="#obhliadka"
                 className="inline-flex items-center gap-2 px-6 py-3.5 bg-gold hover:bg-gold-hover text-brown hover:text-white font-semibold rounded-full transition-all shadow-[0_4px_16px_rgba(203,171,88,0.4)] hover:shadow-[0_10px_28px_rgba(203,171,88,0.55)] hover:-translate-y-0.5"
               >
-                Dohodnúť obhliadku
+                Domluvit prohlídku
               </Link>
               <a
                 href="tel:+421904473111"
@@ -116,7 +116,7 @@ export default function ShowroomPage() {
             aria-hidden
             className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 hidden sm:flex flex-col items-center gap-2 text-white/60"
           >
-            <span className="text-eyebrow text-[0.7rem]">Prezrite si priestor</span>
+            <span className="text-eyebrow text-[0.7rem]">Prohlédněte si prostor</span>
             <ArrowDown size={16} className="animate-bounce [animation-duration:2.5s]" />
           </span>
         </section>
@@ -127,20 +127,20 @@ export default function ShowroomPage() {
             <Reveal>
               <div className="text-eyebrow text-gold mb-4">Showroom Rovinka</div>
               <h2 className="text-display-2 font-bold text-brown">
-                Predstavte si výsledok skôr,
+                Představte si výsledek dřív,
                 <span className="text-gold"> než padne rozhodnutie</span>
               </h2>
               <p className="mt-7 text-mutedbrand text-base lg:text-lg leading-relaxed">
-                Vizualizácia ukáže tvar. Vzorkovník ukáže farbu. Ani jedno vám
-                nepovie, ako sa v tom priestore budete cítiť v horúce popoludnie
-                alebo keď začne pršať.
+                Vizualizace ukáže tvar. Vzorkovník ukáže barvu. Ani jedno vám
+                neřekne, jak se v tom prostoru budete cítit v horkém odpoledni
+                nebo když začne pršet.
               </p>
               <p className="mt-4 text-mutedbrand text-base lg:text-lg leading-relaxed">
-                V Rovinke si to vyskúšate naživo.
+                V Rovince si to vyzkoušíte naživo.
               </p>
 
               <p className="mt-8 font-display italic text-lg text-brown/90 border-l-2 border-gold/50 pl-5">
-                Nikoho tu nepresviedčame. Priestor to spraví lepšie za nás.
+                Nikoho tu nepřesvědčujeme. Prostor to udělá lépe za nás.
               </p>
             </Reveal>
 
@@ -148,16 +148,16 @@ export default function ShowroomPage() {
               <div className="relative aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5] rounded-3xl overflow-hidden bg-cream shadow-[0_24px_60px_rgba(63,34,17,0.16)] group">
                 <Image
                   src="/images/showroom-rovinka.jpeg"
-                  alt="Interiér výstavnej zimnej záhrady v showroome Rovinka"
+                  alt="Interiér výstavní zimní zahrady v showroomu Rovinka"
                   fill
                   sizes="(min-width:1024px) 45vw, 100vw"
                   className="object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brown/70 via-transparent to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
-                  <div className="text-eyebrow text-gold/90">Výstavná zimná záhrada</div>
+                  <div className="text-eyebrow text-gold/90">Výstavní zimní zahrada</div>
                   <div className="mt-1.5 font-display font-bold text-white text-lg sm:text-xl">
-                    V reálnej veľkosti, nie na výkrese
+                    V reálné velikosti, ne na výkrese
                   </div>
                 </div>
               </div>
@@ -171,10 +171,10 @@ export default function ShowroomPage() {
             <Reveal className="max-w-3xl">
               <div className="text-eyebrow text-gold mb-4 inline-flex items-center gap-2">
                 <span className="w-8 h-px bg-gold/60" />
-                Čo si tu vyskúšate
+                Co si tu vyzkoušíte
               </div>
               <h2 className="text-display-2 font-bold text-brown">
-                Štyri veci, ktoré fotka neprenesie
+                Čtyři věci, které fotka nepřenese
               </h2>
             </Reveal>
 
@@ -207,12 +207,12 @@ export default function ShowroomPage() {
                 Video
               </div>
               <h2 className="text-display-2 font-bold text-brown">
-                Kým sa k nám vyberiete, pozrite si to zblízka
+                Než se k nám vypravíte, prohlédněte si to zblízka
               </h2>
               <p className="mt-4 text-mutedbrand text-base lg:text-lg leading-relaxed">
-                Dve krátke videá z hotových zimných záhrad. Uvidíte, ako konštrukcia
-                pracuje so svetlom a ako pôsobí zvnútra — teda presne to, čo vás
-                čaká aj v Rovinke.
+                Dvě krátká videa z hotových zimních zahrad. Uvidíte, jak konstrukce
+                pracuje se světlem a jak působí zevnitř — tedy přesně to, co vás
+                čeká i v Rovince.
               </p>
             </Reveal>
 

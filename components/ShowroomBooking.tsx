@@ -46,13 +46,13 @@ export function ShowroomBooking() {
             </span>
 
             <span className="flex-1">
-              <span className="block text-eyebrow text-gold mb-2">Objednanie návštevy</span>
+              <span className="block text-eyebrow text-gold mb-2">Objednání návštěvy</span>
               <span className="block font-display text-display-3 font-bold text-brown">
-                Dohodnite si obhliadku showroomu
+                Domluvte si prohlídku showroomu
               </span>
               <span className="mt-2 block text-mutedbrand leading-relaxed">
-                Obchodný zástupca si s vami rád dohodne termín návštevy a zodpovie všetky
-                vaše otázky. Návšteva je bezplatná a bez záväzkov.
+                Obchodní zástupce si s vámi rád domluví termín návštěvy a zodpoví všechny
+                vaše otázky. Návštěva je bezplatná a bez závazků.
               </span>
             </span>
 
@@ -62,7 +62,7 @@ export function ShowroomBooking() {
                 "bg-gold text-brown group-hover:bg-gold-hover group-hover:text-white shadow-[0_4px_16px_rgba(203,171,88,0.4)]"
               )}
             >
-              {open ? "Skryť formulár" : "Vybrať termín"}
+              {open ? "Skrýt formulář" : "Vybrat termín"}
               <ChevronDown
                 size={18}
                 className={cn("transition-transform duration-300", open && "rotate-180")}
@@ -80,7 +80,7 @@ export function ShowroomBooking() {
                 <Phone size={20} className="text-gold transition-colors group-hover:text-white" />
               </span>
               <span>
-                <span className="block text-xs text-eyebrow text-mutedbrand">Zavolajte nám</span>
+                <span className="block text-xs text-eyebrow text-mutedbrand">Zavolejte nám</span>
                 <span className="block font-display font-bold text-brown transition-colors group-hover:text-gold">
                   {PHONE_DISPLAY}
                 </span>
@@ -89,7 +89,7 @@ export function ShowroomBooking() {
 
             <a
               href={`mailto:${EMAIL}?subject=${encodeURIComponent(
-                "Objednanie návštevy showroomu Rovinka"
+                "Objednání návštěvy showroomu Rovinka"
               )}`}
               className="group flex items-center gap-4 rounded-2xl border border-cream bg-cream/30 p-5 transition-all hover:border-gold hover:bg-white hover:shadow-[0_8px_28px_rgba(63,34,17,0.08)] hover:-translate-y-0.5"
             >
@@ -97,7 +97,7 @@ export function ShowroomBooking() {
                 <Mail size={20} className="text-gold transition-colors group-hover:text-white" />
               </span>
               <span className="min-w-0">
-                <span className="block text-xs text-eyebrow text-mutedbrand">Napíšte nám</span>
+                <span className="block text-xs text-eyebrow text-mutedbrand">Napište nám</span>
                 <span className="block font-display font-bold text-brown truncate transition-colors group-hover:text-gold">
                   {EMAIL}
                 </span>
@@ -111,7 +111,7 @@ export function ShowroomBooking() {
             hidden={!open}
             className="mt-9 border-t border-cream pt-9"
           >
-            <InquiryForm variant="inline" defaultProduct="Iné" />
+            <InquiryForm variant="inline" defaultProduct="Jiné" />
           </div>
         </div>
       </div>

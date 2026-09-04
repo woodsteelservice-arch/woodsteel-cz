@@ -8,9 +8,9 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { blogPosts, formatDate } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Články - WoodSteel.sk",
+  title: "Články - WoodSteel",
   description:
-    "Rady a návody k pergolám, zimným záhradám a zasklievaniu terás — od kotvenia konštrukcie po údržbu.",
+    "Rady a návody k pergolám, zimním zahradám a zasklívání teras — od kotvení konstrukce po údržbu.",
   alternates: { canonical: "https://woodsteel.sk/clanky/" },
 };
 
@@ -29,11 +29,11 @@ export default function ClankyPage() {
               <span className="text-mutedbrand">Články</span>
             </div>
             <h1 className="text-display-1 font-extrabold text-brown">
-              Inšpirácia a <span className="text-gold">praktické rady.</span>
+              Inspirace a <span className="text-gold">praktické rady.</span>
             </h1>
             <p className="mt-6 text-mutedbrand text-base lg:text-lg max-w-2xl mx-auto">
-              Tipy z praxe, návody na údržbu, sprievodcovia rozhodovaním —
-              všetko, čo by ste mali vedieť pred kúpou outdoor konštrukcie.
+              Tipy z praxe, návody na údržbu, průvodci rozhodováním —
+              všechno, co byste měli vědět před koupí outdoor konstrukce.
             </p>
           </div>
         </section>

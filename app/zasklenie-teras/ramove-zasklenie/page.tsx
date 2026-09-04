@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { GlazingSystemPage } from "@/components/GlazingSystemPage";
 
 export const metadata: Metadata = {
-  title: "Rámové zasklenie terás - WoodSteel.sk",
+  title: "Rámové zasklení teras - WoodSteel",
   description:
-    "Hliníkový rámový posuvný systém na zasklenie terasy. Jednosklo alebo izolačné dvojsklo, zasklenie až do výšky 2,7 metra, priaznivý pomer cena/výkon.",
+    "Hliníkový rámový posuvný systém na zasklení terasy. Jednosklo nebo izolační dvojsklo, zasklení až do výšky 2,7 metru, příznivý poměr cena/výkon.",
   alternates: { canonical: "https://woodsteel.sk/zasklenie-teras/ramove-zasklenie/" },
 };
 
@@ -13,15 +13,15 @@ export default function RamoveZasklenniePage() {
     <GlazingSystemPage
       tag="Rámový systém"
       name="Hliníkový rámový posuvný systém"
-      claim="Ochráni vašu terasu proti vetru a dažďu."
-      description="Posuvný rámový systém je vyrobený z vysoko kvalitných hliníkových profilov doplnených nerezovými komponentmi. Ako výplň používame jednosklo alebo izolačné dvojsklo, ktoré umožňuje zaskliť priestory až do výšky 2,7 metra. Pokiaľ hľadáte priaznivý pomer cena/výkon, je rámový posuvný systém pre vás ideálnym riešením."
+      claim="Ochrání vaši terasu proti větru a dešti."
+      description="Posuvný rámový systém je vyroben z vysoce kvalitních hliníkových profilů doplněných nerezovými komponenty. Jako výplň používáme jednosklo nebo izolační dvojsklo, které umožňuje zasklít prostory až do výšky 2,7 metru. Pokud hledáte příznivý poměr cena/výkon, je rámový posuvný systém pro vás ideálním řešením."
       features={[
-        "chráni pred hlukom, prachom aj nepriazňou počasia",
-        "prekážka proti násilnému vniknutiu",
-        "poistky proti vysadeniu skiel",
-        "jednoduchá montáž vďaka už skompletizovanému systému",
-        "ľahké a rýchle ovládanie aj údržba",
-        "voľba počtu krídiel i spôsobu otvárania",
+        "chrání před hlukem, prachem i nepřízní počasí",
+        "překážka proti násilnému vniknutí",
+        "pojistky proti vysazení skel",
+        "jednoduchá montáž díky již zkompletovanému systému",
+        "snadné a rychlé ovládání i údržba",
+        "volba počtu křídel i způsobu otevírání",
       ]}
       image="/images/zasklenie-ramovy-system.jpg"
     />

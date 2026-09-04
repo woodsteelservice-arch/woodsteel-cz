@@ -99,19 +99,19 @@ export function CookieConsent() {
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-display font-bold text-brown text-base">
-            Tento web používa cookies
+            Tento web používá cookies
           </h3>
           <p className="text-xs text-mutedbrand mt-1.5 leading-relaxed">
-            Súbory cookie nám pomáhajú zlepšovať web, merať jeho výkon a personalizovať reklamu.{" "}
+            Soubory cookie nám pomáhají zlepšovat web, měřit jeho výkon a personalizovat reklamu.{" "}
             <Link href="/ochrana-osobnych-udajov" className="text-gold underline">
-              Viac informácií
+              Více informací
             </Link>
             .
           </p>
         </div>
         <button
           onClick={() => setOpen(false)}
-          aria-label="Zatvoriť"
+          aria-label="Zavřít"
           className="shrink-0 text-mutedbrand hover:text-brown transition-colors"
         >
           <X size={18} />
@@ -120,22 +120,22 @@ export function CookieConsent() {
 
       {showDetails && (
         <div className="mt-5 space-y-3 border-t border-cream pt-4">
-          <Option label="Nevyhnutné" desc="Bez nich web nefunguje." checked disabled />
+          <Option label="Nezbytné" desc="Bez nich web nefunguje." checked disabled />
           <Option
             label="Analytické"
-            desc="Pomáhajú nám vylepšovať web (GA4)."
+            desc="Pomáhají nám vylepšovat web (GA4)."
             checked={consent.analytics}
             onChange={(v) => setConsent({ ...consent, analytics: v })}
           />
           <Option
             label="Marketingové"
-            desc="Pre relevantnejšiu reklamu (Meta Pixel)."
+            desc="Pro relevantnější reklamu (Meta Pixel)."
             checked={consent.marketing}
             onChange={(v) => setConsent({ ...consent, marketing: v })}
           />
           <Option
-            label="Preferencie"
-            desc="Zapamätanie nastavení."
+            label="Preference"
+            desc="Zapamatování nastavení."
             checked={consent.preferences}
             onChange={(v) => setConsent({ ...consent, preferences: v })}
           />
@@ -149,21 +149,21 @@ export function CookieConsent() {
           }
           className="flex-1 px-4 py-2.5 bg-gold hover:bg-gold-hover text-brown hover:text-white font-semibold text-sm rounded-full transition-all"
         >
-          Povoliť všetky
+          Povolit všechny
         </button>
         {showDetails ? (
           <button
             onClick={() => commit(consent)}
             className="px-4 py-2.5 border-2 border-brown/15 hover:border-gold text-brown hover:text-gold font-semibold text-sm rounded-full transition-colors"
           >
-            Uložiť výber
+            Uložit výběr
           </button>
         ) : (
           <button
             onClick={() => setShowDetails(true)}
             className="px-4 py-2.5 border-2 border-brown/15 hover:border-gold text-brown hover:text-gold font-semibold text-sm rounded-full transition-colors"
           >
-            Nastaviť
+            Nastavit
           </button>
         )}
         <button
@@ -172,7 +172,7 @@ export function CookieConsent() {
           }
           className="px-4 py-2.5 text-mutedbrand hover:text-brown font-medium text-sm transition-colors"
         >
-          Odmietnuť
+          Odmítnout
         </button>
       </div>
     </div>

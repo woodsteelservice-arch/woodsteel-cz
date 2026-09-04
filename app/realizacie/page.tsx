@@ -9,9 +9,9 @@ import { FinalCTA } from "@/components/FinalCTA";
 import { realizations } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Realizácie - WoodSteel.sk",
+  title: "Realizace - WoodSteel",
   description:
-    "Fotografie dokončených pergol, zimných záhrad, zasklení a prístreškov na auto z realizácií po celom Slovensku.",
+    "Fotografie dokončených pergol, zimních zahrad, zasklení a přístřešků na auto z realizací po celém Slovensku.",
   alternates: { canonical: "https://woodsteel.sk/realizacie/" },
 };
 
@@ -25,15 +25,15 @@ export default function RealizaciePage() {
             <div className="text-eyebrow text-gold mb-4 inline-flex items-center gap-2">
               <Link href="/" className="hover:text-brown transition-colors">WoodSteel</Link>
               <span className="opacity-50">/</span>
-              <span className="text-mutedbrand">Realizácie</span>
+              <span className="text-mutedbrand">Realizace</span>
             </div>
             <h1 className="text-display-1 font-extrabold text-brown max-w-4xl mx-auto">
-              350+ realizácií<br className="hidden md:inline" />
-              <span className="text-gold">v 4 krajinách EÚ.</span>
+              350+ realizací<br className="hidden md:inline" />
+              <span className="text-gold">ve 4 zemích EU.</span>
             </h1>
             <p className="mt-6 text-mutedbrand text-base lg:text-lg max-w-2xl mx-auto leading-relaxed">
-              Výber z dokončených projektov — pergoly, zimné záhrady
-              aj zasklenia terás.
+              Výběr z dokončených projektů — pergoly, zimní zahrady
+              i zasklení teras.
             </p>
           </div>
         </section>

@@ -83,7 +83,7 @@ export async function POST(request: Request) {
   try {
     body = (await request.json()) as LeadPayload;
   } catch {
-    return NextResponse.json({ error: "Neplatná požiadavka." }, { status: 400 });
+    return NextResponse.json({ error: "Neplatný požadavek." }, { status: 400 });
   }
 
   // Honeypot — botovi potvrdíme odoslanie, ale nikam ho neposielame
@@ -98,7 +98,7 @@ export async function POST(request: Request) {
   if (body.consent !== true) errors.push("consent");
   if (errors.length > 0) {
     return NextResponse.json(
-      { error: "Skontrolujte prosím vyplnené údaje.", fields: errors },
+      { error: "Zkontrolujte prosím vyplněné údaje.", fields: errors },
       { status: 400 }
     );
   }
@@ -124,7 +124,7 @@ export async function POST(request: Request) {
     meno: safeForSheet(body.name),
     telefon: safeForSheet(normalizePhone(String(body.phone))),
     email: safeForSheet(body.email),
-    suhlas: "áno",
+    suhlas: "ano",
     utm_source: safeForSheet(body.utmSource),
     utm_medium: safeForSheet(body.utmMedium),
     utm_campaign: safeForSheet(body.utmCampaign),
@@ -139,7 +139,7 @@ export async function POST(request: Request) {
   const makeUrl = process.env.MAKE_WEBHOOK_URL;
   if (!makeUrl) {
     console.error("[lead] MAKE_WEBHOOK_URL nie je nastavená — dopyt sa nezapísal:", lead);
-    return NextResponse.json({ error: "Odoslanie zlyhalo." }, { status: 502 });
+    return NextResponse.json({ error: "Odeslání selhalo." }, { status: 502 });
   }
 
   try {
@@ -157,11 +157,11 @@ export async function POST(request: Request) {
     if (!response.ok) {
       const detail = await response.text();
       console.error("[lead] Make odmietol požiadavku:", response.status, detail, lead);
-      return NextResponse.json({ error: "Odoslanie zlyhalo." }, { status: 502 });
+      return NextResponse.json({ error: "Odeslání selhalo." }, { status: 502 });
     }
   } catch (error) {
     console.error("[lead] Volanie na Make zlyhalo:", error, lead);
-    return NextResponse.json({ error: "Odoslanie zlyhalo." }, { status: 502 });
+    return NextResponse.json({ error: "Odeslání selhalo." }, { status: 502 });
   }
 
   return NextResponse.json({ ok: true, leadId: lead.lead_id });

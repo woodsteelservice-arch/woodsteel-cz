@@ -8,9 +8,9 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { MapEmbed } from "@/components/MapEmbed";
 
 export const metadata: Metadata = {
-  title: "Kontakt - WoodSteel.sk",
+  title: "Kontakt - WoodSteel",
   description:
-    "Napíšte nám alebo zavolajte a dohodnite si bezplatnú obhliadku. Showroom v Rovinke, pôsobíme po celom Slovensku.",
+    "Napište nám nebo zavolejte a domluvte si bezplatnou prohlídku. Showroom v Rovince, působíme po celém Slovensku i v Česku.",
   alternates: { canonical: "https://woodsteel.sk/kontakt/" },
 };
 
@@ -27,11 +27,11 @@ export default function KontaktPage() {
               <span className="text-mutedbrand">Kontakt</span>
             </div>
             <h1 className="text-display-1 font-extrabold text-brown">
-              Začnime Váš projekt.
+              Začněme Váš projekt.
             </h1>
             <p className="mt-5 text-mutedbrand text-base lg:text-lg max-w-2xl mx-auto">
-              Vyplňte formulár, zavolajte alebo si dohodnite osobné stretnutie v
-              showroome v Rovinke.
+              Vyplňte formulář, zavolejte nebo si domluvte osobní setkání v
+              showroomu v Rovince.
             </p>
           </div>
         </section>
@@ -42,7 +42,7 @@ export default function KontaktPage() {
             <div className="lg:col-span-2 space-y-8">
               <div>
                 <h2 className="font-display font-bold text-2xl text-brown mb-6">
-                  Priame kontakty
+                  Přímé kontakty
                 </h2>
                 <div className="space-y-5">
                   <a href="tel:+421904473111" className="flex items-center gap-4 group">
@@ -87,11 +87,11 @@ export default function KontaktPage() {
                   <div className="flex items-start gap-3">
                     <Clock size={18} className="text-gold mt-1 shrink-0" />
                     <div className="text-charcoal text-sm">
-                      <div className="font-semibold">Otváracie hodiny</div>
+                      <div className="font-semibold">Otevírací doba</div>
                       <div className="text-mutedbrand mt-1">
-                        Po–Pi: 8:00 – 17:00<br />
-                        So: po dohode<br />
-                        Ne: zatvorené
+                        Po–Pá: 8:00 – 17:00<br />
+                        So: po domluvě<br />
+                        Ne: zavřeno
                       </div>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ export default function KontaktPage() {
                     href="/showroom"
                     className="inline-flex items-center gap-2 py-2 text-gold font-semibold text-sm mt-2 hover:gap-3 transition-all"
                   >
-                    Viac o showroome →
+                    Více o showroomu →
                   </Link>
                 </div>
               </div>
@@ -116,7 +116,7 @@ export default function KontaktPage() {
         <section className="pb-20 lg:pb-28 bg-white">
           <div className="max-w-7xl mx-auto px-5 lg:px-8">
             <h2 className="font-display font-bold text-2xl lg:text-3xl text-brown mb-6">
-              Nájdete nás v Rovinke
+              Najdete nás v Rovince
             </h2>
             <MapEmbed title="Showroom Rovinka" />
           </div>

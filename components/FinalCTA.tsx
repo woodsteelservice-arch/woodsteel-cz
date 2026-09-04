@@ -11,14 +11,14 @@ export function FinalCTA() {
           <div className="lg:sticky lg:top-32">
             <div className="text-eyebrow text-gold mb-4 inline-flex items-center gap-2">
               <span className="w-8 h-px bg-gold/60" />
-              Pripravený začať?
+              Připraveni začít?
             </div>
             <h2 className="text-display-2 font-bold text-brown">
-              Vytvoríme terasu podľa vašich predstáv.
+              Vytvoříme terasu podle vašich představ.
             </h2>
             <p className="mt-5 text-mutedbrand text-base lg:text-lg leading-relaxed max-w-xl">
-              Bezplatná obhliadka u vás doma + cenová ponuka do&nbsp;24-48&nbsp;hodín.
-              Bez záväzkov, bez nátlaku.
+              Bezplatná prohlídka u vás doma + cenová nabídka do&nbsp;24-48&nbsp;hodin.
+              Bez závazků, bez nátlaku.
             </p>
 
             <div className="mt-8 sm:mt-10 space-y-4 sm:space-y-5">
@@ -41,7 +41,7 @@ export function FinalCTA() {
                   <MapPin size={20} className="text-gold group-hover:text-white transition-colors" />
                 </div>
                 <div>
-                  <div className="text-xs text-eyebrow text-mutedbrand">Príďte do showroomu</div>
+                  <div className="text-xs text-eyebrow text-mutedbrand">Přijďte do showroomu</div>
                   <div className="font-display font-bold text-lg text-brown group-hover:text-gold transition-colors">
                     Rovinka, okres Senec
                   </div>

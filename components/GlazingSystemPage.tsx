@@ -37,7 +37,7 @@ export function GlazingSystemPage({ tag, name, claim, description, features, ima
               <Link href="/" className="hover:text-brown transition-colors">WoodSteel</Link>
               <span className="opacity-50">/</span>
               <Link href="/zasklenie-teras" className="hover:text-brown transition-colors">
-                Zasklenie terás
+                Zasklení teras
               </Link>
               <span className="opacity-50">/</span>
               <span className="text-mutedbrand">{tag}</span>

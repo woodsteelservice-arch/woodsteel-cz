@@ -60,7 +60,7 @@ export function InstagramFeed() {
             </Link>
           </h2>
           <p className="mt-4 text-mutedbrand">
-            Novinky z dielne, zákulisie montáží a inšpirácia z dokončených realizácií.
+            Novinky z dílny, zákulisí montáží a inspirace z dokončených realizací.
           </p>
         </div>
 

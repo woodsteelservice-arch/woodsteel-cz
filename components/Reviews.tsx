@@ -11,9 +11,9 @@ export function Reviews() {
     <section id="reviews" className="py-16 sm:py-20 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-5 lg:px-8">
         <SectionHeader
-          eyebrow="Recenzie zákazníkov"
-          title="Slová od ľudí, ktorí si nás vybrali"
-          subtitle="Skutočné skúsenosti z dokončených realizácií. Bez prikrášľovania."
+          eyebrow="Recenze zákazníků"
+          title="Slova od lidí, kteří si nás vybrali"
+          subtitle="Skutečné zkušenosti z dokončených realizací. Bez přikrášlování."
         />
 
         <div className="mt-10 sm:mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
@@ -50,7 +50,7 @@ export function Reviews() {
               ))}
             </span>
             <span className="text-brown font-bold text-lg">4.8 / 5</span>
-            <span className="text-mutedbrand text-sm">na základe hodnotení na Googli</span>
+            <span className="text-mutedbrand text-sm">na základě hodnocení na Googlu</span>
           </div>
           <a
             href="https://www.google.com/search?q=Woodsteel+SK+recenzie"
@@ -58,7 +58,7 @@ export function Reviews() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 border-2 border-brown/15 hover:border-gold text-brown hover:text-gold text-sm font-semibold rounded-full transition-colors"
           >
-            Napíšte recenziu na Googli →
+            Napište recenzi na Googlu →
           </a>
         </div>
       </div>

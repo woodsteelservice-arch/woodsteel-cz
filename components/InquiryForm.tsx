@@ -37,7 +37,7 @@ const PRODUCTS = [
     ),
   },
   {
-    name: "Zimná záhrada",
+    name: "Zimní zahrada",
     icon: (
       <svg {...glyph}>
         <path d="M3 20V9.5L12 4l9 5.5V20" />
@@ -48,7 +48,7 @@ const PRODUCTS = [
     ),
   },
   {
-    name: "Zasklenie",
+    name: "Zasklení",
     icon: (
       <svg {...glyph}>
         <rect x="3" y="5" width="18" height="14" rx="1" />
@@ -57,7 +57,7 @@ const PRODUCTS = [
     ),
   },
   {
-    name: "Iné",
+    name: "Jiné",
     icon: (
       <svg {...glyph}>
         <path d="M12 6v12M6 12h12" />
@@ -67,10 +67,10 @@ const PRODUCTS = [
 ];
 
 /** Kedy chce mať zákazník hotovo — pomáha nám plánovať výrobu */
-const TIMING = ["Čo najskôr", "Do 3 mesiacov", "Do 6 mesiacov", "Zatiaľ zisťujem"];
+const TIMING = ["Co nejdřív", "Do 3 měsíců", "Do 6 měsíců", "Zatím zjišťuji"];
 
 /** Záujem o bezplatnú obhliadku */
-const CONSULT = ["Áno, mám záujem", "Zatiaľ nie"];
+const CONSULT = ["Ano, mám zájem", "Zatím ne"];
 
 /** Polia, ktoré tvoria ukazovateľ vyplnenosti */
 const REQUIRED = ["name", "phone", "email"];
@@ -144,7 +144,7 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
     } catch {
       setStatus("idle");
       setError(
-        "Odoslanie sa nepodarilo. Skúste to prosím znova, alebo nám zavolajte na +421 904 473 111."
+        "Odeslání se nezdařilo. Zkuste to prosím znovu, nebo nám zavolejte na +421 904 473 111."
       );
       return;
     }
@@ -184,12 +184,12 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
             <p
               className="ws-rise mt-9 font-display text-3xl sm:text-4xl font-bold text-white text-center"
             >
-              Žiadosť je odoslaná.
+              Poptávka je odeslaná.
             </p>
             <p
               className="ws-rise mt-3 text-cream/70 text-center"
             >
-              Ďakujeme. Ozveme sa vám čo najskôr.
+              Děkujeme. Ozveme se vám co nejdříve.
             </p>
           </div>
         )}
@@ -202,10 +202,10 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
             </div>
 
             <h3 className="mt-6 font-display text-2xl font-bold text-brown">
-              Žiadosť je odoslaná.
+              Poptávka je odeslaná.
             </h3>
-            <p className="mt-2.5 text-mutedbrand">Ďakujeme.</p>
-            <p className="mt-1 text-mutedbrand">Ozveme sa vám čo najskôr.</p>
+            <p className="mt-2.5 text-mutedbrand">Děkujeme.</p>
+            <p className="mt-1 text-mutedbrand">Ozveme se vám co nejdříve.</p>
           </div>
         </div>
       </>
@@ -243,10 +243,10 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div>
           <h3 className="font-display text-xl sm:text-2xl font-bold text-brown leading-tight">
-            Cenová ponuka do 24 hodín
+            Cenová nabídka do 24 hodin
           </h3>
           <p className="mt-2 text-sm text-mutedbrand">
-            Povedzte nám, čo máte v pláne. Ozveme sa s riešením na mieru.
+            Řekněte nám, co máte v plánu. Ozveme se s řešením na míru.
           </p>
         </div>
 
@@ -259,7 +259,7 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-gold" />
           </span>
           <span className="text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-brown/70">
-            Odpovedáme dnes
+            Odpovídáme dnes
           </span>
         </span>
       </div>
@@ -267,7 +267,7 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
       {/* Výber produktu */}
       <div className="mt-9">
         <span className="block text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-mutedbrand mb-3">
-          O aký produkt máte záujem?
+          O jaký produkt máte zájem?
         </span>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
           {PRODUCTS.map((p) => {
@@ -330,7 +330,7 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
       {/* Termín realizácie */}
       <div className="mt-8">
         <span className="block text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-mutedbrand mb-3">
-          Kedy by ste chceli mať hotovo?
+          Kdy byste chtěli mít hotovo?
         </span>
         <div className="flex flex-wrap gap-2">
           {TIMING.map((t) => (
@@ -348,7 +348,7 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
       {/* Bezplatná obhliadka */}
       <div className="mt-8">
         <span className="block text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-mutedbrand mb-3">
-          Máte záujem o bezplatnú konzultáciu a obhliadku?
+          Máte zájem o bezplatnou konzultaci a prohlídku?
         </span>
         <div className="flex flex-wrap gap-2">
           {CONSULT.map((c) => (
@@ -365,13 +365,13 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
 
       {/* Kde staviame */}
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-7">
-        <Field label="Mesto" name="city" placeholder="Bratislava" />
-        <Field label="PSČ" name="psc" placeholder="900 41" />
+        <Field label="Město" name="city" placeholder="Praha" />
+        <Field label="PSČ" name="psc" placeholder="110 00" />
         <div className="sm:col-span-2">
           <TextareaField
             label="Stručný popis (nepovinné)"
             name="message"
-            placeholder="Napríklad: terasa 5×4 m, smer na juh, drevený dom..."
+            placeholder="Například: terasa 5×4 m, směr na jih, dřevěný dům..."
           />
         </div>
       </div>
@@ -379,13 +379,13 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
       {/* Kontakt — až na záver, keď je projekt popísaný */}
       <div className="mt-9 border-t border-brown/[0.08] pt-8">
         <span className="block text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-mutedbrand mb-5">
-          Kontaktné údaje
+          Kontaktní údaje
         </span>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-7">
-          <Field label="Meno a priezvisko *" name="name" required placeholder="Ján Novák" />
-          <Field label="Telefón *" name="phone" type="tel" required placeholder="+421 901 234 567" />
+          <Field label="Jméno a příjmení *" name="name" required placeholder="Jan Novák" />
+          <Field label="Telefon *" name="phone" type="tel" required placeholder="+420 601 234 567" />
           <div className="sm:col-span-2">
-            <Field label="E-mail *" name="email" type="email" required placeholder="vase@meno.sk" />
+            <Field label="E-mail *" name="email" type="email" required placeholder="vase@jmeno.cz" />
           </div>
           <label className="sm:col-span-2 flex items-start gap-3 text-xs text-mutedbrand cursor-pointer group/check">
           <input type="checkbox" name="consent" required className="peer sr-only" />
@@ -403,12 +403,12 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
             <Check size={12} strokeWidth={3} className="text-brown opacity-0 transition-opacity duration-200" />
           </span>
           <span>
-            Súhlasím so spracovaním osobných údajov v zmysle{" "}
+            Souhlasím se zpracováním osobních údajů ve smyslu{" "}
             <Link
               href="/ochrana-osobnych-udajov"
               className="text-brown underline decoration-brown/25 underline-offset-2 transition-colors hover:text-gold hover:decoration-gold"
             >
-              ochrany osobných údajov
+              ochrany osobních údajů
             </Link>
             .
             </span>
@@ -442,7 +442,7 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
             sending ? "opacity-0 translate-y-1" : "opacity-100 translate-y-0"
           )}
         >
-          Odoslať žiadosť
+          Odeslat poptávku
           <ArrowRight size={17} className="transition-transform duration-200 group-hover:translate-x-0.5" />
         </span>
 
@@ -457,7 +457,7 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
             aria-hidden
             className="h-4 w-4 rounded-full border-2 border-brown/25 border-t-brown animate-spin"
           />
-          Odosielame…
+          Odesíláme…
         </span>
       </button>
     </form>

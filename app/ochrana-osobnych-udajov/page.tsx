@@ -5,16 +5,16 @@ import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
-  title: "Ochrana osobných údajov - WoodSteel.sk",
+  title: "Ochrana osobních údajů - WoodSteel",
   description:
-    "Informácie o spracúvaní osobných údajov podľa čl. 13 nariadenia GDPR — prevádzkovateľ, účel, rozsah, doba uchovávania a práva dotknutej osoby.",
+    "Informace o zpracování osobních údajů podle čl. 13 nařízení GDPR — správce, účel, rozsah, doba uchovávání a práva subjektu údajů.",
   alternates: { canonical: "https://woodsteel.sk/ochrana-osobnych-udajov/" },
 };
 
 /** Prevádzkovateľ podľa výpisu z obchodného registra — text prevzatý z woodsteel.sk. */
 const operator = [
-  ["Spoločnosť", "Woodsteel SK s.r.o."],
-  ["Sídlo", "Priehon 112/37, 972 05 Sebedražie"],
+  ["Společnost", "Woodsteel SK s.r.o."],
+  ["Sídlo", "Priehon 112/37, 972 05 Sebedražie, Slovenská republika"],
   ["IČO", "53594126"],
   ["DIČ", "2121454324"],
   ["IČ DPH", "SK2121454324"],
@@ -22,17 +22,17 @@ const operator = [
 ];
 
 const purposes = [
-  "Kontaktovanie s cenovou ponukou záujemcovi",
-  "Uzatvorenie zmluvy",
-  "Archivačná a daňová povinnosť",
+  "Kontaktování zájemce s cenovou nabídkou",
+  "Uzavření smlouvy",
+  "Archivační a daňová povinnost",
 ];
 
 const rights = [
-  "požadovať od prevádzkovateľa prístup k osobným údajom a ich prípadnú opravu alebo výmaz, prípadne obmedzenie spracovania, a vzniesť námietku proti spracovaniu,",
-  "kedykoľvek požadovať informácie týkajúce sa spracovania osobných údajov v zákonnom rozsahu,",
-  "preniesť osobné údaje týkajúce sa osoby klienta k inému prevádzkovateľovi,",
-  "nebyť predmetom žiadneho rozhodnutia založeného výhradne na automatizovanom spracovaní, vrátane profilovania,",
-  "obrátiť sa na Úrad na ochranu osobných údajov s akoukoľvek žiadosťou alebo sťažnosťou.",
+  "požadovat od správce přístup k osobním údajům a jejich případnou opravu nebo výmaz, případně omezení zpracování, a vznést námitku proti zpracování,",
+  "kdykoli požadovat informace týkající se zpracování osobních údajů v zákonném rozsahu,",
+  "přenést osobní údaje týkající se osoby klienta k jinému správci,",
+  "nebýt předmětem žádného rozhodnutí založeného výhradně na automatizovaném zpracování, včetně profilování,",
+  "obrátit se s jakoukoli žádostí nebo stížností na dozorový úřad — Úrad na ochranu osobných údajov Slovenskej republiky, případně na Úřad pro ochranu osobních údajů v zemi svého bydliště.",
 ];
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
@@ -54,22 +54,22 @@ export default function OchranaOsobnychUdajovPage() {
             <div className="text-eyebrow text-gold mb-4 inline-flex items-center gap-2">
               <Link href="/" className="hover:text-brown">WoodSteel</Link>
               <span className="opacity-50">/</span>
-              <span className="text-mutedbrand">Ochrana osobných údajov</span>
+              <span className="text-mutedbrand">Ochrana osobních údajů</span>
             </div>
             <h1 className="text-display-1 font-extrabold text-brown">
-              Ochrana <span className="text-gold">osobných údajov.</span>
+              Ochrana <span className="text-gold">osobních údajů.</span>
             </h1>
             <p className="mt-5 text-mutedbrand text-base lg:text-lg max-w-2xl mx-auto">
-              V zmysle ust. čl. 13 Nariadenia EP a Rady (EÚ) č. 2016/679, všeobecného nariadenia
-              o ochrane osobných údajov („Nariadenie GDPR“).
+              Ve smyslu ust. čl. 13 Nařízení EP a Rady (EU) č. 2016/679, obecného nařízení
+              o ochraně osobních údajů („Nařízení GDPR“).
             </p>
           </div>
         </section>
 
         <section className="py-16 lg:py-20 bg-white">
           <div className="max-w-3xl mx-auto px-5 lg:px-8">
-            <Section title="Prevádzkovateľ">
-              <p>Prevádzkovateľom je spoločnosť:</p>
+            <Section title="Správce">
+              <p>Správcem je společnost:</p>
               <dl className="rounded-2xl border border-cream bg-cream/30 p-5 lg:p-6 space-y-2">
                 {operator.map(([label, value]) => (
                   <div key={label} className="flex flex-col sm:flex-row sm:gap-3">
@@ -79,14 +79,14 @@ export default function OchranaOsobnychUdajovPage() {
                 ))}
               </dl>
               <p>
-                Osobné údaje pre prevádzkovateľa môžu spracovávať aj ďalší sprostredkovatelia,
-                a to najmä poskytovatelia softvéru, v ktorom sú osobné údaje klientov evidované,
-                prípadne ďalší poskytovatelia spracovateľských softvérov, služieb a aplikácií,
-                ktoré v súčasnosti prevádzkovateľ ne/využíva.
+                Osobní údaje pro správce mohou zpracovávat i další zpracovatelé,
+                a to zejména poskytovatelé softwaru, ve kterém jsou osobní údaje klientů evidovány,
+                případně další poskytovatelé zpracovatelských softwarů, služeb a aplikací,
+                které správce v současnosti využívá či nevyužívá.
               </p>
             </Section>
 
-            <Section title="Účel spracovania osobných údajov">
+            <Section title="Účel zpracování osobních údajů">
               <ul className="space-y-2">
                 {purposes.map((p) => (
                   <li key={p} className="flex gap-3">
@@ -97,50 +97,50 @@ export default function OchranaOsobnychUdajovPage() {
               </ul>
             </Section>
 
-            <Section title="Osobné údaje, ktoré uchovávame">
+            <Section title="Osobní údaje, které uchováváme">
               <p>
-                Meno, priezvisko, adresa trvalého alebo prechodného pobytu, rodné číslo, dátum
-                narodenia, štátna príslušnosť, druh a číslo dokladu totožnosti, ak je klient
-                fyzickou osobou alebo zástupcom klienta – právnickej osoby; u fyzickej osoby –
-                podnikateľa tiež adresa miesta podnikania, označenie registra alebo inej evidencie,
-                v ktorej je fyzická osoba – podnikateľ zapísaná, a číslo zápisu do tohto registra
-                alebo inej evidencie.
+                Jméno, příjmení, adresa trvalého nebo přechodného pobytu, rodné číslo, datum
+                narození, státní příslušnost, druh a číslo dokladu totožnosti, je-li klient
+                fyzickou osobou nebo zástupcem klienta – právnické osoby; u fyzické osoby –
+                podnikatele také adresa místa podnikání, označení rejstříku nebo jiné evidence,
+                ve které je fyzická osoba – podnikatel zapsána, a číslo zápisu do tohoto rejstříku
+                nebo jiné evidence.
               </p>
             </Section>
 
-            <Section title="Doba uchovávania">
+            <Section title="Doba uchovávání">
               <p>
-                Kontaktné údaje v rozsahu meno, e-mailová adresa a telefón budú spracovávané po dobu
-                3 rokov, ak nedošlo k uzavretiu zmluvy.
+                Kontaktní údaje v rozsahu jméno, e-mailová adresa a telefon budou zpracovávány po dobu
+                3 let, pokud nedošlo k uzavření smlouvy.
               </p>
               <p>
-                Pokiaľ prišlo k uzavretiu zmluvy, osobné údaje klienta budú prevádzkovateľom
-                spracúvané po dobu 10 rokov od uzavretia zmluvy medzi klientom a prevádzkovateľom.
-              </p>
-            </Section>
-
-            <Section title="Poučenie o dobrovoľnosti">
-              <p>
-                Poskytnutie osobných údajov klienta je dobrovoľné. V rozsahu, v akom je však
-                prevádzkovateľ povinný osobné údaje klientov získavať, spracovávať a uchovávať,
-                je poskytnutie niektorých osobných údajov podmienkou pre poskytovanie služieb zo
-                strany prevádzkovateľa. Týmito povinnými údajmi sú: všetky mená a priezviská, rodné
-                číslo, trvalý alebo iný pobyt a štátne občianstvo; v prípade, že ide o fyzickú osobu
-                – podnikateľa, taktiež jej obchodný názov, odlišujúci dodatok alebo ďalšie
-                označenie, miesto podnikania a identifikačné číslo, druh a číslo preukazu totožnosti,
-                štát, prípadne orgán, ktorý ho vydal, a doba jeho platnosti.
-              </p>
-              <p>
-                Poskytnutie zvyšných osobných údajov je závislé výlučne od rozhodnutia klienta
-                a prevádzkovateľ poskytnutím týchto údajov nepodmieňuje predaj tovaru alebo
-                poskytovanie služieb.
+                Pokud došlo k uzavření smlouvy, osobní údaje klienta budou správcem
+                zpracovávány po dobu 10 let od uzavření smlouvy mezi klientem a správcem.
               </p>
             </Section>
 
-            <Section title="Informácie o právach dotknutej osoby">
+            <Section title="Poučení o dobrovolnosti">
               <p>
-                Klient potvrdzuje, že mu boli riadne poskytnuté informácie o rozsahu spracúvaných
-                osobných údajov a účele ich spracovania, a o práve klienta:
+                Poskytnutí osobních údajů klienta je dobrovolné. V rozsahu, v jakém je však
+                správce povinen osobní údaje klientů získávat, zpracovávat a uchovávat,
+                je poskytnutí některých osobních údajů podmínkou pro poskytování služeb ze
+                strany správce. Těmito povinnými údaji jsou: všechna jména a příjmení, rodné
+                číslo, trvalý nebo jiný pobyt a státní občanství; v případě, že jde o fyzickou osobu
+                – podnikatele, také její obchodní název, odlišující dodatek nebo další
+                označení, místo podnikání a identifikační číslo, druh a číslo průkazu totožnosti,
+                stát, případně orgán, který jej vydal, a doba jeho platnosti.
+              </p>
+              <p>
+                Poskytnutí zbývajících osobních údajů závisí výlučně na rozhodnutí klienta
+                a správce poskytnutím těchto údajů nepodmiňuje prodej zboží ani
+                poskytování služeb.
+              </p>
+            </Section>
+
+            <Section title="Informace o právech subjektu údajů">
+              <p>
+                Klient potvrzuje, že mu byly řádně poskytnuty informace o rozsahu zpracovávaných
+                osobních údajů a účelu jejich zpracování, a o právu klienta:
               </p>
               <ul className="space-y-2">
                 {rights.map((r) => (
@@ -154,9 +154,9 @@ export default function OchranaOsobnychUdajovPage() {
 
             <Section title="Kontakt">
               <p>
-                S otázkami k spracúvaniu osobných údajov sa na nás obráťte na{" "}
+                S dotazy ke zpracování osobních údajů se na nás obraťte na{" "}
                 <a href="mailto:info@woodsteel.sk" className="text-gold underline">info@woodsteel.sk</a>{" "}
-                alebo na čísle{" "}
+                nebo na čísle{" "}
                 <a href="tel:+421904473111" className="text-gold underline">+421 904 473 111</a>.
               </p>
             </Section>

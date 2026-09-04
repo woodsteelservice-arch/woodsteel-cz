@@ -14,9 +14,9 @@ export function Team({ bgClass = "bg-cream/50" }: Props) {
     <section id="team" className={cn("py-16 sm:py-20 lg:py-32", bgClass)}>
       <div className="max-w-7xl mx-auto px-5 lg:px-8">
         <SectionHeader
-          eyebrow="Náš tím"
-          title="Ľudia, ktorí stoja za vašou stavbou"
-          subtitle="25+ zamestnancov, vlastná výroba aj montáž. Tím, ktorý sa vám venuje od prvého dopytu až po odovzdanie kľúčov."
+          eyebrow="Náš tým"
+          title="Lidé, kteří stojí za vaší stavbou"
+          subtitle="25+ zaměstnanců, vlastní výroba i montáž. Tým, který se vám věnuje od první poptávky až po předání klíčů."
         />
 
         <div className="mt-10 sm:mt-14 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 lg:gap-8">

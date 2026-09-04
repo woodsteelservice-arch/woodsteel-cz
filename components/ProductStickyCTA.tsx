@@ -28,7 +28,7 @@ export function ProductStickyCTA({ productName }: Props) {
     >
       <div className="bg-white border-t border-cream shadow-[0_-8px_24px_rgba(63,34,17,0.08)] px-4 py-3 flex items-center justify-between gap-3">
         <div className="min-w-0">
-          <div className="text-[11px] text-eyebrow text-mutedbrand">Cenová ponuka pre</div>
+          <div className="text-[11px] text-eyebrow text-mutedbrand">Cenová nabídka pro</div>
           <div className="font-display font-bold text-brown text-sm truncate">
             {productName}
           </div>
@@ -38,7 +38,7 @@ export function ProductStickyCTA({ productName }: Props) {
           className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2.5 bg-gold text-brown font-semibold text-sm rounded-full shadow-[0_4px_16px_rgba(203,171,88,0.45)]"
         >
           <Zap size={14} />
-          Žiadosť
+          Poptávka
           <ArrowRight size={14} />
         </Link>
       </div>

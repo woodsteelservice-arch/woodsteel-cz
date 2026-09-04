@@ -69,7 +69,7 @@ export default async function ArticleAtRoot({
               href="/clanky"
               className="inline-flex items-center gap-2 text-xs text-eyebrow text-gold mb-5 hover:text-white transition-colors"
             >
-              <ArrowLeft size={14} /> Všetky články
+              <ArrowLeft size={14} /> Všechny články
             </Link>
             <div className="text-eyebrow text-cream/80 mb-3">{post.category}</div>
             <h1 className="text-display-2 font-extrabold text-white">{post.title}</h1>
@@ -86,11 +86,11 @@ export default async function ArticleAtRoot({
               <ArticleBody html={post.contentHtml} />
             ) : (
               <p className="text-mutedbrand">
-                Obsah článku je v príprave. Medzitým si pozrite{" "}
+                Obsah článku se připravuje. Mezitím si prohlédněte{" "}
                 <Link href="/realizacie" className="text-gold underline">
-                  naše realizácie
+                  naše realizace
                 </Link>{" "}
-                alebo nás{" "}
+                nebo nás{" "}
                 <Link href="/kontakt" className="text-gold underline">
                   kontaktujte
                 </Link>
@@ -104,13 +104,13 @@ export default async function ArticleAtRoot({
                 className="inline-flex items-center gap-2 text-mutedbrand hover:text-gold font-semibold text-sm"
               >
                 <ArrowLeft size={14} />
-                Všetky články
+                Všechny články
               </Link>
               <Link
                 href="/akcna-cenova-ponuka"
                 className="inline-flex justify-center items-center gap-2 px-6 py-3 bg-gold hover:bg-gold-hover text-brown hover:text-white font-semibold text-sm rounded-full transition-all"
               >
-                Vyžiadať cenovú ponuku <ArrowRight size={14} />
+                Vyžádat cenovou nabídku <ArrowRight size={14} />
               </Link>
             </div>
           </div>

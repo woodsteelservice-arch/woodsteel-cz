@@ -17,7 +17,7 @@ export async function POST(request: Request) {
   try {
     ({ email } = await request.json());
   } catch {
-    return NextResponse.json({ error: "Neplatná požiadavka." }, { status: 400 });
+    return NextResponse.json({ error: "Neplatný požadavek." }, { status: 400 });
   }
 
   if (typeof email !== "string" || !EMAIL_RE.test(email)) {
@@ -47,14 +47,14 @@ export async function POST(request: Request) {
       body: JSON.stringify({
         from,
         to: [email],
-        subject: "Katalóg WoodSteel",
+        subject: "Katalog WoodSteel",
         text: [
-          "Dobrý deň,",
+          "Dobrý den,",
           "",
-          "v prílohe posielame katalóg WoodSteel — pergoly, zimné záhrady a zasklenia terás.",
+          "v příloze posíláme katalog WoodSteel — pergoly, zimní zahrady a zasklení teras.",
           `Ak by sa príloha nezobrazila, katalóg si stiahnete tu: ${pdfUrl}`,
           "",
-          "V prípade otázok nám zavolajte na +421 904 473 111.",
+          "V případě dotazů nám zavolejte na +421 904 473 111.",
           "",
           "WoodSteel SK s. r. o.",
         ].join("\n"),

@@ -69,7 +69,7 @@ export function Header({ overlay = false }: HeaderProps) {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-5 lg:px-8 h-14 sm:h-16 lg:h-20 flex items-center justify-between gap-4 sm:gap-6">
         {/* Logo */}
-        <Link href="/" className="flex items-center group shrink-0" aria-label="WoodSteel — domov">
+        <Link href="/" className="flex items-center group shrink-0" aria-label="WoodSteel — domů">
           <Image
             src="/logo/woodsteel-logo.png"
             alt="WoodSteel"
@@ -204,8 +204,8 @@ export function Header({ overlay = false }: HeaderProps) {
                 "transition-transform duration-300 hover:-translate-y-0.5 hover:scale-[1.04]"
               )}
             >
-              <span className="hidden sm:inline">Cenová ponuka</span>
-              <span className="sm:hidden">Ponuka</span>
+              <span className="hidden sm:inline">Cenová nabídka</span>
+              <span className="sm:hidden">Nabídka</span>
               <ArrowRight
                 size={15}
                 className="shrink-0 transition-transform duration-300 group-hover:translate-x-1"
@@ -314,7 +314,7 @@ export function Header({ overlay = false }: HeaderProps) {
               onClick={() => setOpen(false)}
               className="mt-2 mx-3 inline-flex justify-center items-center px-5 py-3 bg-gold text-brown font-semibold rounded-full"
             >
-              Cenová ponuka
+              Cenová nabídka
             </Link>
           </nav>
         </div>

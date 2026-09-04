@@ -9,7 +9,7 @@ import { generalFaqs, pergolaFaqs, zimnaZahradaFaqs, zasklenieFaqs } from "@/lib
 import { JsonLd, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Časté otázky - WoodSteel.sk",
+  title: "Časté otázky - WoodSteel",
   description:
     "Odpovede na najčastejšie otázky o pergolách, zimných záhradách a zasklení terás — termíny, záruky aj priebeh montáže.",
   alternates: { canonical: "https://woodsteel.sk/faq/" },
@@ -36,18 +36,18 @@ export default function FaqPage() {
               Často kladené otázky.
             </h1>
             <p className="mt-5 text-mutedbrand text-base lg:text-lg max-w-2xl mx-auto">
-              Stručné odpovede na to, čo sa najčastejšie pýtate. Niečo chýba?
+              Stručné odpovědi na to, na co se nejčastěji ptáte. Něco chybí?
               <Link href="/kontakt" className="text-gold hover:underline ml-1">
-                Napíšte nám.
+                Napište nám.
               </Link>
             </p>
           </div>
         </section>
 
-        <Faq items={generalFaqs} eyebrow="Všeobecné" title="Všeobecné otázky" />
+        <Faq items={generalFaqs} eyebrow="Obecné" title="Obecné otázky" />
         <Faq items={pergolaFaqs.slice(0, 4)} eyebrow="Pergoly" title="Otázky o pergolách" />
-        <Faq items={zimnaZahradaFaqs.slice(0, 4)} eyebrow="Zimné záhrady" title="Otázky o zimných záhradách" />
-        <Faq items={zasklenieFaqs.slice(0, 3)} eyebrow="Zasklenia" title="Otázky o zasklení terás" />
+        <Faq items={zimnaZahradaFaqs.slice(0, 4)} eyebrow="Zimní zahrady" title="Otázky o zimních zahradách" />
+        <Faq items={zasklenieFaqs.slice(0, 3)} eyebrow="Zasklení" title="Otázky o zasklení teras" />
 
         <FinalCTA />
       </main>

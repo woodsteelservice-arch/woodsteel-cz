@@ -20,7 +20,7 @@ export function WhatsAppButton() {
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Napíšte nám na WhatsApp"
+      aria-label="Napište nám na WhatsApp"
       className={cn(
         "fixed bottom-5 left-5 z-40 inline-flex items-center justify-center w-14 h-14 rounded-full transition-all shadow-[0_8px_28px_rgba(37,211,102,0.5)] hover:shadow-[0_16px_36px_rgba(37,211,102,0.6)]",
         "bg-[#25D366] hover:bg-[#1FB855] hover:-translate-y-0.5",

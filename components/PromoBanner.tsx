@@ -83,7 +83,7 @@ export function PromoBanner() {
     <div
       role="dialog"
       aria-modal="true"
-      aria-label="Prebiehajúca akcia"
+      aria-label="Probíhající akce"
       className="fixed inset-0 z-[65] flex items-center justify-center px-5"
     >
       <div
@@ -114,7 +114,7 @@ export function PromoBanner() {
         <button
           type="button"
           onClick={dismiss}
-          aria-label="Zavrieť"
+          aria-label="Zavřít"
           className="absolute right-4 top-4 z-10 flex h-8 w-8 items-center justify-center rounded-full text-mutedbrand/70 transition-colors hover:bg-brown/[0.06] hover:text-brown"
         >
           <X size={15} />
@@ -131,7 +131,7 @@ export function PromoBanner() {
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-gold" />
             </span>
             <span className="text-[0.7rem] font-bold uppercase tracking-[0.16em] text-brown/70">
-              Časovo obmedzená ponuka
+              Časově omezená nabídka
             </span>
           </span>
 
@@ -144,9 +144,9 @@ export function PromoBanner() {
           </div>
 
           <p className="mt-4 font-display text-xl font-bold tracking-tight text-brown">
-            zľava vo výške DPH
+            sleva ve výši DPH
           </p>
-          <p className="mt-1.5 text-sm text-mutedbrand">na všetky produkty</p>
+          <p className="mt-1.5 text-sm text-mutedbrand">na všechny produkty</p>
 
           {/* Odpočet */}
           <div className="mt-8 grid grid-cols-4 gap-2">
@@ -180,7 +180,7 @@ export function PromoBanner() {
               "transition-transform duration-200 hover:-translate-y-0.5 hover:scale-[1.02]"
             )}
           >
-            Cenová ponuka
+            Cenová nabídka
             <ArrowRight
               size={17}
               className="transition-transform duration-200 group-hover:translate-x-1"

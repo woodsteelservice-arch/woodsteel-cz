@@ -16,54 +16,54 @@ import { zimnaZahradaFaqs } from "@/lib/faqs";
 import { JsonLd, productSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Zimné záhrady - WoodSteel.sk",
+  title: "Zimní zahrady - WoodSteel",
   description:
-    "Drevené a hliníkové zimné záhrady na mieru. Rámové aj bezrámové zasklenie, vlastná SK výroba a montáž.",
+    "Dřevěné a hliníkové zimní zahrady na míru. Rámové i bezrámové zasklení, vlastní SK výroba a montáž.",
   alternates: { canonical: "https://woodsteel.sk/zimne-zahrady/" },
 };
 
 const variants = [
   {
-    name: "Hliníková zimná záhrada",
+    name: "Hliníková zimní zahrada",
     tag: "Hliník",
     description:
-      "Ľahká konštrukcia a veľkorysé presklenie s maximom svetla. Čistý, moderný vzhľad a priestor, ktorý si užijete po celý rok.",
+      "Lehká konstrukce a velkorysé prosklení s maximem světla. Čistý, moderní vzhled a prostor, který si užijete po celý rok.",
     image:
       "/images/zimna-zahrada-hamuliakovo.jpeg",
   },
   {
-    name: "Drevená zimná záhrada",
-    tag: "Drevo",
+    name: "Dřevěná zimní zahrada",
+    tag: "Dřevo",
     description:
-      "Prirodzené teplo a charakter dreva. Materiál, ktorý priestoru dodá útulnosť a časom získa patinu.",
+      "Přirozené teplo a charakter dřeva. Materiál, který prostoru dodá útulnost a časem získá patinu.",
     image:
       "/images/drevena-zimna-zahrada5.jpg",
   },
 ];
 
 const features = [
-  "Zasklenie rámové / bezrámové",
+  "Zasklení rámové / bezrámové",
   "Bezúdržbové hliníkové profily",
-  "Posuvné sliding systémy",
-  "Možnosť osadenia tieniacej techniky (screenové rolety)",
-  "Voliteľné kúrenie / klimatizácia",
-  "5+ rokov záruka",
-  "Vlastná výroba na Slovensku",
+  "Posuvné systémy",
+  "Možnost osazení stínicí techniky (screenové rolety)",
+  "Volitelné topení / klimatizace",
+  "5+ let záruka",
+  "Vlastní výroba na Slovensku",
 ];
 
 export default function ZimneZahradyPage() {
-  const projects = realizations.filter((r) => r.category.toLowerCase().includes("zimná"));
+  const projects = realizations.filter((r) => r.category.toLowerCase().includes("zimní"));
 
   return (
     <>
       <JsonLd
         data={productSchema({
-          name: "Zimné záhrady WoodSteel",
+          name: "Zimní zahrady WoodSteel",
           description:
-            "Hliníkové alebo drevené zimné záhrady na mieru. Zasklenie rámové aj bezrámové, sliding systémy. Vlastná SK výroba.",
+            "Hliníkové nebo dřevěné zimní zahrady na míru. Zasklení rámové i bezrámové, posuvné systémy. Vlastní SK výroba.",
           image:
             "/images/zimna-zahrada-hero.jpeg",
-          category: "Zimné záhrady",
+          category: "Zimní zahrady",
         })}
       />
       <JsonLd data={faqSchema(zimnaZahradaFaqs)} />
@@ -72,7 +72,7 @@ export default function ZimneZahradyPage() {
         <section className="relative min-h-[80svh] flex items-end overflow-hidden">
           <Image
             src="/images/zimna-zahrada-hero.jpeg"
-            alt="Hliníková zimná záhrada WoodSteel"
+            alt="Hliníková zimní zahrada WoodSteel"
             fill
             priority
             sizes="100vw"
@@ -83,18 +83,18 @@ export default function ZimneZahradyPage() {
             <div className="text-eyebrow text-gold mb-4 inline-flex items-center gap-2">
               <Link href="/" className="hover:text-white transition-colors">WoodSteel</Link>
               <span>/</span>
-              <span className="text-white">Zimné záhrady</span>
+              <span className="text-white">Zimní zahrady</span>
             </div>
             <h1 className="text-display-1 font-extrabold text-white max-w-3xl">
-              Zimné záhrady, kde sa <span className="text-gold">leto nikdy nekončí.</span>
+              Zimní zahrady, kde <span className="text-gold">léto nikdy nekončí.</span>
             </h1>
             <p className="mt-6 text-cream/90 text-lg max-w-2xl leading-relaxed">
-              Plnohodnotná obytná zóna nezávislá od počasia. Hliník alebo drevo,
-              zasklenie rámové aj bezrámové, sliding systémy s plynulým otváraním.
+              Plnohodnotná obytná zóna nezávislá na počasí. Hliník nebo dřevo,
+              zasklení rámové i bezrámové, posuvné systémy s plynulým otevíráním.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row gap-3">
               <Link href="#variants" className="inline-flex justify-center items-center gap-2 px-7 py-4 bg-gold hover:bg-gold-hover text-brown hover:text-white font-semibold rounded-full transition-all shadow-[0_8px_24px_rgba(203,171,88,0.4)] hover:-translate-y-0.5">
-                Pozrieť varianty <ArrowRight size={18} />
+                Prohlédnout varianty <ArrowRight size={18} />
               </Link>
               <a href="tel:+421904473111" className="inline-flex justify-center items-center gap-2 px-7 py-4 border-2 border-white/40 hover:border-white text-white font-semibold rounded-full transition-colors">
                 <Phone size={18} /> +421 904 473 111
@@ -105,7 +105,7 @@ export default function ZimneZahradyPage() {
 
         <section id="variants" className="py-24 lg:py-32 bg-white">
           <div className="max-w-7xl mx-auto px-5 lg:px-8">
-            <SectionHeader eyebrow="Varianty" title="Dve prevedenia, jeden štandard kvality" subtitle="Vyberte si materiál a režim používania — technické riešenie aj montáž zostávajú u nás." />
+            <SectionHeader eyebrow="Varianty" title="Dvě provedení, jeden standard kvality" subtitle="Vyberte si materiál a režim používání — technické řešení i montáž zůstávají u nás." />
             <div className="mt-16 space-y-16 lg:space-y-24">
               {variants.map((v, i) => (
                 <div key={v.name} className={`grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center ${i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""}`}>
@@ -131,7 +131,7 @@ export default function ZimneZahradyPage() {
             <div>
               <div className="text-eyebrow text-gold mb-4">Štandardná výbava</div>
               <h2 className="text-display-2 font-bold text-brown">Bývanie pod hviezdami, aj v zime.</h2>
-              <p className="mt-6 text-mutedbrand leading-relaxed">Každá zimná záhrada od WoodSteel prejde 5-krokovým procesom — od osobného zamerania až po finálnu montáž naším tímom.</p>
+              <p className="mt-6 text-mutedbrand leading-relaxed">Každá zimní zahrada od WoodSteel projde 5krokovým procesem — od osobního zaměření až po finální montáž naším týmem.</p>
             </div>
             <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-4">
               {features.map((f) => (
@@ -148,7 +148,7 @@ export default function ZimneZahradyPage() {
 
         <section className="py-24 lg:py-32 bg-white">
           <div className="max-w-7xl mx-auto px-5 lg:px-8">
-            <SectionHeader eyebrow="Realizácie" title="Naše zimné záhrady v reálnych domácnostiach" subtitle="Z Bratislavy, Sencu, Hamuliakova aj Kittsee — pohľady na dokončené projekty." />
+            <SectionHeader eyebrow="Realizace" title="Naše zimní zahrady v reálných domácnostech" subtitle="Z Bratislavy, Sence, Hamuliakova i Kittsee — pohledy na dokončené projekty." />
             <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
               {projects.map((r) => (
                 <article key={r.image} className="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-cream">

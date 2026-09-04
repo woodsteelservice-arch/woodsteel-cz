@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import { RealizationsSubpage } from "@/components/RealizationsSubpage";
 
 export const metadata: Metadata = {
-  title: "Realizácie - Drevené pergoly - WoodSteel.sk",
-  description: "Naše dokončené realizácie drevených pergol — z rodinných domov po celom Slovensku.",
+  title: "Realizace - Dřevěné pergoly - WoodSteel",
+  description: "Naše dokončené realizace dřevěných pergol — z rodinných domů po celém Slovensku.",
   alternates: { canonical: "https://woodsteel.sk/realizacie/realizacie-drevene-pergoly/" },
 };
 
 export default function Page() {
   return (
     <RealizationsSubpage
-      title={<>Realizácie — <span className="text-gold">drevené pergoly</span>.</>}
-      subtitle="BSH drevené konštrukcie z rodinných domov po celom Slovensku."
-      filter={(c) => c.toLowerCase().includes("drevená pergola")}
+      title={<>Realizace — <span className="text-gold">dřevěné pergoly</span>.</>}
+      subtitle="BSH dřevěné konstrukce z rodinných domů po celém Slovensku."
+      filter={(c) => c.toLowerCase().includes("dřevěná pergola")}
     />
   );
 }

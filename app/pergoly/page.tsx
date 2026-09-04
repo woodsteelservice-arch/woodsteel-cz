@@ -16,9 +16,9 @@ import { pergolaFaqs } from "@/lib/faqs";
 import { JsonLd, productSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Pergoly - WoodSteel.sk",
+  title: "Pergoly - WoodSteel",
   description:
-    "Drevené a hliníkové pergoly na mieru — návrh, vlastná SK výroba aj montáž. Prístrešky na auto a príprava na neskoršie zasklenie.",
+    "Dřevěné a hliníkové pergoly na míru — návrh, vlastní SK výroba i montáž. Přístřešky na auto a příprava na pozdější zasklení.",
   alternates: { canonical: "https://woodsteel.sk/pergoly/" },
 };
 
@@ -27,35 +27,35 @@ const variants = [
     name: "Hliníková pergola",
     tag: "Hliník",
     description:
-      "Hliníkové pergoly sú v posledných rokoch obľúbeným a ideálnym riešením pre mnohé záhrady. Sú odolné voči poveternostným vplyvom, ľahké na údržbu a majú moderný vzhľad. Zaručujú dlhodobú životnosť a vytvárajú útulný priestor Vášho exteriéru. Zvoľte eleganciu a trvanlivosť s našimi hliníkovými pergolami.",
+      "Hliníkové pergoly jsou v posledních letech oblíbeným a ideálním řešením pro mnohé zahrady. Jsou odolné vůči povětrnostním vlivům, snadné na údržbu a mají moderní vzhled. Zaručují dlouhodobou životnost a vytvářejí útulný prostor Vašeho exteriéru. Zvolte eleganci a trvanlivost s našimi hliníkovými pergolami.",
     image:
       "/images/hlinikova-pergola-senec.jpeg",
   },
   {
-    name: "Drevená pergola z BSH dreva",
-    tag: "Drevo",
+    name: "Dřevěná pergola z BSH dřeva",
+    tag: "Dřevo",
     description:
-      "Drevené pergoly sú nestarnúcou klasikou riešenia pre akúkoľvek záhradu. Svojím tradičným vzhľadom zútulnia každý exteriér. Vynikajú dlhou životnosťou a možnosťou prispôsobenia svojho vzhľadu všetkým potrebám i prianiam nášho zákazníka, čím naplnia všetky Vaše sny. Vytvoria harmonický doplnok každej záhrady!",
+      "Dřevěné pergoly jsou nestárnoucí klasikou řešení pro jakoukoli zahradu. Svým tradičním vzhledem zútulní každý exteriér. Vynikají dlouhou životností a možností přizpůsobení svého vzhledu všem potřebám i přáním našeho zákazníka, čímž naplní všechny Vaše sny. Vytvoří harmonický doplněk každé zahrady!",
     image:
       "/images/drevena-pergola-woodsteel.jpg",
   },
   {
-    name: "Prístrešok na auto",
+    name: "Přístřešek na auto",
     tag: "Carport",
     description:
-      "Naše prístrešky na auto poskytujú spoľahlivú ochranu pred nepriaznivým počasím. Sú ideálnym riešením pre zachovanie Vášho vozidla v optimálnom stave. Ponúkame viacero variant a riešení prístreškov na auto. Pomôžeme Vám vybrať štýlový a funkčný prístrešok, ktorý spoľahlivo ochráni Vaše auto a investície.",
+      "Naše přístřešky na auto poskytují spolehlivou ochranu před nepříznivým počasím. Jsou ideálním řešením pro zachování Vašeho vozidla v optimálním stavu. Nabízíme více variant a řešení přístřešků na auto. Pomůžeme Vám vybrat stylový a funkční přístřešek, který spolehlivě ochrání Vaše auto i investice.",
     image:
       "/images/IMG_5562.jpg",
   },
 ];
 
 const features = [
-  "Príprava na neskoršie zasklenie",
-  "Vlastná výroba na Slovensku",
-  "5+ rokov záruka",
+  "Příprava na pozdější zasklení",
+  "Vlastní výroba na Slovensku",
+  "5+ let záruka",
   "Integrované LED osvetlenie ako voliteľný doplnok",
-  "Možnosť osadenia tieniacej techniky (screenové rolety)",
-  "Odtokový systém v stĺpoch",
+  "Možnost osazení stínicí techniky (screenové rolety)",
+  "Odtokový systém ve sloupech",
 ];
 
 export default function PergolyPage() {
@@ -69,7 +69,7 @@ export default function PergolyPage() {
         data={productSchema({
           name: "Pergoly WoodSteel",
           description:
-            "Hliníkové a drevené pergoly a hliníkové prístrešky na auto. Vlastná SK výroba s 5+ rokmi záruka.",
+            "Hliníkové a dřevěné pergoly a hliníkové přístřešky na auto. Vlastní SK výroba s 5+ lety záruky.",
           image:
             "/images/hlinikova-pergola-trencin.jpeg",
           category: "Pergoly",
@@ -96,19 +96,19 @@ export default function PergolyPage() {
               <span className="text-white">Pergoly</span>
             </div>
             <h1 className="text-display-1 font-extrabold text-white max-w-3xl">
-              Pergoly na mieru, ktoré <span className="text-gold">prežijú generácie.</span>
+              Pergoly na míru, které <span className="text-gold">přežijí generace.</span>
             </h1>
             {/* Price badge */}
             <p className="mt-6 text-cream/90 text-lg max-w-2xl leading-relaxed">
-              Hliníkové a drevené pergoly a hliníkové prístrešky na auto.
-              Každú pergolu navrhujeme presne pre váš dom — od merania až po finálnu montáž.
+              Hliníkové a dřevěné pergoly a hliníkové přístřešky na auto.
+              Každou pergolu navrhujeme přesně pro váš dům — od zaměření až po finální montáž.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row gap-3">
               <Link
                 href="#variants"
                 className="inline-flex justify-center items-center gap-2 px-7 py-4 bg-gold hover:bg-gold-hover text-brown hover:text-white font-semibold rounded-full transition-all shadow-[0_8px_24px_rgba(203,171,88,0.4)] hover:-translate-y-0.5"
               >
-                Pozrieť varianty
+                Prohlédnout varianty
                 <ArrowRight size={18} />
               </Link>
               <a
@@ -154,7 +154,7 @@ export default function PergolyPage() {
                       href="#contact"
                       className="mt-8 inline-flex items-center gap-2 py-2 text-gold font-semibold text-sm hover:gap-3 transition-all"
                     >
-                      Vyžiadať ponuku
+                      Vyžádat nabídku
                       <ArrowRight size={16} />
                     </Link>
                   </div>
@@ -170,11 +170,11 @@ export default function PergolyPage() {
             <div>
               <div className="text-eyebrow text-gold mb-4">Štandardná výbava</div>
               <h2 className="text-display-2 font-bold text-brown">
-                Premyslené do najmenšieho detailu
+                Promyšlené do nejmenšího detailu
               </h2>
               <p className="mt-6 text-mutedbrand leading-relaxed">
-                Každá pergola od WoodSteel ide cez ten istý 5-krokový proces — od
-                osobného zamerania až po finálnu montáž naším tímom.
+                Každá pergola od WoodSteel prochází stejným 5krokovým procesem — od
+                osobního zaměření až po finální montáž naším týmem.
               </p>
             </div>
             <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-4">
@@ -194,9 +194,9 @@ export default function PergolyPage() {
         <section className="py-24 lg:py-32 bg-white">
           <div className="max-w-7xl mx-auto px-5 lg:px-8">
             <SectionHeader
-              eyebrow="Realizácie pergól"
-              title="Naše pergoly v reálnych domácnostiach"
-              subtitle="Hliníkové i drevené, mestské i vidiecke."
+              eyebrow="Realizace pergol"
+              title="Naše pergoly v reálných domácnostech"
+              subtitle="Hliníkové i dřevěné, městské i venkovské."
             />
             <div className="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
               {pergolaProjects.map((r) => (

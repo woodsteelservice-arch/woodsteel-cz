@@ -11,7 +11,7 @@ export function CookieSettingsButton() {
       className="inline-flex items-center gap-2 px-5 py-3 bg-gold hover:bg-gold-hover text-brown hover:text-white font-semibold text-sm rounded-full transition-all"
     >
       <Cookie size={16} />
-      Zmeniť nastavenie cookies
+      Změnit nastavení cookies
     </button>
   );
 }

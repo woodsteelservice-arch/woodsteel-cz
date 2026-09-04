@@ -39,8 +39,8 @@ export function Footer() {
               className="h-10 sm:h-12 w-auto [filter:brightness(0)_invert(1)]"
             />
             <p className="mt-5 text-cream/70 text-sm leading-relaxed max-w-xs">
-              Pergoly, zimné záhrady a zasklenia terás na mieru. Vlastná SK
-              výroba aj montáž od roku 2021.
+              Pergoly, zimní zahrady a zasklení teras na míru. Vlastní SK
+              výroba i montáž od roku 2021.
             </p>
             <div className="mt-6 flex items-center gap-3">
               <a href="#" aria-label="Facebook" className="w-9 h-9 rounded-full bg-white/8 hover:bg-gold flex items-center justify-center transition-colors">
@@ -59,19 +59,19 @@ export function Footer() {
             <h4 className="text-eyebrow text-gold mb-5">Produkty</h4>
             <ul className="space-y-3 text-sm">
               <li><Link href="/pergoly" className="hover:text-gold transition-colors">Pergoly</Link></li>
-              <li><Link href="/zimne-zahrady" className="hover:text-gold transition-colors">Zimné záhrady</Link></li>
-              <li><Link href="/zasklenie-teras" className="hover:text-gold transition-colors">Zasklenie terás</Link></li>
-              <li><Link href="/pergoly#carport" className="hover:text-gold transition-colors">Prístrešky na auto</Link></li>
+              <li><Link href="/zimne-zahrady" className="hover:text-gold transition-colors">Zimní zahrady</Link></li>
+              <li><Link href="/zasklenie-teras" className="hover:text-gold transition-colors">Zasklení teras</Link></li>
+              <li><Link href="/pergoly#carport" className="hover:text-gold transition-colors">Přístřešky na auto</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-eyebrow text-gold mb-5">Spoločnosť</h4>
+            <h4 className="text-eyebrow text-gold mb-5">Společnost</h4>
             <ul className="space-y-3 text-sm">
               <li><Link href="#team" className="hover:text-gold transition-colors">O nás</Link></li>
-              <li><Link href="#realizations" className="hover:text-gold transition-colors">Realizácie</Link></li>
+              <li><Link href="#realizations" className="hover:text-gold transition-colors">Realizace</Link></li>
               <li><Link href="#process" className="hover:text-gold transition-colors">Proces</Link></li>
-              <li><Link href="#reviews" className="hover:text-gold transition-colors">Recenzie</Link></li>
+              <li><Link href="#reviews" className="hover:text-gold transition-colors">Recenze</Link></li>
               <li><Link href="/showroom" className="hover:text-gold transition-colors">Showroom Rovinka</Link></li>
             </ul>
           </div>
@@ -100,9 +100,9 @@ export function Footer() {
         </div>
 
         <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-start md:items-center gap-4 text-xs text-cream/55">
-          <div>© {new Date().getFullYear()} WoodSteel.sk. Všetky práva vyhradené.</div>
+          <div>© {new Date().getFullYear()} WoodSteel.sk. Všechna práva vyhrazena.</div>
           <div className="flex gap-6">
-            <Link href="/ochrana-osobnych-udajov" className="inline-block py-2 hover:text-gold transition-colors">Ochrana osobných údajov</Link>
+            <Link href="/ochrana-osobnych-udajov" className="inline-block py-2 hover:text-gold transition-colors">Ochrana osobních údajů</Link>
             <Link href="/cookies" className="inline-block py-2 hover:text-gold transition-colors">Cookies</Link>
           </div>
           <div className="font-mono text-[11px] tracking-wider px-2.5 py-1 rounded-md bg-white/8 text-gold/80">

@@ -3,48 +3,48 @@ import { ProductSubpage } from "@/components/ProductSubpage";
 import { zimnaZahradaFaqs } from "@/lib/faqs";
 
 export const metadata: Metadata = {
-  title: "Hliníkové zimné záhrady - WoodSteel.sk",
+  title: "Hliníkové zimní zahrady - WoodSteel",
   description:
-    "Hliníkové zimné záhrady na mieru. Sliding systémy, bezúdržbová konštrukcia s úpravou komaxit, garancia 5+ rokov.",
+    "Hliníkové zimní zahrady na míru. Posuvné systémy, bezúdržbová konstrukce s úpravou komaxit, záruka 5+ let.",
   alternates: { canonical: "https://woodsteel.sk/zimne-zahrady/hlinikove-zimne-zahrady/" },
 };
 
 export default function HlinikoveZimneZahradyPage() {
   return (
     <ProductSubpage
-      breadcrumb={{ parentLabel: "Zimné záhrady", parentHref: "/zimne-zahrady" }}
+      breadcrumb={{ parentLabel: "Zimní zahrady", parentHref: "/zimne-zahrady" }}
       hero={{
-        eyebrow: "Hliníkové zimné záhrady",
+        eyebrow: "Hliníkové zimní zahrady",
         title: (
           <>
-            Hliníkové zimné záhrady. <span className="text-gold">Maximálny výhľad.</span>
+            Hliníkové zimní zahrady. <span className="text-gold">Maximální výhled.</span>
           </>
         ),
         subtitle:
-          "Ľahká konštrukcia a veľkorysé presklenie, ktoré do priestoru pustí maximum svetla. Čisté línie, ktoré nekonkurujú výhľadu, a priestor pripravený na celoročné využitie — v lete aj uprostred zimy.",
+          "Lehká konstrukce a velkorysé prosklení, které do prostoru pustí maximum světla. Čisté linie, které nekonkurují výhledu, a prostor připravený na celoroční využití — v létě i uprostřed zimy.",
         image:
           "/images/zimna-zahrada-hamuliakovo.jpeg",
       }}
       intro={{
-        title: "Krásny dizajn, maximum svetla",
+        title: "Krásný design, maximum světla",
         body:
-          "Hliníková zimná záhrada poskytuje ideálny pomer cena/výkon — spravíme ju v sezónnom alebo aj celoročnom prevedení, stačí si vybrať variant. Konštrukcia je bezúdržbová a s povrchovou úpravou komaxit vydrží desaťročia.",
+          "Hliníková zimní zahrada poskytuje ideální poměr cena/výkon — uděláme ji v sezónním nebo i celoročním provedení, stačí si vybrat variantu. Konstrukce je bezúdržbová a s povrchovou úpravou komaxit vydrží desetiletí.",
       }}
       features={[
-        "Povrchová úprava hliníka komaxit",
-        "Zasklenie rámové / bezrámové",
-        "Sliding posuvné systémy",
-        "Integrované LED osvetlenie ako voliteľný doplnok",
-        "Možnosť osadenia tieniacej techniky (screenové rolety)",
-        "Integrovaný žľab v konštrukcii",
-        "Voľba základných a prémiových strešných krytín",
-        "Voliteľné kúrenie / klimatizácia",
-        "Záruka 5+ rokov",
-        "Vlastná SK výroba",
+        "Povrchová úprava hliníku komaxit",
+        "Zasklení rámové / bezrámové",
+        "Posuvné systémy",
+        "Integrované LED osvětlení jako volitelný doplněk",
+        "Možnost osazení stínicí techniky (screenové rolety)",
+        "Integrovaný žlab v konstrukci",
+        "Volba základních a prémiových střešních krytin",
+        "Volitelné topení / klimatizace",
+        "Záruka 5+ let",
+        "Vlastní SK výroba",
       ]}
-      realizationFilter={(c) => c.toLowerCase().includes("zimná") && !c.toLowerCase().includes("drevená")}
+      realizationFilter={(c) => c.toLowerCase().includes("zimní") && !c.toLowerCase().includes("dřevěná")}
       faqs={zimnaZahradaFaqs.slice(0, 5)}
-      stickyName="Hliníková zimná záhrada"
+      stickyName="Hliníková zimní zahrada"
     />
   );
 }

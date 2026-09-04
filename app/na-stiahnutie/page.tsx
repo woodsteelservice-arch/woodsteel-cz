@@ -7,8 +7,8 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CatalogDownload } from "@/components/CatalogDownload";
 
 export const metadata: Metadata = {
-  title: "Na stiahnutie - WoodSteel.sk",
-  description: "PDF katalógy, reklamačné formuláre a referenčné dokumenty na stiahnutie.",
+  title: "Ke stažení - WoodSteel",
+  description: "PDF katalogy, reklamační formuláře a referenční dokumenty ke stažení.",
   alternates: { canonical: "https://woodsteel.sk/na-stiahnutie/" },
 };
 
@@ -22,24 +22,24 @@ type Doc = {
 
 const docs: Doc[] = [
   {
-    title: "WoodSteel katalóg 2025",
+    title: "WoodSteel katalog 2025",
     file: "/download/woodsteel-katalog-2025.pdf",
     size: "7.0 MB",
-    note: "Kompletný produktový katalóg — pergoly, zimné záhrady, zasklenia, doplnky",
+    note: "Kompletní produktový katalog — pergoly, zimní zahrady, zasklení, doplňky",
     type: "pdf",
   },
   {
-    title: "Reklamačný formulár (PDF)",
+    title: "Reklamační formulář (PDF)",
     file: "/download/reklamacny-formular.pdf",
     size: "41 KB",
-    note: "Vytlačiť, vyplniť a zaslať poštou alebo e-mailom na info@woodsteel.sk",
+    note: "Vytisknout, vyplnit a zaslat poštou nebo e-mailem na info@woodsteel.sk",
     type: "pdf",
   },
   {
-    title: "Reklamačný formulár (Word)",
+    title: "Reklamační formulář (Word)",
     file: "/download/reklamacny-formular.docx",
     size: "6 KB",
-    note: "Editovateľná verzia pre Microsoft Word / Pages / Google Docs",
+    note: "Editovatelná verze pro Microsoft Word / Pages / Google Docs",
     type: "docx",
   },
 ];
@@ -65,7 +65,7 @@ export default function NaStiahnutiePage() {
               Dokumenty <span className="text-gold">na stiahnutie.</span>
             </h1>
             <p className="mt-5 text-mutedbrand text-base lg:text-lg max-w-2xl mx-auto">
-              Produktový katalóg, reklamačné formuláre a referenčné dokumenty.
+              Produktový katalog, reklamační formuláře a referenční dokumenty.
             </p>
           </div>
         </section>
@@ -91,7 +91,7 @@ export default function NaStiahnutiePage() {
                 </div>
                 <span className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 bg-gold hover:bg-gold-hover text-brown hover:text-white font-semibold text-sm rounded-full transition-all">
                   <Download size={14} />
-                  Stiahnuť
+                  Stáhnout
                 </span>
               </a>
             ))}

@@ -30,7 +30,7 @@ export function MapEmbed({ title = "Showroom Rovinka", height = "400px" }: Props
         className="absolute bottom-4 right-4 inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-gold text-brown hover:text-white text-sm font-semibold rounded-full shadow-[0_4px_16px_rgba(63,34,17,0.15)] transition-colors"
       >
         <Navigation size={14} />
-        Navigovať
+        Navigovat
       </Link>
     </div>
   );

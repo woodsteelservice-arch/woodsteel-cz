@@ -72,7 +72,7 @@ export function CatalogDownload() {
             <div className="relative overflow-hidden rounded-xl shadow-[0_28px_70px_rgba(0,0,0,0.45)] transition-transform duration-700 ease-out [transform:rotate(-3deg)] group-hover:[transform:rotate(0deg)_translateY(-6px)]">
               <Image
                 src="/images/katalog-cover.jpg"
-                alt="Obálka PDF katalógu WoodSteel — zimné záhrady"
+                alt="Obálka PDF katalogu WoodSteel — zimní zahrady"
                 width={820}
                 height={1161}
                 sizes="(min-width:1024px) 320px, 260px"
@@ -94,12 +94,12 @@ export function CatalogDownload() {
                   <Mail size={28} className="text-gold" />
                 </div>
                 <h3 className="mt-5 font-display text-2xl font-bold text-white">
-                  {emailSent ? "Skontrolujte si e-mail" : "Katalóg sa sťahuje"}
+                  {emailSent ? "Zkontrolujte si e-mail" : "Katalog se stahuje"}
                 </h3>
                 <p className="mt-3 text-cream/80">
                   {emailSent
-                    ? "Katalóg je na ceste — a medzitým sa vám už stiahol do zariadenia."
-                    : "Katalóg sa práve ukladá do vášho zariadenia."}
+                    ? "Katalog je na cestě — a mezitím se vám už stáhl do zařízení."
+                    : "Katalog se právě ukládá do vašeho zařízení."}
                 </p>
               </div>
             ) : (
@@ -111,18 +111,18 @@ export function CatalogDownload() {
               >
                 <div className="text-eyebrow text-gold mb-4 inline-flex items-center gap-2">
                   <span className="w-8 h-px bg-gold/60" />
-                  Katalóg
+                  Katalog
                 </div>
 
                 <h2 className="text-display-2 font-bold text-white">
-                  Kompletný PDF katalóg.
+                  Kompletní PDF katalog.
                   <br />
                   <span className="text-gold">Zdarma na e-mail.</span>
                 </h2>
 
                 <p className="mt-5 max-w-md text-cream/85 text-base lg:text-lg leading-relaxed">
-                  Pergoly, zimné záhrady a zasklenia terás — varianty, materiály
-                  a hotové realizácie na jednom mieste.
+                  Pergoly, zimní zahrady a zasklení teras — varianty, materiály
+                  a hotové realizace na jednom místě.
                 </p>
 
                 <form
@@ -134,7 +134,7 @@ export function CatalogDownload() {
                       type="email"
                       name="email"
                       required
-                      placeholder="vase@meno.sk"
+                      placeholder="vase@jmeno.cz"
                       aria-label="E-mail"
                       className="flex-1 min-w-0 rounded-full bg-white/95 px-5 py-3.5 text-charcoal placeholder:text-mutedbrand/60 outline-none ring-1 ring-transparent transition-all focus:ring-2 focus:ring-gold"
                     />
@@ -144,10 +144,10 @@ export function CatalogDownload() {
                       className="group/btn inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-gradient-to-br from-gold via-gold to-gold-hover px-6 py-3.5 font-semibold text-brown transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_rgba(203,171,88,0.5)] disabled:opacity-60 disabled:translate-y-0"
                     >
                       {status === "sending" ? (
-                        "Odosielame…"
+                        "Odesíláme…"
                       ) : (
                         <>
-                          Poslať katalóg
+                          Poslat katalog
                           <ArrowRight
                             size={16}
                             className="transition-transform group-hover/btn:translate-x-1"
@@ -164,7 +164,7 @@ export function CatalogDownload() {
                       className="mt-0.5 h-[18px] w-[18px] shrink-0 accent-[#cbab58]"
                     />
                     <span>
-                      Súhlasím so zaslaním katalógu na uvedený e-mail.
+                      Souhlasím se zasláním katalogu na uvedený e-mail.
                     </span>
                   </label>
                 </form>

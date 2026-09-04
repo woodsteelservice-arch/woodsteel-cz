@@ -83,13 +83,13 @@ export function Faq({
             {help && (
               <div className="mt-8 rounded-2xl border border-cream bg-white/80 backdrop-blur-sm p-6 shadow-[0_8px_28px_rgba(63,34,17,0.06)]">
                 <p className="text-sm text-mutedbrand leading-relaxed">
-                  Nenašli ste svoju otázku? Odpovede máme aj na ďalšie.
+                  Nenašli jste svou otázku? Odpovědi máme i na další.
                 </p>
                 <Link
                   href="/faq"
                   className="mt-4 group inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-gold via-gold to-gold-hover px-5 py-2.5 text-sm font-semibold text-brown transition-all hover:-translate-y-0.5 hover:shadow-[0_10px_26px_rgba(203,171,88,0.45)]"
                 >
-                  Zobraziť všetky otázky
+                  Zobrazit všechny otázky
                   <ArrowRight
                     size={15}
                     className="transition-transform group-hover:translate-x-1"

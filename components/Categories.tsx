@@ -9,9 +9,9 @@ export function Categories() {
     <section id="categories" className="py-16 sm:py-20 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-5 lg:px-8">
         <SectionHeader
-          eyebrow="Naša ponuka"
-          title="Tri kategórie pre váš dokonalý outdoor priestor"
-          subtitle="Každé riešenie navrhujeme presne pre váš dom — zameranie, vizualizácia, výroba a montáž v rámci jedného tímu."
+          eyebrow="Naše nabídka"
+          title="Tři kategorie pro váš dokonalý outdoor prostor"
+          subtitle="Každé řešení navrhujeme přesně pro váš dům — zaměření, vizualizace, výroba a montáž v rámci jednoho týmu."
         />
 
         <div className="mt-10 sm:mt-14 lg:mt-16 grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-6">
@@ -36,7 +36,7 @@ export function Categories() {
                   {c.description}
                 </p>
                 <span className="mt-5 sm:mt-6 inline-flex items-center gap-2 text-gold font-semibold text-sm group-hover:gap-3 transition-all">
-                  Pozrieť kategóriu
+                  Prohlédnout kategorii
                   <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </span>
               </div>

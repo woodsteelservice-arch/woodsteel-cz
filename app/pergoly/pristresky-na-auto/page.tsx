@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ProductSubpage } from "@/components/ProductSubpage";
 
 export const metadata: Metadata = {
-  title: "Prístrešky na auto - WoodSteel.sk",
+  title: "Přístřešky na auto - WoodSteel",
   description:
-    "Hliníkové prístrešky na auto na mieru — kotvené do domu alebo samostatne stojace. Odvodnenie skryté v konštrukcii, vlastná SK výroba.",
+    "Hliníkové přístřešky na auto na míru — kotvené do domu nebo samostatně stojící. Odvodnění skryté v konstrukci, vlastní SK výroba.",
   alternates: { canonical: "https://woodsteel.sk/pergoly/pristresky-na-auto/" },
 };
 
@@ -13,34 +13,34 @@ export default function PristreskyNaAutoPage() {
     <ProductSubpage
       breadcrumb={{ parentLabel: "Pergoly", parentHref: "/pergoly" }}
       hero={{
-        eyebrow: "Prístrešky na auto",
+        eyebrow: "Přístřešky na auto",
         title: (
           <>
-            Prístrešky na auto, ktoré <span className="text-gold">vydržia počasie</span>.
+            Přístřešky na auto, které <span className="text-gold">vydrží počasí</span>.
           </>
         ),
         subtitle:
-          "Konštrukcia na mieru, ktorá ochráni auto pred slnkom, snehom aj krupobitím. Jedno- alebo dvojstojisková, s odvodnením skrytým priamo v profiloch.",
+          "Konstrukce na míru, která ochrání auto před sluncem, sněhem i krupobitím. S odvodněním skrytým přímo v profilech.",
         image:
           "/images/IMG_5562.jpg",
       }}
       intro={{
-        title: "Prístrešok, ktorý odolá snehu aj vetru",
+        title: "Přístřešek, který odolá sněhu i větru",
         body:
-          "Každý prístrešok navrhujeme podľa snehovej oblasti a zaťaženia vetrom v mieste stavby — nie podľa katalógu. Hliníkové prevedenie je štíhle a bezúdržbové — prístrešok môže byť kotvený do domu alebo samostatne stojaci v priestore.",
+          "Každý přístřešek navrhujeme podle sněhové oblasti a zatížení větrem v místě stavby — ne podle katalogu. Hliníkové provedení je štíhlé a bezúdržbové — přístřešek může být kotvený do domu nebo samostatně stojící v prostoru.",
       }}
       features={[
-        "Kotvené do domu alebo samostatne stojace v priestore",
-        "Povrchová úprava hliníka komaxit",
-        "Príprava na neskoršie zasklenie",
-        "Integrované LED osvetlenie ako voliteľný doplnok",
-        "Možnosť osadenia tieniacej techniky (screenové rolety)",
-        "Integrovaný žľab v konštrukcii",
-        "Voľba základných a prémiových strešných krytín",
-        "Záruka 5+ rokov",
+        "Kotvené do domu nebo samostatně stojící v prostoru",
+        "Povrchová úprava hliníku komaxit",
+        "Příprava na pozdější zasklení",
+        "Integrované LED osvětlení jako volitelný doplněk",
+        "Možnost osazení stínicí techniky (screenové rolety)",
+        "Integrovaný žlab v konstrukci",
+        "Volba základních a prémiových střešních krytin",
+        "Záruka 5+ let",
       ]}
-      realizationFilter={(c) => c.toLowerCase().includes("prístrešok") || c.toLowerCase().includes("carport")}
-      stickyName="Prístrešok na auto"
+      realizationFilter={(c) => c.toLowerCase().includes("přístřešek") || c.toLowerCase().includes("carport")}
+      stickyName="Přístřešek na auto"
     />
   );
 }

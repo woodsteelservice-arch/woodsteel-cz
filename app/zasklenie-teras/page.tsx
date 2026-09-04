@@ -14,9 +14,9 @@ import { zasklenieFaqs } from "@/lib/faqs";
 import { JsonLd, productSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Zasklenie terás - WoodSteel.sk",
+  title: "Zasklení teras - WoodSteel",
   description:
-    "Rámové a bezrámové zasklenie terás a balkónov. Chráni pred vetrom a dažďom, terasu využijete aj mimo sezóny.",
+    "Rámové a bezrámové zasklení teras a balkonů. Chrání před větrem a deštěm, terasu využijete i mimo sezónu.",
   alternates: { canonical: "https://woodsteel.sk/zasklenie-teras/" },
 };
 
@@ -27,17 +27,17 @@ const systems = [
     href: "/zasklenie-teras/ramove-zasklenie",
     name: "Hliníkový rámový posuvný systém",
     tag: "Rámový systém",
-    claim: "Ochráni vašu terasu proti vetru a dažďu.",
+    claim: "Ochrání vaši terasu proti větru a dešti.",
     description:
-      "Posuvný rámový systém je vyrobený z vysoko kvalitných hliníkových profilov doplnených nerezovými komponentmi. Ako výplň používame jednosklo alebo izolačné dvojsklo, ktoré umožňuje zaskliť priestory až do výšky 2,7 metra. Pokiaľ hľadáte priaznivý pomer cena/výkon, je rámový posuvný systém pre vás ideálnym riešením.",
+      "Posuvný rámový systém je vyroben z vysoce kvalitních hliníkových profilů doplněných nerezovými komponenty. Jako výplň používáme jednosklo nebo izolační dvojsklo, které umožňuje zasklít prostory až do výšky 2,7 metru. Pokud hledáte příznivý poměr cena/výkon, je rámový posuvný systém pro vás ideálním řešením.",
     image: "/images/zasklenie-ramovy-system.jpg",
     features: [
-      "chráni pred hlukom, prachom aj nepriazňou počasia",
-      "prekážka proti násilnému vniknutiu",
-      "poistky proti vysadeniu skiel",
-      "jednoduchá montáž vďaka už skompletizovanému systému",
-      "ľahké a rýchle ovládanie aj údržba",
-      "voľba počtu krídiel i spôsobu otvárania",
+      "chrání před hlukem, prachem i nepřízní počasí",
+      "překážka proti násilnému vniknutí",
+      "pojistky proti vysazení skel",
+      "jednoduchá montáž díky již zkompletovanému systému",
+      "snadné a rychlé ovládání i údržba",
+      "volba počtu křídel i způsobu otevírání",
     ],
   },
   {
@@ -45,16 +45,16 @@ const systems = [
     href: "/zasklenie-teras/bezramove-zasklenie",
     name: "Bezrámový posuvný systém",
     tag: "Bezrámový systém",
-    claim: "Zasklenie terasy ochráni proti vetru a dažďu.",
+    claim: "Zasklení terasy ochrání proti větru a dešti.",
     description:
-      "Bezrámový posuvný systém predstavuje dizajnové riešenie pre náročnejších zákazníkov, ktorí hľadajú moderný a minimalistický vzhľad bez viditeľných rámov. Využíva bezpečnostné jednosklo, ktoré umožňuje zaskliť priestory až do výšky 3 metrov. Poskytuje nielen spoľahlivú ochranu pred vetrom, dažďom, snehom a nečistotami, ale aj luxusný, prémiový vzhľad.",
+      "Bezrámový posuvný systém představuje designové řešení pro náročnější zákazníky, kteří hledají moderní a minimalistický vzhled bez viditelných rámů. Využívá bezpečnostní jednosklo, které umožňuje zasklít prostory až do výšky 3 metrů. Poskytuje nejen spolehlivou ochranu před větrem, deštěm, sněhem a nečistotami, ale i luxusní, prémiový vzhled.",
     image: "/images/zasklenie-bezramovy-system.jpg",
     features: [
-      "zaisťuje ničím nerušený výhľad do záhrady",
-      "prekážka proti násilnému vniknutiu",
-      "poistky proti vysadeniu skiel",
-      "ľahké a rýchle ovládanie aj údržba",
-      "voľba počtu krídiel i spôsobu otvárania",
+      "zajišťuje ničím nerušený výhled do zahrady",
+      "překážka proti násilnému vniknutí",
+      "pojistky proti vysazení skel",
+      "snadné a rychlé ovládání i údržba",
+      "volba počtu křídel i způsobu otevírání",
     ],
   },
 ];
@@ -64,9 +64,9 @@ export default function ZasklenieTerasPage() {
     <>
       <JsonLd
         data={productSchema({
-          name: "Zasklenie terás WoodSteel",
+          name: "Zasklení teras WoodSteel",
           description:
-            "Bezrámové posuvné systémy pre zasklenie terás. V lete otvorené, v zime uzavretý priestor.",
+            "Bezrámové posuvné systémy pro zasklení teras. V létě otevřené, v zimě uzavřený prostor.",
           image:
             "/images/zimna-zahrada-horne-janiky.jpeg",
           category: "Zasklenia",
@@ -78,7 +78,7 @@ export default function ZasklenieTerasPage() {
         <section className="relative min-h-[80svh] flex items-end overflow-hidden">
           <Image
             src="/images/zasklenie-teras-hero.jpg"
-            alt="Zasklenie terasy"
+            alt="Zasklení terasy"
             fill
             priority
             sizes="100vw"
@@ -89,19 +89,19 @@ export default function ZasklenieTerasPage() {
             <div className="text-eyebrow text-gold mb-4 inline-flex items-center gap-2">
               <Link href="/" className="hover:text-white transition-colors">WoodSteel</Link>
               <span>/</span>
-              <span className="text-white">Zasklenie terás</span>
+              <span className="text-white">Zasklení teras</span>
             </div>
             <h1 className="text-display-1 font-extrabold text-white max-w-3xl">
-              Zasklenie terasy <span className="text-gold">podľa vašich predstáv.</span>
+              Zasklení terasy <span className="text-gold">podle vašich představ.</span>
             </h1>
             <p className="mt-6 text-cream/90 text-lg max-w-2xl leading-relaxed">
-              Vyrobíme zasklenie terasy na mieru presne podľa vašich predstáv.
-              Elegantné a funkčné riešenie pre váš vonkajší priestor s vysokou
-              kvalitou spracovania a odolnosťou voči poveternostným podmienkam.
+              Vyrobíme zasklení terasy na míru přesně podle vašich představ.
+              Elegantní a funkční řešení pro váš venkovní prostor s vysokou
+              kvalitou zpracování a odolností vůči povětrnostním podmínkám.
             </p>
             <div className="mt-9 flex flex-col sm:flex-row gap-3">
               <Link href="/akcna-cenova-ponuka" className="inline-flex justify-center items-center gap-2 px-7 py-4 bg-gold hover:bg-gold-hover text-brown hover:text-white font-semibold rounded-full transition-all shadow-[0_8px_24px_rgba(203,171,88,0.4)] hover:-translate-y-0.5">
-                Cenová ponuka <ArrowRight size={18} />
+                Cenová nabídka <ArrowRight size={18} />
               </Link>
               <a href="tel:+421904473111" className="inline-flex justify-center items-center gap-2 px-7 py-4 border-2 border-white/40 hover:border-white text-white font-semibold rounded-full transition-colors">
                 <Phone size={18} /> +421 904 473 111
@@ -115,15 +115,15 @@ export default function ZasklenieTerasPage() {
           <div className="max-w-3xl mx-auto px-5 lg:px-8 text-center">
             <div className="text-eyebrow text-gold mb-4 inline-flex items-center gap-2">
               <span className="w-8 h-px bg-gold/60" />
-              Zasklenie terasy od WoodSteel.sk
+              Zasklení terasy od WoodSteel
             </div>
             <h2 className="text-display-2 font-bold text-brown">
-              Terasa, ktorú využijete aj mimo sezóny
+              Terasa, kterou využijete i mimo sezónu
             </h2>
             <p className="mt-7 text-mutedbrand text-base lg:text-lg leading-relaxed">
-              Naši špecialisti vám radi pomôžu s výberom zasklenia terasy, ochotne
-              poradia a vypracujú cenovú ponuku na mieru. To všetko za prijateľnú
-              cenu a s profesionálnym prístupom.
+              Naši specialisté vám rádi pomohou s výběrem zasklení terasy, ochotně
+              poradí a vypracují cenovou nabídku na míru. To vše za přijatelnou
+              cenu a s profesionálním přístupem.
             </p>
           </div>
         </section>
@@ -131,7 +131,7 @@ export default function ZasklenieTerasPage() {
         {/* Systémy zasklenia — detail má každý na vlastnej stránke */}
         <section className="py-16 sm:py-20 lg:py-28 bg-cream/40">
           <div className="max-w-7xl mx-auto px-5 lg:px-8">
-            <SectionHeader eyebrow="Systémy" title="Dva systémy, dva rozdielne výsledky" />
+            <SectionHeader eyebrow="Systémy" title="Dva systémy, dva rozdílné výsledky" />
             <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
               {systems.map((sys) => (
                 <Link
@@ -156,7 +156,7 @@ export default function ZasklenieTerasPage() {
                     </h3>
                     <p className="mt-3 font-display italic text-brown/80">{sys.claim}</p>
                     <span className="mt-6 inline-flex items-center gap-2 text-gold font-semibold text-sm group-hover:gap-3 transition-all">
-                      Zobraziť systém
+                      Zobrazit systém
                       <ArrowRight size={16} />
                     </span>
                   </div>

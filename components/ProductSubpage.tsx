@@ -50,7 +50,7 @@ export function ProductSubpage({ breadcrumb, hero, intro, features, realizationF
             <p className="mt-6 text-cream/90 text-lg max-w-2xl leading-relaxed">{hero.subtitle}</p>
             <div className="mt-9 flex flex-col sm:flex-row gap-3">
               <Link href="/akcna-cenova-ponuka" className="inline-flex justify-center items-center gap-2 px-7 py-4 bg-gold hover:bg-gold-hover text-brown hover:text-white font-semibold rounded-full transition-all shadow-[0_8px_24px_rgba(203,171,88,0.4)] hover:-translate-y-0.5">
-                Cenová ponuka <ArrowRight size={18} />
+                Cenová nabídka <ArrowRight size={18} />
               </Link>
               <a href="tel:+421904473111" className="inline-flex justify-center items-center gap-2 px-7 py-4 border-2 border-white/40 hover:border-white text-white font-semibold rounded-full transition-colors">
                 <Phone size={18} /> +421 904 473 111
@@ -82,7 +82,7 @@ export function ProductSubpage({ breadcrumb, hero, intro, features, realizationF
         {projects.length > 0 && (
           <section className="py-16 sm:py-20 lg:py-32 bg-white">
             <div className="max-w-7xl mx-auto px-5 lg:px-8">
-              <SectionHeader eyebrow="Realizácie" title="Reálne projekty z tejto kategórie" />
+              <SectionHeader eyebrow="Realizace" title="Reálné projekty z této kategorie" />
               <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
                 {projects.map((r) => (
                   <article key={r.image} className="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-cream">

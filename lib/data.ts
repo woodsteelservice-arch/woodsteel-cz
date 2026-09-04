@@ -3,30 +3,30 @@
 export const team = [
   {
     name: "Branislav Kmec",
-    role: "Zakladateľ",
+    role: "Zakladatel",
     photo: "/images/BranoKmecBG.png",
     quote:
-      "Moja vízia je napredovať, držať krok s trendmi a zároveň si zachovať ľudský, proklientský prístup.",
+      "Mojí vizí je posouvat se dál, držet krok s trendy a zároveň si zachovat lidský, proklientský přístup.",
   },
   {
     name: "Denis Nemec",
-    role: "Zakladateľ",
+    role: "Zakladatel",
     photo: "/images/DenisNemecBG.png",
     quote:
-      "Mojou prioritou je, aby sme ako spoločnosť doručovali čo najvyššiu hodnotu našim zákazníkom.",
+      "Mojí prioritou je, abychom jako společnost doručovali našim zákazníkům co nejvyšší hodnotu.",
   },
   {
     name: "Peter Kurilla",
-    role: "Riaditeľ obchodného oddelenia",
+    role: "Ředitel obchodního oddělení",
     photo: "/images/PeterKurillaBG.png",
-    quote: "V obore sa pohybujem už viac než 5 rokov.",
+    quote: "V oboru se pohybuji už více než 5 let.",
   },
   {
     name: "Viktor Farda",
-    role: "Senior obchodný manažér",
+    role: "Senior obchodní manažer",
     photo: "/images/ViktorFardaBG.png",
     quote:
-      "Pôsobím na pozícii senior obchodného manažéra s dlhoročnými skúsenosťami.",
+      "Působím na pozici seniorního obchodního manažera s dlouholetými zkušenostmi.",
   },
 ];
 
@@ -45,7 +45,7 @@ export const realizations: {
   },
   {
     location: "Hamuliakovo",
-    category: "Zimná záhrada",
+    category: "Zimní zahrada",
     image:
       "/images/zimna-zahrada-hamuliakovo.jpeg",
   },
@@ -57,13 +57,13 @@ export const realizations: {
   },
   {
     location: "Rovinka",
-    category: "Zasklenie terasy",
+    category: "Zasklení terasy",
     image:
       "/images/zimna-zahrada-rovinka.jpeg",
   },
   {
     location: "Dunajská Lužná",
-    category: "Zimná záhrada",
+    category: "Zimní zahrada",
     image:
       "/images/zimna-zahrada-dunajska-luzna.jpeg",
   },
@@ -75,13 +75,13 @@ export const realizations: {
   },
   {
     location: "Kittsee",
-    category: "Zimná záhrada",
+    category: "Zimní zahrada",
     image:
       "/images/zimna-zahrada-kittse.jpeg",
   },
   {
     location: "BA — Podunajské Biskupice",
-    category: "Zimná záhrada",
+    category: "Zimní zahrada",
     image:
       "/images/zimna-zahrada-podunajske-biskupice.jpeg",
   },
@@ -95,25 +95,25 @@ export const realizations: {
   // drevená, preto majú vlastnú kategóriu a nemiešajú sa s hliníkovými.
   {
     location: "Rovinka",
-    category: "Drevená zimná záhrada",
+    category: "Dřevěná zimní zahrada",
     image:
       "/images/drevena-zimna-zahrada2.jpg",
   },
   {
     location: "Rovinka",
-    category: "Drevená zimná záhrada",
+    category: "Dřevěná zimní zahrada",
     image:
       "/images/drevena-zimna-zahrada3.jpg",
   },
   {
     location: "Rovinka",
-    category: "Drevená zimná záhrada",
+    category: "Dřevěná zimní zahrada",
     image:
       "/images/drevena-zimna-zahrada4.jpg",
   },
   {
     location: "Rovinka",
-    category: "Drevená zimná záhrada",
+    category: "Dřevěná zimní zahrada",
     image:
       "/images/drevena-zimna-zahrada5.jpg",
   },
@@ -145,27 +145,27 @@ export const realizations: {
   // Prístrešky na auto — vlastné fotografie zákazníka
   {
     location: "BA — Koliba",
-    category: "Prístrešok na auto",
+    category: "Přístřešek na auto",
     image:
       "/images/pristresok-na-auto-2.jpg",
   },
   {
     location: "Trenčianske Teplice",
-    category: "Prístrešok na auto",
+    category: "Přístřešek na auto",
     image:
       "/images/pristresok-na-auto-3.jpg",
   },
   {
     location: "Viničné",
-    category: "Prístrešok na auto",
+    category: "Přístřešek na auto",
     image:
       "/images/pristresok-na-auto-4.jpg",
   },
 ];
 
-// Skutočné recenzie zákazníkov. Text je prevzatý doslovne — citáty
-// neupravujeme. `location` a `time` sú voliteľné, karta ich zobrazí,
-// len ak sú vyplnené.
+// Skutočné recenzie zákazníkov zo slovenského Googlu — pre českú verziu
+// preložené. Obsah ani vyznenie neupravujeme, mení sa len jazyk.
+// `location` a `time` sú voliteľné, karta ich zobrazí, len ak sú vyplnené.
 export const reviews: {
   name: string;
   text: string;
@@ -174,27 +174,27 @@ export const reviews: {
 }[] = [
   {
     name: "Alena C.",
-    text: "Zimnú záhradu od Woodsteelu vrele odporúčame. Je nad očakávanie 👌 Ak ju chcete užívať už na jar, neváhajte si ju objednať už teraz. Ďakujeme zvlášť pánovi Kurillovi za vysoko profesionálne jednanie so zákazníkom 👍",
+    text: "Zimní zahradu od Woodsteelu vřele doporučujeme. Je nad očekávání 👌 Pokud ji chcete užívat už na jaře, neváhejte si ji objednat už teď. Děkujeme zvlášť panu Kurillovi za vysoce profesionální jednání se zákazníkem 👍",
   },
   {
     name: "Naďa G.",
-    text: "Dlho sme sa rozhodovali nad firmou, ktorú si zvolíme a som nesmierne rada, že som sa rozhodla práve pre Woodsteel. Neskutočne milý a ochotný personál s promptnou komunikáciou a profesionálnym prístupom. Zimnú záhradu nám dokončili ešte pred termínom, čo nás potešilo ešte viac. Za nás určite odporúčam. :)",
+    text: "Dlouho jsme se rozhodovali, kterou firmu si zvolíme, a jsem nesmírně ráda, že jsem se rozhodla právě pro Woodsteel. Neskutečně milý a ochotný personál s promptní komunikací a profesionálním přístupem. Zimní zahradu nám dokončili ještě před termínem, což nás potěšilo ještě víc. Za nás určitě doporučuji. :)",
   },
   {
     name: "Radka Š.",
-    text: "Určite odporúčam, výborná komunikácia od začiatku až do konca, odborný a profesionálny prístup, precízna práca a vysoká kvalita. O zákazníka sa starajú. Výsledok skutočne stojí za to.",
+    text: "Určitě doporučuji, výborná komunikace od začátku až do konce, odborný a profesionální přístup, precizní práce a vysoká kvalita. O zákazníka se starají. Výsledek skutečně stojí za to.",
   },
   {
     name: "Veronika H.",
-    text: "Spoločnosť nám montovala hliníkovú pergolu. Od prvého kontaktu perfektná a zrozumiteľná komunikácia, rýchle dodanie a montáž prebehla bez problémov za pár hodín. Perfektná práca, ďakujeme :)",
+    text: "Společnost nám montovala hliníkovou pergolu. Od prvního kontaktu perfektní a srozumitelná komunikace, rychlé dodání a montáž proběhla bez problémů za pár hodin. Perfektní práce, děkujeme :)",
   },
   {
     name: "Roman Z.",
-    text: "Máme od nich presklenie terasy. Perfektná komunikácia s obchodným zástupcom, profesionálne zameranie a montáž. Môžem iba odporučiť. 👍",
+    text: "Máme od nich prosklení terasy. Perfektní komunikace s obchodním zástupcem, profesionální zaměření a montáž. Můžu jen doporučit. 👍",
   },
   {
     name: "Tomáš M.",
-    text: "Dostal som odporúčanie od spokojného suseda a taktiež môžem len odporučiť. Boli mi vysvetlené všetky detaily, ktoré som potreboval ujasniť. Samotná realizácia behom jedného pracovného dňa. Známa skúsenosť hodná recenzie. Určite odporučím rád aj ja ďalej.",
+    text: "Dostal jsem doporučení od spokojeného souseda a také můžu jen doporučit. Byly mi vysvětleny všechny detaily, které jsem potřeboval ujasnit. Samotná realizace během jednoho pracovního dne. Známá zkušenost hodná recenze. Určitě rád doporučím i já dál.",
   },
 ];
 
@@ -203,23 +203,23 @@ export const categories = [
     slug: "pergoly",
     name: "Pergoly",
     description:
-      "Hliníkové pergoly s moderným vzhľadom alebo klasické drevené konštrukcie z lepeného BSH dreva. Príprava na neskoršie zasklenie.",
+      "Hliníkové pergoly s moderním vzhledem nebo klasické dřevěné konstrukce z lepeného BSH dřeva. Příprava na pozdější zasklení.",
     image:
       "/images/hlinikova-pergola-senec.jpeg",
   },
   {
     slug: "zimne-zahrady",
-    name: "Zimné záhrady",
+    name: "Zimní zahrady",
     description:
-      "Plnohodnotná obytná zóna nezávislá od počasia. Izolačné dvojsklo, sliding systémy s plynulým otváraním.",
+      "Plnohodnotná obytná zóna nezávislá na počasí. Izolační dvojsklo, posuvné systémy s plynulým otevíráním.",
     image:
       "/images/zimna-zahrada-rovinka.jpeg",
   },
   {
     slug: "zasklenie-teras",
-    name: "Zasklenie terás",
+    name: "Zasklení teras",
     description:
-      "Premena otvorenej terasy na chránený priestor počas chladnejších mesiacov. Plne posuvné, otvorené v lete, uzavreté v zime.",
+      "Proměna otevřené terasy v chráněný prostor během chladnějších měsíců. Plně posuvné, otevřené v létě, uzavřené v zimě.",
     image:
       "/images/zimna-zahrada-horne-janiky.jpeg",
   },
@@ -227,11 +227,11 @@ export const categories = [
 
 // `meta` = krátky časový alebo vecný údaj ku kroku
 export const process = [
-  { n: "01", title: "Dopyt", meta: "Do hodiny", description: "Zavoláte alebo napíšete." },
-  { n: "02", title: "Obhliadka", meta: "Bezplatne", description: "Prídeme zamerať priestor." },
-  { n: "03", title: "Cenová ponuka", meta: "Do 48 hodín", description: "Cenová ponuka na mieru." },
-  { n: "04", title: "Výroba", meta: "Vlastná dielňa", description: "Vyrábame na Slovensku." },
-  { n: "05", title: "Montáž", meta: "Na kľúč", description: "Postavíme a odovzdáme." },
+  { n: "01", title: "Poptávka", meta: "Do hodiny", description: "Zavoláte nebo napíšete." },
+  { n: "02", title: "Prohlídka", meta: "Zdarma", description: "Přijedeme zaměřit prostor." },
+  { n: "03", title: "Cenová nabídka", meta: "Do 48 hodin", description: "Cenová nabídka na míru." },
+  { n: "04", title: "Výroba", meta: "Vlastní dílna", description: "Vyrábíme na Slovensku." },
+  { n: "05", title: "Montáž", meta: "Na klíč", description: "Postavíme a předáme." },
 ];
 
 // Číslo je vždy prvé — pás ho zobrazuje veľké a odpočítava od nuly,
@@ -240,10 +240,10 @@ export const process = [
 // koľko toho postavíme → akú istotu dostane → kam všade chodíme →
 // ako rýchlo sa ozveme. Posledný údaj vedie priamo k dopytu.
 export const stats = [
-  { value: "250+", label: "Realizácií ročne" },
-  { value: "5+", label: "Rokov záruka" },
-  { value: "5", label: "Krajín pôsobenia" },
-  { value: "48h", label: "Do odoslania cenovej ponuky" },
+  { value: "250+", label: "Realizací ročně" },
+  { value: "5+", label: "Let záruka" },
+  { value: "5", label: "Zemí působení" },
+  { value: "48h", label: "Do odeslání cenové nabídky" },
 ];
 
 // `match` = cesty, pri ktorých sa položka označí ako aktívna (prefixová zhoda).
@@ -260,29 +260,29 @@ export const navigation = [
         href: "/pergoly",
         items: [
           { label: "Hliníkové pergoly", href: "/pergoly/hlinikove-pergoly" },
-          { label: "Drevené pergoly", href: "/pergoly/drevene-pergoly" },
-          { label: "Prístrešky na auto", href: "/pergoly/pristresky-na-auto" },
+          { label: "Dřevěné pergoly", href: "/pergoly/drevene-pergoly" },
+          { label: "Přístřešky na auto", href: "/pergoly/pristresky-na-auto" },
         ],
       },
       {
-        label: "Zimné záhrady",
+        label: "Zimní zahrady",
         href: "/zimne-zahrady",
         items: [
-          { label: "Hliníkové zimné záhrady", href: "/zimne-zahrady/hlinikove-zimne-zahrady" },
-          { label: "Drevené zimné záhrady", href: "/zimne-zahrady/drevene-zimne-zahrady" },
+          { label: "Hliníkové zimní zahrady", href: "/zimne-zahrady/hlinikove-zimne-zahrady" },
+          { label: "Dřevěné zimní zahrady", href: "/zimne-zahrady/drevene-zimne-zahrady" },
         ],
       },
       {
-        label: "Zasklenie terás",
+        label: "Zasklení teras",
         href: "/zasklenie-teras",
         items: [
-          { label: "Rámové zasklenie terás", href: "/zasklenie-teras/ramove-zasklenie" },
-          { label: "Bezrámové zasklenie terás", href: "/zasklenie-teras/bezramove-zasklenie" },
+          { label: "Rámové zasklení teras", href: "/zasklenie-teras/ramove-zasklenie" },
+          { label: "Bezrámové zasklení teras", href: "/zasklenie-teras/bezramove-zasklenie" },
         ],
       },
     ],
   },
-  { label: "Realizácie", href: "/realizacie" },
+  { label: "Realizace", href: "/realizacie" },
   { label: "Showroom", href: "/showroom" },
   { label: "Články", href: "/clanky" },
   { label: "O nás", href: "/o-nas" },

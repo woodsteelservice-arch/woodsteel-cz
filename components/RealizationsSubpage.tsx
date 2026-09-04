@@ -25,7 +25,7 @@ export function RealizationsSubpage({ title, subtitle, filter }: Props) {
             <div className="text-eyebrow text-gold mb-4 inline-flex items-center gap-2">
               <Link href="/" className="hover:text-brown">WoodSteel</Link>
               <span className="opacity-50">/</span>
-              <Link href="/realizacie" className="hover:text-brown">Realizácie</Link>
+              <Link href="/realizacie" className="hover:text-brown">Realizace</Link>
             </div>
             <h1 className="text-display-1 font-extrabold text-brown max-w-4xl mx-auto">
               {title}
@@ -59,9 +59,9 @@ export function RealizationsSubpage({ title, subtitle, filter }: Props) {
             ) : (
               <div className="text-center py-12">
                 <p className="text-mutedbrand">
-                  Realizácie tejto kategórie pripravujeme.{" "}
+                  Realizace této kategorie připravujeme.{" "}
                   <Link href="/realizacie" className="text-gold underline">
-                    Pozrite si všetky →
+                    Prohlédněte si všechny →
                   </Link>
                 </p>
               </div>
