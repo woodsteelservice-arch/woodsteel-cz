@@ -98,7 +98,7 @@ export function InstagramFeed() {
             className="inline-flex items-center gap-2 px-6 py-3.5 border-2 border-brown/15 hover:border-gold text-brown hover:text-gold font-semibold text-sm rounded-full transition-colors"
           >
             <Instagram size={16} />
-            Sledovať {INSTAGRAM_HANDLE}
+            Sledovat {INSTAGRAM_HANDLE}
           </Link>
         </div>
       </div>
