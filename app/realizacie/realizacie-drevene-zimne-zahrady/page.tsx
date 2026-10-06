@@ -4,7 +4,7 @@ import { RealizationsSubpage } from "@/components/RealizationsSubpage";
 export const metadata: Metadata = {
   title: "Realizace - Dřevěné zimní zahrady - WoodSteel",
   description: "Naše dokončené realizace dřevěných zimních zahrad — BSH dřevěné konstrukce.",
-  alternates: { canonical: "https://woodsteel.sk/realizacie/realizacie-drevene-zimne-zahrady/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/realizacie/realizacie-drevene-zimne-zahrady/" },
 };
 
 export default function Page() {

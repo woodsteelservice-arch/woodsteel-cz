@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Časté otázky - WoodSteel",
   description:
     "Odpovede na najčastejšie otázky o pergolách, zimných záhradách a zasklení terás — termíny, záruky aj priebeh montáže.",
-  alternates: { canonical: "https://woodsteel.sk/faq/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/faq/" },
 };
 
 export default function FaqPage() {

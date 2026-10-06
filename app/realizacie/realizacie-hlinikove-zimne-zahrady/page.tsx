@@ -4,7 +4,7 @@ import { RealizationsSubpage } from "@/components/RealizationsSubpage";
 export const metadata: Metadata = {
   title: "Realizace - Hliníkové zimní zahrady - WoodSteel",
   description: "Naše dokončené realizace hliníkových zimních zahrad — bezúdržbové konstrukce na míru.",
-  alternates: { canonical: "https://woodsteel.sk/realizacie/realizacie-hlinikove-zimne-zahrady/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/realizacie/realizacie-hlinikove-zimne-zahrady/" },
 };
 
 export default function Page() {

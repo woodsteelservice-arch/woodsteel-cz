@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "O nás - WoodSteel",
   description:
     "Vlastní slovenská výroba a montáž od roku 2021. Tým, který vede zakázku od návrhu po předání.",
-  alternates: { canonical: "https://woodsteel.sk/o-nas/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/o-nas/" },
 };
 
 const values = [

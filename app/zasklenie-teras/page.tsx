@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: "Zasklení teras - WoodSteel",
   description:
     "Rámové a bezrámové zasklení teras a balkonů. Chrání před větrem a deštěm, terasu využijete i mimo sezónu.",
-  alternates: { canonical: "https://woodsteel.sk/zasklenie-teras/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/zasklenie-teras/" },
 };
 
 // Systémy zasklenia — texty a fotografie prevzaté z woodsteel.sk

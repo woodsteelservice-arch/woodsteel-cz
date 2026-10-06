@@ -27,7 +27,7 @@ export async function generateMetadata({
   return {
     title: seo?.title || `${post.title} - WoodSteel.sk`,
     description: seo?.meta_description || post.excerpt,
-    alternates: { canonical: `https://woodsteel.sk/${slug}/` },
+    alternates: { canonical: `https://woodsteelzimnizahrady.cz/${slug}/` },
     openGraph: {
       title: seo?.title || post.title,
       description: seo?.meta_description || post.excerpt,

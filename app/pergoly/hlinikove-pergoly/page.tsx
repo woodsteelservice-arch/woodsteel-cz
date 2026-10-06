@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Hliníkové pergoly - WoodSteel",
   description:
     "Hliníkové pergoly na míru s integrovaným žlabem a přípravou na pozdější zasklení. Odolné vůči počasí, snadné na údržbu, s moderními liniemi.",
-  alternates: { canonical: "https://woodsteel.sk/pergoly/hlinikove-pergoly/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/pergoly/hlinikove-pergoly/" },
 };
 
 export default function HlinikovePergolyPage() {

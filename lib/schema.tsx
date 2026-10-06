@@ -1,7 +1,7 @@
 // Schema.org structured data (JSON-LD) helpers.
 // Rendered inline via <script type="application/ld+json" /> in pages.
 
-export const SITE_URL = "https://woodsteel.sk";
+export const SITE_URL = "https://woodsteelzimnizahrady.cz";
 
 export const localBusinessSchema = {
   "@context": "https://schema.org",

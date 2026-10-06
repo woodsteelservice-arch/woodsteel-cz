@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Akční cenová nabídka - WoodSteel",
   description:
     "Vyžádejte si nezávaznou cenovou nabídku do 24 hodin. Bezplatná prohlídka a zaměření přímo u vás.",
-  alternates: { canonical: "https://woodsteel.sk/akcna-cenova-ponuka/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/akcna-cenova-ponuka/" },
 };
 
 const promises = [

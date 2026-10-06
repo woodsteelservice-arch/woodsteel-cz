@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Přístřešky na auto - WoodSteel",
   description:
     "Hliníkové přístřešky na auto na míru — kotvené do domu nebo samostatně stojící. Odvodnění skryté v konstrukci, vlastní SK výroba.",
-  alternates: { canonical: "https://woodsteel.sk/pergoly/pristresky-na-auto/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/pergoly/pristresky-na-auto/" },
 };
 
 export default function PristreskyNaAutoPage() {

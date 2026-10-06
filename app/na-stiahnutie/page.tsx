@@ -9,7 +9,7 @@ import { CatalogDownload } from "@/components/CatalogDownload";
 export const metadata: Metadata = {
   title: "Ke stažení - WoodSteel",
   description: "PDF katalogy, reklamační formuláře a referenční dokumenty ke stažení.",
-  alternates: { canonical: "https://woodsteel.sk/na-stiahnutie/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/na-stiahnutie/" },
 };
 
 type Doc = {

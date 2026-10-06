@@ -18,7 +18,7 @@ import { generalFaqs } from "@/lib/faqs";
 import { JsonLd, localBusinessSchema, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://woodsteel.sk/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/" },
 };
 
 export default function HomePage() {

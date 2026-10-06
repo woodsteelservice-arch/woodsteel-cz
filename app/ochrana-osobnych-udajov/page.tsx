@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Ochrana osobních údajů - WoodSteel",
   description:
     "Informace o zpracování osobních údajů podle čl. 13 nařízení GDPR — správce, účel, rozsah, doba uchovávání a práva subjektu údajů.",
-  alternates: { canonical: "https://woodsteel.sk/ochrana-osobnych-udajov/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/ochrana-osobnych-udajov/" },
 };
 
 /** Prevádzkovateľ podľa výpisu z obchodného registra — text prevzatý z woodsteel.sk. */

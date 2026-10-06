@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Pergoly - WoodSteel",
   description:
     "Dřevěné a hliníkové pergoly na míru — návrh, vlastní SK výroba i montáž. Přístřešky na auto a příprava na pozdější zasklení.",
-  alternates: { canonical: "https://woodsteel.sk/pergoly/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/pergoly/" },
 };
 
 const variants = [

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Zimní zahrady - WoodSteel",
   description:
     "Dřevěné a hliníkové zimní zahrady na míru. Rámové i bezrámové zasklení, vlastní SK výroba a montáž.",
-  alternates: { canonical: "https://woodsteel.sk/zimne-zahrady/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/zimne-zahrady/" },
 };
 
 const variants = [

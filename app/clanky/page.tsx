@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Články - WoodSteel",
   description:
     "Rady a návody k pergolám, zimním zahradám a zasklívání teras — od kotvení konstrukce po údržbu.",
-  alternates: { canonical: "https://woodsteel.sk/clanky/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/clanky/" },
 };
 
 export default function ClankyPage() {

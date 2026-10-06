@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Dřevěné zimní zahrady - WoodSteel",
   description:
     "Dřevěné zimní zahrady z BSH dřeva. Teplo a charakter klasiky, záruka 5+ let, vlastní SK výroba.",
-  alternates: { canonical: "https://woodsteel.sk/zimne-zahrady/drevene-zimne-zahrady/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/zimne-zahrady/drevene-zimne-zahrady/" },
 };
 
 export default function DreveneZimneZahradyPage() {

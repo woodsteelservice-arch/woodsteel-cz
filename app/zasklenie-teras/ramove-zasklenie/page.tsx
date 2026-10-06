@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Rámové zasklení teras - WoodSteel",
   description:
     "Hliníkový rámový posuvný systém na zasklení terasy. Jednosklo nebo izolační dvojsklo, zasklení až do výšky 2,7 metru, příznivý poměr cena/výkon.",
-  alternates: { canonical: "https://woodsteel.sk/zasklenie-teras/ramove-zasklenie/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/zasklenie-teras/ramove-zasklenie/" },
 };
 
 export default function RamoveZasklenniePage() {

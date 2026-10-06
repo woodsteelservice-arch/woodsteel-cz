@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Kontakt - WoodSteel",
   description:
     "Napište nám nebo zavolejte a domluvte si bezplatnou prohlídku u vás doma. Působíme po celém Slovensku i v Česku.",
-  alternates: { canonical: "https://woodsteel.sk/kontakt/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/kontakt/" },
 };
 
 export default function KontaktPage() {

@@ -7,7 +7,7 @@ export const generalFaqs = [
   {
     question: "Jaké záruky poskytujete?",
     answer:
-      "Na nosnou konstrukci poskytujeme záruku 5 let, na povrchovou úpravu až 7 let a na elektrické a motorické komponenty 2 roky.",
+      "Na naše díla poskytujeme záruku až 7 let. Specifikaci záručních lhůt najdete ve smlouvě o dílo.",
   },
   {
     question: "Potřebuji stavební povolení?",
@@ -17,12 +17,12 @@ export const generalFaqs = [
   {
     question: "Jak probíhá cenová nabídka?",
     answer:
-      "Vyplníte formulář nebo zavoláte. Náš obchodník se vám ozve do hodiny v pracovních dnech, domluví si bezplatnou prohlídku u vás doma a do 24-48 hodin máte na e-mailu nabídku + vizualizaci.",
+      "Vyplníte formulář a ozve se Vám naše asistentka. Pokud máte zájem o osobní prohlídku, obchodník se Vám ozve a domluví si s Vámi termín; pokud chcete jen cenovou nabídku, zašleme Vám ji e-mailem podle zadaných parametrů. Standardně se tak děje v průběhu 48 hodin od odeslání poptávky.",
   },
   {
     question: "Jakým způsobem se platí?",
     answer:
-      "Bankovním převodem nebo v hotovosti. Cena se hradí v zálohách navázaných na průběh zakázky — standardně 20 % po podpisu smlouvy, 70 % před dodáním a 10 % po finální montáži. U specifických projektů umíme splátkový kalendář nastavit individuálně.",
+      "Standardně se platí na fakturu s DPH nebo v režimu přenesení daňové povinnosti (přenos DPH), podle dohodnutých platebních podmínek z cenové nabídky / smlouvy o dílo. Standardní platební podmínky jsou: 70 % zálohová platba — po její úhradě začíná proces realizace a běží termín dodání; 20 % druhá platba — po zahájení stavby díla (1. stavební den); 10 % třetí platba — po kompletním dokončení díla a podpisu předávacího protokolu.",
   },
 ];
 
@@ -45,7 +45,7 @@ export const pergolaFaqs = [
   {
     question: "Jaké doplňky doporučujete?",
     answer:
-      "Nejoblíbenější jsou: LED osvětlení integrované do sloupů, screenové rolety po stranách (proti větru a hmyzu), infrazářiče pro celoroční využití, motorické ovládání přes aplikaci.",
+      "Nejoblíbenější doplňky jsou: integrované LED osvětlení do krovu s dálkovým ovládáním a ZIP screenové rolety jako stínicí technika. Oba doplňky jsou v designovém a moderním provedení.",
   },
   ...generalFaqs.slice(0, 3),
 ];
@@ -54,7 +54,7 @@ export const zimnaZahradaFaqs = [
   {
     question: "Jaká je tepelná izolace?",
     answer:
-      "U celoročních zimních zahrad používáme izolační dvojsklo s Ug do 1.0 W/m²K, nebo trojsklo s Ug do 0.6. Hliníkové profily mají přerušený tepelný most. Zahrada se tedy neliší od interiéru.",
+      "Tepelná izolace zimní zahrady závisí na zvolených materiálech. Zimní zahradu Vám umíme nakonfigurovat jako sezónní řešení, ale i jako plnohodnotné rozšíření obytného prostoru.",
   },
   {
     question: "Potřebuji topení?",
@@ -62,14 +62,9 @@ export const zimnaZahradaFaqs = [
       "Pro celoroční používání ano — nejčastěji podlahové topení nebo klimatizace s topným režimem. Díky dobrému zasklení jsou provozní náklady velmi nízké (srovnatelné s běžným pokojem).",
   },
   {
-    question: "Jaký výhled zůstane?",
-    answer:
-      "Naše profily jsou extrémně štíhlé (od 50 mm), takže výhled je téměř stejný jako na terase. U posuvných systémů se celá stěna dá otevřít — v létě tak máte plnohodnotnou terasu.",
-  },
-  {
     question: "Kdy je nejlepší čas na realizaci?",
     answer:
-      "Optimálně na jaře (duben-červen), kdy jsou dobré podmínky pro stavební práce. Pro rozhodování a prohlídku doporučujeme podzim nebo zimu — máte čas promyslet detaily.",
+      "Ideálně od jara do podzimu. Montujeme však i během zimních měsíců, samozřejmě při dodržení doporučených technologických postupů.",
   },
   ...generalFaqs.slice(0, 3),
 ];
@@ -78,12 +73,12 @@ export const zasklenieFaqs = [
   {
     question: "Jaký je rozdíl mezi rámovým a bezrámovým zasklením?",
     answer:
-      "Bezrámové sklo má jen úzké kovové úchyty nahoře a dole, vypadá vizuálně čistě a maximalizuje výhled. Rámové systémy jsou robustnější a lépe izolují, jsou zhruba o 20 % levnější.",
+      "Bezrámové sklo má jen úzké kovové úchyty nahoře a dole, vypadá vizuálně čistě a maximalizuje výhled. Rámové systémy jsou robustnější a lépe izolují.",
   },
   {
     question: "Jsou posuvné panely bezpečné?",
     answer:
-      "Ano — používáme kalené bezpečnostní sklo o tloušťce 8-12 mm, vodítka s měkkým dorazem a magnetické zajišťování. Systém je odolnější proti vloupání než standardní dveře.",
+      "Ano, všechna naše zasklení jsou vyráběna s důrazem na kvalitu a bezpečnost. Jako výplň je možné použít i bezpečnostní sklo. Zamykání funguje pomocí okenních klik, případně i FAB zámkem.",
   },
   {
     question: "Jak se čistí sklo?",

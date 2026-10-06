@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Bezrámové zasklení teras - WoodSteel",
   description:
     "Bezrámový posuvný systém na zasklení terasy. Bezpečnostní jednosklo, zasklení až do výšky 3 metrů, minimalistický vzhled bez viditelných rámů.",
-  alternates: { canonical: "https://woodsteel.sk/zasklenie-teras/bezramove-zasklenie/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/zasklenie-teras/bezramove-zasklenie/" },
 };
 
 export default function BezramoveZasklenniePage() {

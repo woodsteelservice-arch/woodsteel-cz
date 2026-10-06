@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Realizace - WoodSteel",
   description:
     "Fotografie dokončených pergol, zimních zahrad, zasklení a přístřešků na auto z realizací po celém Slovensku.",
-  alternates: { canonical: "https://woodsteel.sk/realizacie/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/realizacie/" },
 };
 
 export default function RealizaciePage() {

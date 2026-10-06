@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Hliníkové zimní zahrady - WoodSteel",
   description:
     "Hliníkové zimní zahrady na míru. Posuvné systémy, bezúdržbová konstrukce s úpravou komaxit, záruka 5+ let.",
-  alternates: { canonical: "https://woodsteel.sk/zimne-zahrady/hlinikove-zimne-zahrady/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/zimne-zahrady/hlinikove-zimne-zahrady/" },
 };
 
 export default function HlinikoveZimneZahradyPage() {

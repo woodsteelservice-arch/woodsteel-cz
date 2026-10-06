@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Cookies - WoodSteel",
   description:
     "Jaké soubory cookies na webu používáme, k čemu slouží a jak svůj souhlas kdykoli změníte nebo odvoláte.",
-  alternates: { canonical: "https://woodsteel.sk/cookies/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/cookies/" },
 };
 
 /** Kategórie zodpovedajú prepínačom v lište súhlasu (components/CookieConsent.tsx). */

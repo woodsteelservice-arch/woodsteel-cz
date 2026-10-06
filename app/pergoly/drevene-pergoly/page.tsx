@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Dřevěné pergoly - WoodSteel",
   description:
     "Dřevěné pergoly na míru z lepeného dřeva. Přirozené teplo, tvarová stálost a příprava na pozdější zasklení. Vlastní SK výroba.",
-  alternates: { canonical: "https://woodsteel.sk/pergoly/drevene-pergoly/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/pergoly/drevene-pergoly/" },
 };
 
 export default function DrevenePergolyPage() {

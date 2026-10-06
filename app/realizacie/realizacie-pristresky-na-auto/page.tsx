@@ -4,7 +4,7 @@ import { RealizationsSubpage } from "@/components/RealizationsSubpage";
 export const metadata: Metadata = {
   title: "Realizace - Přístřešky na auto - WoodSteel",
   description: "Naše dokončené realizace přístřešků na auto — hliníkové konstrukce na míru.",
-  alternates: { canonical: "https://woodsteel.sk/realizacie/realizacie-pristresky-na-auto/" },
+  alternates: { canonical: "https://woodsteelzimnizahrady.cz/realizacie/realizacie-pristresky-na-auto/" },
 };
 
 export default function Page() {

@@ -18,7 +18,7 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://woodsteel.sk"),
+  metadataBase: new URL("https://woodsteelzimnizahrady.cz"),
   title: "WoodSteel - Zimní zahrady, pergoly a zasklení teras",
   description:
     "Vlastní SK výroba i montáž. Cenová nabídka do 24 hodin, bezplatná prohlídka. 250+ realizací, 5 let záruka.",
