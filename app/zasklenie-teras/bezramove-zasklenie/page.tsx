@@ -22,7 +22,7 @@ export default function BezramoveZasklenniePage() {
         "snadné a rychlé ovládání i údržba",
         "volba počtu křídel i způsobu otevírání",
       ]}
-      image="/images/zasklenie-bezramovy-system.jpg"
+      image="/images/zasklenie-bezramove-hnede.jpg"
     />
   );
 }

@@ -205,7 +205,7 @@ export const categories = [
     description:
       "Hliníkové pergoly s moderním vzhledem nebo klasické dřevěné konstrukce z lepeného BSH dřeva. Příprava na pozdější zasklení.",
     image:
-      "/images/hlinikova-pergola-senec.jpeg",
+      "/images/hlinikova-pergola-svetla.jpeg",
   },
   {
     slug: "zimne-zahrady",
@@ -213,7 +213,7 @@ export const categories = [
     description:
       "Plnohodnotná obytná zóna nezávislá na počasí. Izolační dvojsklo, posuvné systémy s plynulým otevíráním.",
     image:
-      "/images/zimna-zahrada-rovinka.jpeg",
+      "/images/zimna-zahrada-moderna.jpeg",
   },
   {
     slug: "zasklenie-teras",
@@ -221,7 +221,7 @@ export const categories = [
     description:
       "Proměna otevřené terasy v chráněný prostor během chladnějších měsíců. Plně posuvné, otevřené v létě, uzavřené v zimě.",
     image:
-      "/images/zimna-zahrada-horne-janiky.jpeg",
+      "/images/zasklenie-terasy-javor-v2.jpeg",
   },
 ];
 
