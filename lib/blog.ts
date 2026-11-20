@@ -1,4 +1,9 @@
 import seoExport from "./seo-export.json";
+import { clanekSkloHtml } from "./clanok-sklo";
+import { clanekVyuzitiHtml } from "./clanok-vyuziti";
+import { clanekRealizaceHtml } from "./clanok-realizace";
+import { clanekMaterialHtml } from "./clanok-material";
+import { clanekStineniHtml } from "./clanok-stineni";
 
 /** Autoři článků — jméno, role a oříznutá kulatá fotka. */
 export const autori = {
@@ -48,6 +53,69 @@ function enrich(post: Omit<BlogPost, "contentLength"> & { contentLength?: number
 }
 
 export const blogPosts: BlogPost[] = [
+  enrich({
+    slug: "stineni-a-prehrivani-prosklenych-prostor",
+    title: "Proč se prosklený prostor přehřívá — a co s tím opravdu funguje",
+    date: "2026-11-19",
+    image: "/images/stineni-prehrivani.jpg",
+    author: "viktor-farda",
+    excerpt:
+      "Lidé se ptají, jestli nebude v zimní zahradě v zimě zima. Ve skutečnosti pak řeší červenec. Proč venkovní stínění funguje a vnitřní žaluzie ne — a co se musí naplánovat předem.",
+    summary:
+      "Prosklený prostor se přehřívá kvůli skleníkovému efektu: záření projde sklem dovnitř, ale teplo už ven neodejde. Z toho plyne základní pravidlo — slunce je potřeba zastavit ještě před sklem. Nejúčinnější jsou venkovní screenové rolety, u pergol lamelová střecha; vnitřní žaluzie odstraní oslnění, ale ne horko. Reflexní sklo funguje trvale a bez obsluhy, hodí se ale spíš jako doplněk. Polovinu úspěchu dělá příčné větrání, které se musí naplánovat při návrhu. Nejnáročnější je západní orientace — nízké odpolední slunce zastaví jedině svislé screeny.",
+    category: "Obecné",
+    contentHtml: clanekStineniHtml,
+  }),
+  enrich({
+    slug: "hlinik-nebo-drevo-material-konstrukce",
+    title: "Hliník, nebo dřevo? Jak vybrat materiál konstrukce",
+    date: "2026-11-18",
+    image: "/images/hlinik-nebo-drevo.jpg",
+    author: "branislav-kmec",
+    excerpt:
+      "Hliník se nekroutí a nepotřebuje péči, dřevo má teplotu a k některým domům prostě sedí líp. Čím se oba materiály liší v praxi — a proč u dřeva nikdy nepoužíváme masivní hranoly.",
+    summary:
+      "Hliník je tvarově stálý, barevně stálý a zvládne větší rozpon na tenčím profilu — proto se hodí k novostavbám a všude, kde se počítá s prosklením a posuvy. Dřevo má teplotu a strukturu a ke starším či venkovským domům sedí líp, ale vyžaduje obnovu lazury po pár letech. U dřeva používáme výhradně lepené dřevo, ne masivní hranoly: masiv pracuje, kroutí se a praská. Oba materiály se dají kombinovat — nejčastěji dřevěná nosná konstrukce s hliníkovým zasklením.",
+    category: "Obecné",
+    contentHtml: clanekMaterialHtml,
+  }),
+  enrich({
+    slug: "jak-probiha-realizace-krok-za-krokem",
+    title: "Jak probíhá realizace krok za krokem: od prvního telefonátu po předání",
+    date: "2026-11-17",
+    image: "/images/realizace-montaz.jpg",
+    author: "peter-kurilla",
+    excerpt:
+      "Nejčastější otázka po cenové nabídce není o ceně, ale o tom, jak to celé probíhá. Sedm kroků od prvního kontaktu po předání, jak dlouho trvají a co se nejčastěji protáhne.",
+    summary:
+      "Realizace má sedm kroků: první kontakt, bezplatné zaměření u vás doma, cenová nabídka do 24 hodin, smlouva se zálohou, výroba na míru, montáž a předání se zárukou. Zaměření je klíčové — technik posuzuje stav fasády, spád terasy, odtok vody i sněhovou oblast a teprve pak vzniká konkrétní řešení. Montáž trvá u pergoly obvykle den, u zimní zahrady dva až tři. Nejdelší a nejhůř odhadnutelná část bývá rozmýšlení nad nabídkou, proto s ní počítejte, pokud máte pevný termín.",
+    category: "Obecné",
+    contentHtml: clanekRealizaceHtml,
+  }),
+  enrich({
+    slug: "zimni-zahrada-ktera-se-opravdu-pouziva",
+    title: "Zimní zahrada, do které si denně sednete",
+    date: "2026-11-16",
+    image: "/images/zimni-zahrada-rano.jpg",
+    excerpt:
+      "Ranní káva, jídelní stůl, pracovna nebo místo pro rostliny — zimní zahrady se nakonec využívají jinak, než si majitelé plánovali. A tři věci rozhodují o tom, jestli do ní budete chodit denně.",
+    summary:
+      "Zákazníci si zimní zahradu pořizují kvůli jedné představě a nakonec ji používají úplně jinak — a víc. Nejčastější odpovědí je ranní káva, protože za sklem si sednete i v lednu. Hodně lidí si tam přesune jídelní stůl a do původní jídelny pak skoro nechodí. Dál se objevuje pracovna, přezimování rostlin, místo pro děti za deště a cvičení. Zimní zahrady, které se opravdu používají, mají tři věci společné: jeden jasný účel, pohodlné sezení a vyřešené stínění a světlo.",
+    category: "Zimní zahrady",
+    contentHtml: clanekVyuzitiHtml,
+  }),
+  enrich({
+    slug: "jake-sklo-do-zimni-zahrady",
+    title: "Jaké sklo do zimní zahrady: dvojsklo, trojsklo a bezpečnostní sklo v praxi",
+    date: "2026-11-16",
+    image: "/images/sklo-zimni-zahrada.jpg",
+    excerpt:
+      "Sklo tvoří většinu plochy i většiny ceny zimní zahrady a nejde ho později vyměnit. Jak se rozhodnout mezi jednosklem, dvojsklem a trojsklem, proč do střechy patří vrstvené sklo a kolik sněhu musí konstrukce unést.",
+    summary:
+      "Zasklení je u zimní zahrady nejdůležitější a prakticky nevratné rozhodnutí. Jednosklo zastaví déšť a vítr, izolační dvojsklo (Ug kolem 1,1) je rozumný standard pro užívání od jara do podzimu i s přitápěním, trojsklo (Ug kolem 0,6) dává smysl jen při napojení na vytápění domu — je těžší a konstrukce na něj musí být dimenzovaná od začátku. Do střechy patří vrstvené bezpečnostní sklo, protože při rozbití zůstanou střepy na fólii. Proti letnímu přehřívání pomáhá reflexní sklo v kombinaci s venkovním stíněním. A tloušťku skla i profilů určuje sněhová oblast.",
+    category: "Zimní zahrady",
+    contentHtml: clanekSkloHtml,
+  }),
   enrich({
     slug: "ako-spravne-kotvit-pergolu-do-fasady-domu",
     title: "Jak správně kotvit pergolu do fasády domu",
