@@ -31,7 +31,7 @@ const docs: Doc[] = [
     title: "Reklamační formulář (PDF)",
     file: "/download/reklamacny-formular.pdf",
     size: "41 KB",
-    note: "Vytisknout, vyplnit a zaslat poštou nebo e-mailem na info@woodsteel.sk",
+    note: "Vytisknout, vyplnit a zaslat poštou nebo e-mailem na info@woodsteelzimnizahrady.cz",
     type: "pdf",
   },
   {

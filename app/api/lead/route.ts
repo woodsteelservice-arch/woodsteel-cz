@@ -54,7 +54,7 @@ function safeForSheet(value: unknown): string {
   return String(value).trim();
 }
 
-/** Telefón na tvar +421904473111 (bez medzier), aby sa dal v Sheets hľadať */
+/** Telefón na tvar +420723434311 (bez medzier), aby sa dal v Sheets hľadať */
 function normalizePhone(phone: string): string {
   const trimmed = phone.trim();
   if (!trimmed) return "";
@@ -113,7 +113,7 @@ export async function POST(request: Request) {
   const lead = {
     datum: bratislavaTimestamp(),
     lead_id: crypto.randomUUID(),
-    web: "woodsteel.sk",
+    web: "woodsteelzimnizahrady.cz",
     stranka: safeForSheet(body.page),
     produkt: safeForSheet(body.product),
     termin: safeForSheet(body.timing),

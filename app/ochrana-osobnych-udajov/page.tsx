@@ -154,9 +154,9 @@ export default function OchranaOsobnychUdajovPage() {
             <Section title="Kontakt">
               <p>
                 S dotazy ke zpracování osobních údajů se na nás obraťte na{" "}
-                <a href="mailto:info@woodsteel.sk" className="text-gold underline">info@woodsteel.sk</a>{" "}
+                <a href="mailto:info@woodsteelzimnizahrady.cz" className="text-gold underline">info@woodsteelzimnizahrady.cz</a>{" "}
                 nebo na čísle{" "}
-                <a href="tel:+421904473111" className="text-gold underline">+421 904 473 111</a>.
+                <a href="tel:+420723434311" className="text-gold underline">+420 723 434 311</a>.
               </p>
             </Section>
           </div>

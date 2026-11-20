@@ -35,7 +35,7 @@ export default function DreveneZimneZahradyPage() {
         "Posuvné systémy",
         "Příprava na vytápění / klimatizaci",
         "Záruka 5+ let",
-        "Vlastní SK výroba",
+        "Vlastní výroba",
         "Impregnace proti UV a vlhkosti",
       ]}
       realizationFilter={(c) => c.toLowerCase().includes("dřevěná zimní")}

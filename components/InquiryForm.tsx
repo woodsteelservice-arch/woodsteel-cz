@@ -144,7 +144,7 @@ export function InquiryForm({ variant = "card", defaultProduct = "" }: Props) {
     } catch {
       setStatus("idle");
       setError(
-        "Odeslání se nezdařilo. Zkuste to prosím znovu, nebo nám zavolejte na +421 904 473 111."
+        "Odeslání se nezdařilo. Zkuste to prosím znovu, nebo nám zavolejte na +420 723 434 311."
       );
       return;
     }

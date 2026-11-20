@@ -88,10 +88,10 @@ export function GlazingSystemPage({ tag, name, claim, description, features, ima
                   Naceniť zasklenie terasy <ArrowRight size={18} />
                 </Link>
                 <a
-                  href="tel:+421904473111"
+                  href="tel:+420723434311"
                   className="inline-flex justify-center items-center gap-2 px-7 py-4 border-2 border-brown/15 hover:border-gold text-brown hover:text-gold font-semibold rounded-full transition-colors"
                 >
-                  <Phone size={18} /> +421 904 473 111
+                  <Phone size={18} /> +420 723 434 311
                 </a>
               </div>
             </Reveal>

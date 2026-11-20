@@ -79,14 +79,14 @@ export default function CenovaPonukaPage() {
                 </p>
               </div>
 
-              <a href="tel:+421904473111" className="flex items-center gap-4 group">
+              <a href="tel:+420723434311" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full bg-gold/15 group-hover:bg-gold flex items-center justify-center transition-colors shrink-0">
                   <Phone size={18} className="text-gold group-hover:text-white" />
                 </div>
                 <div>
                   <div className="text-xs text-eyebrow text-mutedbrand">Nebo nám rovnou zavolejte</div>
                   <div className="font-display font-bold text-lg text-brown group-hover:text-gold transition-colors">
-                    +421 904 473 111
+                    +420 723 434 311
                   </div>
                 </div>
               </a>

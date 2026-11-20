@@ -68,7 +68,7 @@ export default function PergolyPage() {
         data={productSchema({
           name: "Pergoly WoodSteel",
           description:
-            "Hliníkové a dřevěné pergoly a hliníkové přístřešky na auto. Vlastní SK výroba s 5+ lety záruky.",
+            "Hliníkové a dřevěné pergoly a hliníkové přístřešky na auto. Vlastní výroba s 5+ lety záruky.",
           image:
             "/images/hlinikova-pergola-trencin.jpeg",
           category: "Pergoly",
@@ -111,11 +111,11 @@ export default function PergolyPage() {
                 <ArrowRight size={18} />
               </Link>
               <a
-                href="tel:+421904473111"
+                href="tel:+420723434311"
                 className="inline-flex justify-center items-center gap-2 px-7 py-4 border-2 border-white/40 hover:border-white text-white font-semibold rounded-full transition-colors"
               >
                 <Phone size={18} />
-                +421 904 473 111
+                +420 723 434 311
               </a>
             </div>
           </div>

@@ -22,7 +22,7 @@ export function FinalCTA() {
 
             <div className="mt-8 sm:mt-10 space-y-4 sm:space-y-5">
               <a
-                href="tel:+421904473111"
+                href="tel:+420723434311"
                 className="flex items-center gap-4 group"
               >
                 <div className="w-12 h-12 rounded-full bg-gold/15 group-hover:bg-gold flex items-center justify-center transition-colors">
@@ -31,12 +31,12 @@ export function FinalCTA() {
                 <div>
                   <div className="text-xs text-eyebrow text-mutedbrand">Zavolejte nám</div>
                   <div className="font-display font-bold text-lg text-brown group-hover:text-gold transition-colors">
-                    +421 904 473 111
+                    +420 723 434 311
                   </div>
                 </div>
               </a>
               <a
-                href="mailto:info@woodsteel.sk"
+                href="mailto:info@woodsteelzimnizahrady.cz"
                 className="flex items-center gap-4 group"
               >
                 <div className="w-12 h-12 rounded-full bg-gold/15 group-hover:bg-gold flex items-center justify-center transition-colors">
@@ -45,7 +45,7 @@ export function FinalCTA() {
                 <div>
                   <div className="text-xs text-eyebrow text-mutedbrand">Napište nám</div>
                   <div className="font-display font-bold text-lg text-brown group-hover:text-gold transition-colors">
-                    info@woodsteel.sk
+                    info@woodsteelzimnizahrady.cz
                   </div>
                 </div>
               </a>

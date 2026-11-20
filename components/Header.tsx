@@ -175,7 +175,7 @@ export function Header({ overlay = false }: HeaderProps) {
         {/* Right side: phone + CTA */}
         <div className="flex items-center gap-3">
           <a
-            href="tel:+421904473111"
+            href="tel:+420723434311"
             className={cn(
               "hidden xl:inline-flex items-center gap-2 text-sm font-medium transition-colors",
               transparent
@@ -184,7 +184,7 @@ export function Header({ overlay = false }: HeaderProps) {
             )}
           >
             <Phone size={16} />
-            +421 904 473 111
+            +420 723 434 311
           </a>
           {/* Trvalo zvýraznené CTA — viditeľné na každej šírke aj v oboch stavoch lišty */}
           <span className="relative inline-flex shrink-0">
@@ -303,11 +303,11 @@ export function Header({ overlay = false }: HeaderProps) {
               );
             })}
             <a
-              href="tel:+421904473111"
+              href="tel:+420723434311"
               className="flex items-center gap-2 mt-4 px-3 py-3 text-base font-medium text-charcoal border-t border-cream"
             >
               <Phone size={18} className="text-gold" />
-              +421 904 473 111
+              +420 723 434 311
             </a>
             <Link
               href="#contact"

@@ -40,7 +40,7 @@ export default function HlinikoveZimneZahradyPage() {
         "Volba základních a prémiových střešních krytin",
         "Volitelné topení / klimatizace",
         "Záruka 5+ let",
-        "Vlastní SK výroba",
+        "Vlastní výroba",
       ]}
       realizationFilter={(c) => c.toLowerCase().includes("zimní") && !c.toLowerCase().includes("dřevěná")}
       faqs={zimnaZahradaFaqs.slice(0, 5)}

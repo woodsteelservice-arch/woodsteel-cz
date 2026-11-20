@@ -4,12 +4,11 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { InquiryForm } from "@/components/InquiryForm";
-import { MapEmbed } from "@/components/MapEmbed";
 
 export const metadata: Metadata = {
   title: "Kontakt - WoodSteel",
   description:
-    "Napište nám nebo zavolejte a domluvte si bezplatnou prohlídku u vás doma. Působíme po celém Slovensku i v Česku.",
+    "Napište nám nebo zavolejte a domluvte si bezplatné zaměření u vás doma. Působíme po celé České republice.",
   alternates: { canonical: "https://woodsteelzimnizahrady.cz/kontakt/" },
 };
 
@@ -29,8 +28,8 @@ export default function KontaktPage() {
               Začněme Váš projekt.
             </h1>
             <p className="mt-5 text-mutedbrand text-base lg:text-lg max-w-2xl mx-auto">
-              Vyplňte formulář, zavolejte nebo si domluvte osobní setkání v
-              naší provozovně.
+              Vyplňte formulář nebo zavolejte. Domluvíme bezplatné zaměření
+              přímo u vás doma.
             </p>
           </div>
         </section>
@@ -44,25 +43,25 @@ export default function KontaktPage() {
                   Přímé kontakty
                 </h2>
                 <div className="space-y-5">
-                  <a href="tel:+421904473111" className="flex items-center gap-4 group">
+                  <a href="tel:+420723434311" className="flex items-center gap-4 group">
                     <div className="w-12 h-12 rounded-full bg-gold/15 group-hover:bg-gold flex items-center justify-center transition-colors shrink-0">
                       <Phone size={18} className="text-gold group-hover:text-white" />
                     </div>
                     <div>
                       <div className="text-xs text-eyebrow text-mutedbrand">Telefón</div>
                       <div className="font-display font-bold text-lg text-brown group-hover:text-gold">
-                        +421 904 473 111
+                        +420 723 434 311
                       </div>
                     </div>
                   </a>
-                  <a href="mailto:info@woodsteel.sk" className="flex items-center gap-4 group">
+                  <a href="mailto:info@woodsteelzimnizahrady.cz" className="flex items-center gap-4 group">
                     <div className="w-12 h-12 rounded-full bg-gold/15 group-hover:bg-gold flex items-center justify-center transition-colors shrink-0">
                       <Mail size={18} className="text-gold group-hover:text-white" />
                     </div>
                     <div>
                       <div className="text-xs text-eyebrow text-mutedbrand">E-mail</div>
                       <div className="font-display font-bold text-lg text-brown group-hover:text-gold">
-                        info@woodsteel.sk
+                        info@woodsteelzimnizahrady.cz
                       </div>
                     </div>
                   </a>
@@ -71,22 +70,22 @@ export default function KontaktPage() {
 
               <div className="border-t border-cream pt-8">
                 <h2 className="font-display font-bold text-2xl text-brown mb-6">
-                  Showroom
+                  Kde působíme
                 </h2>
                 <div className="space-y-4 text-mutedbrand">
                   <div className="flex items-start gap-3">
                     <MapPin size={18} className="text-gold mt-1 shrink-0" />
                     <div className="text-charcoal">
-                      <div className="font-semibold">Showroom Rovinka</div>
+                      <div className="font-semibold">Celá Česká republika</div>
                       <div className="text-sm text-mutedbrand">
-                        okres Senec, Slovenská republika
+                        Za zaměřením k vám přijedeme, kdekoli jste.
                       </div>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Clock size={18} className="text-gold mt-1 shrink-0" />
                     <div className="text-charcoal text-sm">
-                      <div className="font-semibold">Otevírací doba</div>
+                      <div className="font-semibold">Kdy nás zastihnete</div>
                       <div className="text-mutedbrand mt-1">
                         Po–Pá: 8:00 – 17:00<br />
                         So: po domluvě<br />
@@ -105,15 +104,6 @@ export default function KontaktPage() {
           </div>
         </section>
 
-        {/* Map */}
-        <section className="pb-20 lg:pb-28 bg-white">
-          <div className="max-w-7xl mx-auto px-5 lg:px-8">
-            <h2 className="font-display font-bold text-2xl lg:text-3xl text-brown mb-6">
-              Najdete nás v Rovince
-            </h2>
-            <MapEmbed title="Showroom Rovinka" />
-          </div>
-        </section>
       </main>
       <Footer />
     </>

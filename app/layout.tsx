@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://woodsteelzimnizahrady.cz"),
   title: "WoodSteel - Zimní zahrady, pergoly a zasklení teras",
   description:
-    "Vlastní SK výroba i montáž. Cenová nabídka do 24 hodin, bezplatná prohlídka. 250+ realizací, 5 let záruka.",
+    "Vlastní výroba i montáž. Cenová nabídka do 24 hodin, bezplatná prohlídka. 250+ realizací, 5 let záruka.",
   openGraph: {
     title: "WoodSteel — Outdoor prostor, který milujete celý rok",
     description:
-      "Pergoly, zimní zahrady, zasklení teras. Vlastní SK výroba a montáž od roku 2021.",
+      "Pergoly, zimní zahrady, zasklení teras. Vlastní výroba i montáž od roku 2021.",
     type: "website",
     locale: "cs_CZ",
   },

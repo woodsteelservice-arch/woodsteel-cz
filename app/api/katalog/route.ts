@@ -54,7 +54,7 @@ export async function POST(request: Request) {
           "v příloze posíláme katalog WoodSteel — pergoly, zimní zahrady a zasklení teras.",
           `Pokud by se příloha nezobrazila, katalog si stáhnete zde: ${pdfUrl}`,
           "",
-          "V případě dotazů nám zavolejte na +421 904 473 111.",
+          "V případě dotazů nám zavolejte na +420 723 434 311.",
           "",
           "WoodSteel SK s. r. o.",
         ].join("\n"),

@@ -6,26 +6,20 @@ export const SITE_URL = "https://woodsteelzimnizahrady.cz";
 export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: "WoodSteel",
+  name: "Woodsteel zimní zahrady s.r.o.",
   url: SITE_URL,
   logo: `${SITE_URL}/logo/woodsteel-logo.png`,
   image: `${SITE_URL}/logo/woodsteel-logo.png`,
   description:
-    "Pergoly, zimní zahrady a zasklení teras na míru. Vlastní SK výroba a montáž od roku 2021.",
-  telephone: "+421904473111",
-  email: "info@woodsteel.sk",
-  priceRange: "€€€",
+    "Pergoly, zimní zahrady a zasklení teras na míru. Vlastní výroba i montáž od roku 2021.",
+  telephone: "+420723434311",
+  email: "info@woodsteelzimnizahrady.cz",
+  priceRange: "$$$",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Rovinka",
-    addressRegion: "Senec",
-    addressCountry: "SK",
+    addressCountry: "CZ",
   },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: 48.1689,
-    longitude: 17.2731,
-  },
+  areaServed: { "@type": "Country", name: "Česko" },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
@@ -67,7 +61,7 @@ export function productSchema(opts: {
     schema.offers = {
       "@type": "AggregateOffer",
       lowPrice: opts.priceFrom.replace(/[^0-9]/g, ""),
-      priceCurrency: "EUR",
+      priceCurrency: "CZK",
       offerCount: "3",
       availability: "https://schema.org/InStock",
     };
