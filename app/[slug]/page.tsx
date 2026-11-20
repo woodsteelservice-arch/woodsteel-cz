@@ -29,7 +29,7 @@ export async function generateMetadata({
   if (!post) return {};
   const seo = prodMeta(`/${slug}/`);
   return {
-    title: seo?.title || `${post.title} - WoodSteel.sk`,
+    title: seo?.title || `${post.title} - WoodSteel`,
     description: seo?.meta_description || post.excerpt,
     alternates: { canonical: `https://woodsteelzimnizahrady.cz/${slug}/` },
     openGraph: {
@@ -186,7 +186,7 @@ export default async function ArticleAtRoot({
           <section className="py-16 lg:py-20 bg-cream/40">
             <div className="max-w-7xl mx-auto px-5 lg:px-8">
               <h2 className="font-display font-bold text-2xl lg:text-3xl text-brown mb-10">
-                Ďalšie články z kategórie {post.category}
+                Další články z kategorie {post.category}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10">
                 {related.map((p) => (
