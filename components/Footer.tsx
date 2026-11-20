@@ -46,7 +46,11 @@ export function Footer() {
               <a href="#" aria-label="Facebook" className="w-9 h-9 rounded-full bg-white/8 hover:bg-gold flex items-center justify-center transition-colors">
                 <SocialIcon type="facebook" />
               </a>
-              <a href="#" aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/8 hover:bg-gold flex items-center justify-center transition-colors">
+              <a
+                href="https://www.instagram.com/woodsteel_cz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram" className="w-9 h-9 rounded-full bg-white/8 hover:bg-gold flex items-center justify-center transition-colors">
                 <SocialIcon type="instagram" />
               </a>
               <a href="#" aria-label="YouTube" className="w-9 h-9 rounded-full bg-white/8 hover:bg-gold flex items-center justify-center transition-colors">

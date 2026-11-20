@@ -22,8 +22,8 @@ function Instagram({ size = 16, className = "" }: { size?: number; className?: s
   );
 }
 
-const INSTAGRAM_HANDLE = "@woodsteelsk";
-const INSTAGRAM_URL = "https://www.instagram.com/woodsteelsk/";
+const INSTAGRAM_HANDLE = "@woodsteel_cz";
+const INSTAGRAM_URL = "https://www.instagram.com/woodsteel_cz/";
 
 // Visual mock of the latest 8 posts. In production this should be replaced with
 // a live feed via Instagram Basic Display API or a service like Behold.so / Curator.io.

@@ -35,7 +35,7 @@ export const localBusinessSchema = {
     },
   ],
   sameAs: [
-    "https://www.instagram.com/woodsteelsk/",
+    "https://www.instagram.com/woodsteel_cz/",
     "https://www.facebook.com/p/Woodsteel-SK-100086640138632/",
   ],
   aggregateRating: {
