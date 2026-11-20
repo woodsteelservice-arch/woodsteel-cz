@@ -15,7 +15,12 @@ export const metadata: Metadata = {
 
 export default function ClankyPage() {
   // Čas čtení počítáme na serveru — klient pak dostane hotová čísla.
-  const clanky = blogPosts.map((p) => ({ ...p, minuty: readingMinutes(p) }));
+  // Telá článkov do klientskeho komponentu neposielame — index ich nepotrebuje
+  // a v payloade stránky by to boli stovky kilobajtov textu.
+  const clanky = blogPosts.map(({ contentHtml: _html, contentLength: _len, ...p }) => ({
+    ...p,
+    minuty: readingMinutes({ ...p, contentHtml: _html, contentLength: _len }),
+  }));
   const kategorie = blogKategorie();
 
   return (
