@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ArrowRight, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const CATALOG_FILE = "/download/woodsteel-katalog-2025.pdf";
+const CATALOG_FILE = "/download/woodsteel-katalog-cz-2026.pdf";
 
 export function CatalogDownload() {
   const [status, setStatus] = useState<"idle" | "sending" | "leaving" | "success">("idle");
@@ -71,10 +71,10 @@ export function CatalogDownload() {
 
             <div className="relative overflow-hidden rounded-xl shadow-[0_28px_70px_rgba(0,0,0,0.45)] transition-transform duration-700 ease-out [transform:rotate(-3deg)] group-hover:[transform:rotate(0deg)_translateY(-6px)]">
               <Image
-                src="/images/katalog-cover.jpg"
-                alt="Obálka PDF katalogu WoodSteel — zimní zahrady"
+                src="/images/katalog-cover-cz.jpg"
+                alt="Obálka českého PDF katalogu WoodSteel — zimní zahrady a pergoly"
                 width={820}
-                height={1161}
+                height={1160}
                 sizes="(min-width:1024px) 320px, 260px"
                 className="w-full h-auto"
               />

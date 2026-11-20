@@ -21,9 +21,9 @@ type Doc = {
 
 const docs: Doc[] = [
   {
-    title: "WoodSteel katalog 2025",
-    file: "/download/woodsteel-katalog-2025.pdf",
-    size: "7.0 MB",
+    title: "WoodSteel katalog 2026",
+    file: "/download/woodsteel-katalog-cz-2026.pdf",
+    size: "9.4 MB",
     note: "Kompletní produktový katalog — pergoly, zimní zahrady, zasklení, doplňky",
     type: "pdf",
   },

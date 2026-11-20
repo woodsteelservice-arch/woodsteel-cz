@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const CATALOG_FILE = "/download/woodsteel-katalog-2025.pdf";
+const CATALOG_FILE = "/download/woodsteel-katalog-cz-2026.pdf";
 const RESEND_ENDPOINT = "https://api.resend.com/emails";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -52,7 +52,7 @@ export async function POST(request: Request) {
           "Dobrý den,",
           "",
           "v příloze posíláme katalog WoodSteel — pergoly, zimní zahrady a zasklení teras.",
-          `Ak by sa príloha nezobrazila, katalóg si stiahnete tu: ${pdfUrl}`,
+          `Pokud by se příloha nezobrazila, katalog si stáhnete zde: ${pdfUrl}`,
           "",
           "V případě dotazů nám zavolejte na +421 904 473 111.",
           "",
