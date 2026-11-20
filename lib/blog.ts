@@ -4,6 +4,9 @@ import { clanekVyuzitiHtml } from "./clanok-vyuziti";
 import { clanekRealizaceHtml } from "./clanok-realizace";
 import { clanekMaterialHtml } from "./clanok-material";
 import { clanekStineniHtml } from "./clanok-stineni";
+import { clanekVizualizaceHtml } from "./clanok-vizualizace";
+import { clanekCenaHtml } from "./clanok-cena";
+import { clanekPristresekHtml } from "./clanok-pristresek";
 
 /** Autoři článků — jméno, role a oříznutá kulatá fotka. */
 export const autori = {
@@ -53,6 +56,45 @@ function enrich(post: Omit<BlogPost, "contentLength"> & { contentLength?: number
 }
 
 export const blogPosts: BlogPost[] = [
+  enrich({
+    slug: "pristresek-na-auto-nebo-garaz",
+    title: "Přístřešek na auto, nebo garáž? Co z toho se vám vyplatí",
+    date: "2026-11-22",
+    image: "/images/pristresok-na-auto-hero.jpg",
+    author: "viktor-farda",
+    excerpt:
+      "Garáž řeší zabezpečení a skladování, přístřešek řeší počasí. Co přístřešek skutečně vyřeší, co ne, jak velký ho navrhnout a na co se při návrhu nejčastěji zapomíná.",
+    summary:
+      "Pokud auto nepotřebujete zabezpečit ani v garáži nic skladovat, dělá přístřešek většinu užitku za zlomek nákladů. Spolehlivě vyřeší sníh, námrazu ve mrazivých nocích, UV záření na laku a horko v interiéru; nevyřeší krádež, skladování ani déšť vháněný bokem. Rozměr navrhujte na používání auta, ne na jeho délku — s rezervou na otevřené dveře a nosič kol, a s výškou vyřešenou předem. Nejčastěji se zapomíná na odtok vody, nosný podklad pro patky, dimenzování na sněhovou oblast a přípravu vedení pro osvětlení či nabíjení elektromobilu.",
+    category: "Pergoly",
+    contentHtml: clanekPristresekHtml,
+  }),
+  enrich({
+    slug: "co-ovlivnuje-cenu-pergoly-a-zimni-zahrady",
+    title: "Co opravdu ovlivňuje cenu pergoly a zimní zahrady",
+    date: "2026-11-21",
+    image: "/images/co-ovplyvnuje-cenu.jpg",
+    author: "peter-kurilla",
+    excerpt:
+      "Dvě pergoly o stejné ploše se můžou v ceně lišit dvojnásobně. Rozdíl nedělá marže, ale rozhodnutí o rozponu, střeše a zasklení. Kde se dá ušetřit rozumně — a kde se to nevyplácí.",
+    summary:
+      "Cenu konstrukce netvoří metr čtvereční, ale rozhodnutí při návrhu. Nejvíc s ní hýbe zasklení, pak rozpon (sloup navíc je mnohem levnější než silnější nosník), typ střechy a složitost kotvení a základů — položka, kterou nabídky nejčastěji tají. Materiál a barva rozhodují méně, než se čeká. Rozumně se šetří sloupem místo delšího rozponu, pevnou střechou a odložením doplňků s připraveným vedením; nešetří se na dimenzování na sníh, na vrstveném skle ve střeše, na kování posuvů a na kotvení. Proto cenu posíláme až po zaměření — do 24 hodin.",
+    category: "Obecné",
+    contentHtml: clanekCenaHtml,
+  }),
+  enrich({
+    slug: "jak-si-predstavit-pergolu-u-sveho-domu",
+    title: "Jak si pergolu nebo zimní zahradu představit u svého domu",
+    date: "2026-11-20",
+    image: "/images/ukazka-po.jpg",
+    author: "denis-nemec",
+    excerpt:
+      "Pergolu nelze vrátit do obchodu — stojí u domu dvacet let. Tři způsoby, jak si výsledek představit ještě před stavbou, a jedna věc, kterou žádný z nich nenahradí.",
+    summary:
+      "Představu o budoucí konstrukci si lze udělat třemi způsoby: z fotek dokončených realizací (hned, ale bez vašeho domu), vizualizací do fotky vašeho domu (do minuty, zdarma, umožní porovnat barvy vedle sebe) nebo projektem od architekta (týdny a tisíce korun, smysl u novostaveb a atypických zadání). Všechny tři řeší jen vzhled. Jestli konstrukce na vašem domě vůbec jde, jaké rozměry se vejdou a kolik to bude stát, určí až zaměření technikem — to není alternativa k vizualizaci, ale další fáze. Pořadí je logické: nejdřív představa, potom technik.",
+    category: "Obecné",
+    contentHtml: clanekVizualizaceHtml,
+  }),
   enrich({
     slug: "stineni-a-prehrivani-prosklenych-prostor",
     title: "Proč se prosklený prostor přehřívá — a co s tím opravdu funguje",
