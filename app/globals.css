@@ -55,6 +55,22 @@
   .text-display-3 { font-size: clamp(1.5rem, 2.5vw, 2.25rem); line-height: 1.15; letter-spacing: -0.02em; }
   .text-eyebrow { font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; }
 
+  /* Prechádzajúci lesk cez plátno vizualizátora počas generovania. */
+  @keyframes ws-sheen {
+    from { background-position: 180% 0; }
+    to   { background-position: -80% 0; }
+  }
+
+  /* Skenovacia linka cez plátno počas generovania. */
+  .ws-scan { animation: ws-scan 2.4s cubic-bezier(0.45, 0, 0.55, 1) infinite; }
+  @keyframes ws-scan {
+    0%   { top: -12%; opacity: 0; }
+    12%  { opacity: 1; }
+    88%  { opacity: 1; }
+    100% { top: 100%; opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { .ws-scan { animation: none; opacity: 0; } }
+
   .reveal { animation: ws-reveal 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
   @keyframes ws-reveal {
     from { opacity: 0; transform: translateY(24px); }
