@@ -43,6 +43,12 @@ export function RealizationsSubpage({ title, subtitle, filter }: Props) {
                   <article key={r.image} className="group relative aspect-[4/3] rounded-2xl overflow-hidden bg-cream">
                     <Image src={r.image} alt={r.location ? `${r.category} — ${r.location}` : r.category} fill sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 100vw" className="object-cover transition-transform duration-700 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-brown/85 via-brown/30 to-transparent" />
+                    {r.country && (
+                      <div className="absolute top-3 left-3 sm:top-4 sm:left-4 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-sm text-brown text-[11px] font-semibold tracking-wide uppercase">
+                        <MapPin size={11} className="text-gold" />
+                        {r.country}
+                      </div>
+                    )}
                     <div className="absolute inset-x-0 bottom-0 p-5 lg:p-6 text-white">
                       <div className="text-eyebrow text-gold/95 mb-1">{r.category}</div>
                       {r.location && (

@@ -36,57 +36,88 @@ export const realizations: {
   location?: string;
   category: string;
   image: string;
+  /** Štítek země — zobrazí se na dlaždici. Používáme u realizací v ČR. */
+  country?: string;
 }[] = [
+  // Realizace v České republice — záměrně úplně nahoře, aby bylo hned vidět,
+  // že stavíme i v ČR. Fotky z vlastních montáží (složka WEB CZ).
   {
-    location: "BA — Vrakuňa",
+    location: "Hradec Králové",
+    category: "Hliníková pergola",
+    image: "/images/hlinikova-pergola-hradec-kralove.jpeg",
+    country: "Česká republika",
+  },
+  {
+    location: "Vrahovice — Prostějov",
+    category: "Zimní zahrada",
+    image: "/images/zimni-zahrada-vrahovice.jpeg",
+    country: "Česká republika",
+  },
+  {
+    location: "Želešice u Brna",
+    category: "Dřevěná pergola",
+    image: "/images/drevena-pergola-zelesice-u-brna.jpeg",
+    country: "Česká republika",
+  },
+  {
+    location: "Ivanovice",
+    category: "Zimní zahrada",
+    image: "/images/zimni-zahrada-ivanovice.jpeg",
+    country: "Česká republika",
+  },
+  {
+    location: "Kozlovice — Frýdek-Místek",
+    category: "Zimní zahrada",
+    image: "/images/zimni-zahrada-kozlovice.jpeg",
+    country: "Česká republika",
+  },
+  {
+    location: "Želešice u Brna",
+    category: "Dřevěná pergola",
+    image: "/images/drevena-pergola-zelesice-u-brna-2.jpeg",
+    country: "Česká republika",
+  },
+  {
     category: "Hliníková pergola",
     image:
       "/images/hlinikova-pergola-BA-Vrakuna.jpeg",
   },
   {
-    location: "Hamuliakovo",
     category: "Zimní zahrada",
     image:
       "/images/zimna-zahrada-hamuliakovo.jpeg",
   },
   {
-    location: "Senec",
     category: "Hliníková pergola",
     image:
       "/images/hlinikova-pergola-senec.jpeg",
   },
   {
-    location: "Rovinka",
     category: "Zasklení terasy",
     image:
       "/images/zimna-zahrada-rovinka.jpeg",
   },
   {
-    location: "Dunajská Lužná",
     category: "Zimní zahrada",
     image:
       "/images/zimna-zahrada-dunajska-luzna.jpeg",
   },
   {
-    location: "Trenčín — Soblahov",
     category: "Hliníková pergola",
     image:
       "/images/hlinikova-pergola-trencin.jpeg",
   },
   {
-    location: "Kittsee",
     category: "Zimní zahrada",
     image:
       "/images/zimna-zahrada-kittse.jpeg",
   },
   {
-    location: "BA — Podunajské Biskupice",
     category: "Zimní zahrada",
     image:
       "/images/zimna-zahrada-podunajske-biskupice.jpeg",
   },
   {
-    location: "Horné Janíky",
     category: "Hliníková pergola",
     image:
       "/images/zimna-zahrada-horne-janiky-1.jpeg",
@@ -94,69 +125,58 @@ export const realizations: {
   // Drevené realizácie prevzaté z woodsteel.sk — konštrukcia je skutočne
   // drevená, preto majú vlastnú kategóriu a nemiešajú sa s hliníkovými.
   {
-    location: "Rovinka",
     category: "Dřevěná zimní zahrada",
     image:
       "/images/drevena-zimna-zahrada2.jpg",
   },
   {
-    location: "Rovinka",
     category: "Dřevěná zimní zahrada",
     image:
       "/images/drevena-zimna-zahrada3.jpg",
   },
   {
-    location: "Rovinka",
     category: "Dřevěná zimní zahrada",
     image:
       "/images/drevena-zimna-zahrada4.jpg",
   },
   {
-    location: "Rovinka",
     category: "Dřevěná zimní zahrada",
     image:
       "/images/drevena-zimna-zahrada5.jpg",
   },
   // Ďalšie hliníkové pergoly prevzaté z woodsteel.sk
   {
-    location: "Ivanka pri Dunaji",
     category: "Hliníková pergola",
     image:
       "/images/hlinikova-pergola2.jpg",
   },
   {
-    location: "Neded",
     category: "Hliníková pergola",
     image:
       "/images/hlinikova-pergola3.jpg",
   },
   {
-    location: "Trenčín",
     category: "Hliníková pergola",
     image:
       "/images/hlinikova-pergola4.jpg",
   },
   {
-    location: "BA — Vrakuňa",
     category: "Hliníková pergola",
     image:
       "/images/hlinikova-pergola5.jpg",
   },
   // Prístrešky na auto — vlastné fotografie zákazníka
   {
-    location: "BA — Koliba",
     category: "Přístřešek na auto",
     image:
       "/images/pristresok-na-auto-2.jpg",
   },
   {
-    location: "Trenčianske Teplice",
     category: "Přístřešek na auto",
     image:
       "/images/pristresok-na-auto-3.jpg",
   },
   {
-    location: "Viničné",
     category: "Přístřešek na auto",
     image:
       "/images/pristresok-na-auto-4.jpg",
