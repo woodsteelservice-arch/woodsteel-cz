@@ -18,8 +18,10 @@ export function ArticleBody({ html }: { html: string }) {
         prose-a:text-gold prose-a:no-underline hover:prose-a:underline
         prose-strong:text-brown
         prose-img:rounded-xl prose-img:shadow-[0_8px_24px_rgba(63,34,17,0.08)]
+        prose-figure:my-8 prose-figcaption:text-center prose-figcaption:text-[13px] prose-figcaption:text-mutedbrand prose-figcaption:mt-3
         prose-ul:my-6 prose-li:my-2
         prose-blockquote:border-l-4 prose-blockquote:border-gold prose-blockquote:bg-cream/40 prose-blockquote:rounded-r-xl prose-blockquote:px-6 prose-blockquote:py-4 prose-blockquote:not-italic prose-blockquote:font-display
+        [&_blockquote_p:first-of-type]:before:content-none [&_blockquote_p:last-of-type]:after:content-none
       "
       dangerouslySetInnerHTML={{ __html: sanitized }}
     />

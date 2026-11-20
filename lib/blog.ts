@@ -1,11 +1,25 @@
 import seoExport from "./seo-export.json";
 
+/** Autoři článků — jméno, role a oříznutá kulatá fotka. */
+export const autori = {
+  "denis-nemec":     { jmeno: "Denis Nemec",     role: "Zakladatel",                   foto: "/images/autor-denis-nemec.jpg" },
+  "peter-kurilla":   { jmeno: "Peter Kurilla",   role: "Ředitel obchodního oddělení",  foto: "/images/autor-peter-kurilla.jpg" },
+  "branislav-kmec":  { jmeno: "Branislav Kmec",  role: "Zakladatel",                   foto: "/images/autor-branislav-kmec.jpg" },
+  "viktor-farda":    { jmeno: "Viktor Farda",    role: "Senior obchodní manažer",      foto: "/images/autor-viktor-farda.jpg" },
+} as const;
+
+export type AutorId = keyof typeof autori;
+
 export type BlogPost = {
   slug: string;
   title: string;
   date: string;
   image: string;
   excerpt: string;
+  /** Zhrnutie do rámčeka nad článkom. Keď chýba, použije sa `excerpt`. */
+  summary?: string;
+  /** Kto článok napísal. Keď chýba, uvedie sa Denis Nemec. */
+  author?: AutorId;
   category: "Pergoly" | "Zimní zahrady" | "Zasklení" | "Obecné";
   contentHtml?: string;
   contentLength?: number;
@@ -23,12 +37,13 @@ const seoMap = new Map<string, SeoEntry>(
   (seoExport as SeoEntry[]).map((e) => [e.path.replace(/^\//, "").replace(/\/$/, ""), e])
 );
 
-function enrich(post: Omit<BlogPost, "contentHtml" | "contentLength">): BlogPost {
+function enrich(post: Omit<BlogPost, "contentLength"> & { contentLength?: number }): BlogPost {
   const entry = seoMap.get(post.slug);
   return {
     ...post,
-    contentHtml: entry?.content_html,
-    contentLength: entry?.content_text_length,
+    // Vlastné HTML má prednosť — články písané tu nie sú v seo-exporte.
+    contentHtml: post.contentHtml ?? entry?.content_html,
+    contentLength: post.contentLength ?? entry?.content_text_length,
   };
 }
 
@@ -142,4 +157,32 @@ export function formatDate(iso: string): string {
     month: "long",
     year: "numeric",
   });
+}
+
+/**
+ * Odhad času čtení v minutách.
+ *
+ * `contentLength` nesou starší články ze seo-exportu; novější si nesou rovnou
+ * HTML, takže z něj délku dopočítáme. 200 slov za minutu je běžný průměr.
+ */
+export function readingMinutes(post: BlogPost): number {
+  const znaky =
+    post.contentLength ??
+    (post.contentHtml ? post.contentHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").length : 0);
+  if (!znaky) return 3;
+  return Math.max(2, Math.round(znaky / 6 / 200));
+}
+
+/** Kategorie, které se reálně vyskytují — v pořadí podle počtu článků. */
+export function blogKategorie(): { nazev: string; pocet: number }[] {
+  const mapa = new Map<string, number>();
+  for (const p of blogPosts) mapa.set(p.category, (mapa.get(p.category) ?? 0) + 1);
+  return [...mapa.entries()]
+    .map(([nazev, pocet]) => ({ nazev, pocet }))
+    .sort((a, b) => b.pocet - a.pocet);
+}
+
+/** Autor článku — s rozumným výchozím stavem pro starší články bez údaje. */
+export function autorClanku(post: BlogPost) {
+  return autori[post.author ?? "denis-nemec"];
 }
