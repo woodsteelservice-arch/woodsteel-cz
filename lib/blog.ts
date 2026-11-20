@@ -7,6 +7,7 @@ import { clanekStineniHtml } from "./clanok-stineni";
 import { clanekVizualizaceHtml } from "./clanok-vizualizace";
 import { clanekCenaHtml } from "./clanok-cena";
 import { clanekPristresekHtml } from "./clanok-pristresek";
+import { clanekPodzimHtml } from "./clanok-podzim";
 
 /** Autoři článků — jméno, role a oříznutá kulatá fotka. */
 export const autori = {
@@ -157,6 +158,19 @@ export const blogPosts: BlogPost[] = [
       "Zasklení je u zimní zahrady nejdůležitější a prakticky nevratné rozhodnutí. Jednosklo zastaví déšť a vítr, izolační dvojsklo (Ug kolem 1,1) je rozumný standard pro užívání od jara do podzimu i s přitápěním, trojsklo (Ug kolem 0,6) dává smysl jen při napojení na vytápění domu — je těžší a konstrukce na něj musí být dimenzovaná od začátku. Do střechy patří vrstvené bezpečnostní sklo, protože při rozbití zůstanou střepy na fólii. Proti letnímu přehřívání pomáhá reflexní sklo v kombinaci s venkovním stíněním. A tloušťku skla i profilů určuje sněhová oblast.",
     category: "Zimní zahrady",
     contentHtml: clanekSkloHtml,
+  }),
+  enrich({
+    slug: "terasa-a-zimni-zahrada-na-podzim-a-v-zime",
+    title: "Terasa, kterou používáte i v listopadu",
+    date: "2026-11-15",
+    image: "/images/zimni-zahrada-podzim.jpg",
+    author: "branislav-kmec",
+    excerpt:
+      "V červenci se dá sedět venku i bez konstrukce. V listopadu je rozdíl největší — pokud máte vyřešený vítr, teplo a světlo. Co se musí naplánovat předem a co se dá doplnit.",
+    summary:
+      "Zastřešenou terasu dělá použitelnou v chladné polovině roka pět věcí: zastřešení s dostatečným přesahem, boční ochrana proti větru (screen nebo zasklení), infrazářič, který ohřívá lidi a ne vzduch, teplé stmívatelné osvětlení a funkční odvod vody. Zastřešení a odtok se dodatečně nedělají, topení a světlo se doplnit dají — pokud se na ně při návrhu připraví vedení. Na podzim stojí hodinu práce vyčistit žlaby, vyzkoušet odtok hadicí, vytáhnout screeny nahoru a umýt sklo. A pokud chcete sedět pod novou konstrukcí v květnu, poptávka patří do listopadu, ne do dubna.",
+    category: "Obecné",
+    contentHtml: clanekPodzimHtml,
   }),
   enrich({
     slug: "ako-spravne-kotvit-pergolu-do-fasady-domu",
