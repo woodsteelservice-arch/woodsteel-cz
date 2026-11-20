@@ -108,7 +108,9 @@ export async function POST(request: Request) {
   const lead = {
     meno: safeForSheet(`${body.jmeno!.trim()} ${body.prijmeni!.trim()}`),
     email: safeForSheet(body.email),
-    telefon: safeForSheet(normalizePhone(body.telefon!)),
+    // Bez safeForSheet — to odstraňuje vedúce „+" a medzinárodná predvoľba
+    // je to jediné, čo tu na začiatku môže stáť.
+    telefon: normalizePhone(body.telefon!),
     produkt: safeForSheet(produkt?.nazev ?? "Vizualizace"),
     kraj: safeForSheet(body.kraj),
     datum: prahaTimestamp(),
