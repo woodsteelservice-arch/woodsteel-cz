@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
+import { checkBotId } from "botid/server";
 import { FARBY, KRAJE, PRODUKTY } from "@/lib/vizualizace";
+import { vydajVstupenku } from "@/lib/vizu-ochrana";
 
 /**
  * Kontaktné údaje, ktorými si návštevník odomyká vygenerovanú vizualizáciu.
@@ -13,6 +15,11 @@ import { FARBY, KRAJE, PRODUKTY } from "@/lib/vizualizace";
  *   E V jakém období… · F Máte zájem o BEZPLATNOU konzultaci…
  *   G Miesto realizácie · H Dátum pridania · I Poznámky
  * Stĺpce E a F vizualizácia nezisťuje, posielame ich prázdne.
+ *
+ * Kontakt sa posiela PRED generovaním: odpoveď nesie `vstupenka` (podpísaná,
+ * platí pár hodín), bez ktorej `/api/vizualizace/` nič nevygeneruje — viď
+ * lib/vizu-ochrana.ts. Vstupenku vydáme aj keď zlyhá Make (lead je potom
+ * v logu Vercelu), aby návštevník kvôli našej chybe neprišiel o vizualizáciu.
  *
  * Pozor: `trailingSlash: true` v next.config.ts platí aj na API — klient musí
  * volať "/api/vizualizace-lead/" so lomkou, inak dostane 308 redirect.
@@ -71,6 +78,11 @@ function prahaTimestamp(): string {
 }
 
 export async function POST(request: Request) {
+  const overenie = await checkBotId();
+  if (overenie.isBot) {
+    return NextResponse.json({ error: "Požadavek se nepodařilo ověřit. Obnovte prosím stránku a zkuste to znovu." }, { status: 403 });
+  }
+
   let body: VizuLeadPayload;
   try {
     body = (await request.json()) as VizuLeadPayload;
@@ -117,10 +129,12 @@ export async function POST(request: Request) {
     poznamka: safeForSheet(poznamka),
   };
 
+  const vstupenka = vydajVstupenku();
+
   const makeUrl = process.env.MAKE_WEBHOOK_VIZU_URL;
   if (!makeUrl) {
     console.error("[vizu-lead] MAKE_WEBHOOK_VIZU_URL nie je nastavená — lead sa nezapísal:", lead);
-    return NextResponse.json({ error: "Odeslání selhalo." }, { status: 502 });
+    return NextResponse.json({ error: "Odeslání selhalo.", vstupenka }, { status: 502 });
   }
 
   try {
@@ -138,12 +152,12 @@ export async function POST(request: Request) {
     if (!response.ok) {
       const detail = await response.text();
       console.error("[vizu-lead] Make odmietol požiadavku:", response.status, detail, lead);
-      return NextResponse.json({ error: "Odeslání selhalo." }, { status: 502 });
+      return NextResponse.json({ error: "Odeslání selhalo.", vstupenka }, { status: 502 });
     }
   } catch (error) {
     console.error("[vizu-lead] Volanie na Make zlyhalo:", error, lead);
-    return NextResponse.json({ error: "Odeslání selhalo." }, { status: 502 });
+    return NextResponse.json({ error: "Odeslání selhalo.", vstupenka }, { status: 502 });
   }
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, vstupenka });
 }
